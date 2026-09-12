@@ -249,6 +249,7 @@
       <a href="#modelos">Modelos</a>
       <a href="#herramientas">Herramientas</a>
       <a href="#tutoriales">Tutoriales</a>
+      <a href="#desde-x">Desde X</a>
       <a href="#fuentes">Fuentes</a>
     </div>
   </nav>
@@ -261,7 +262,7 @@
       Pensado para decidir qué probar, qué leer y qué ignorar.
     </p>
     <div class="stats">
-      <div class="stat"><b>16</b><span>piezas seleccionadas</span></div>
+      <div class="stat"><b>20</b><span>piezas seleccionadas</span></div>
       <div class="stat"><b>6</b><span>modelos clave</span></div>
       <div class="stat"><b>4</b><span>lanzamientos de plataforma</span></div>
       <div class="stat"><b>4</b><span>tutoriales prácticos</span></div>
@@ -274,6 +275,7 @@
     <button data-filter="herramienta">Herramientas</button>
     <button data-filter="articulo">Artículos</button>
     <button data-filter="tutorial">Tutoriales</button>
+    <button data-filter="x">Desde X</button>
   </div>
 
   <section id="destacados" class="featured">
@@ -476,6 +478,75 @@
     </article>
   </div>
 
+
+  <div class="section-title" id="desde-x">
+    <h2>Desde X</h2>
+    <span>Señal alta · sin hype</span>
+  </div>
+
+  <article class="card item" data-type="x" style="margin-bottom:1rem; grid-column: 1 / -1;">
+    <div class="meta-row"><span class="pill" style="background:var(--text);color:var(--bg);border:0;">criterio</span></div>
+    <a class="title" href="#desde-x">Cómo filtramos X</a>
+    <p class="why">
+      En X hay señal temprana (lanzamientos, benches independientes, demos de builders) y mucho ruido.
+      Solo entra aquí lo que: (1) viene de cuentas con historial técnico, (2) se puede contrastar con anuncio oficial o bench público, y (3) cambia una decisión práctica (qué modelo probar, qué API mirar, qué ignorar).
+    </p>
+    <div class="takeaway"><strong>Regla:</strong> si solo es viral y no aporta criterio, fuera.</div>
+  </article>
+
+  <div class="grid" style="margin-bottom:1rem;">
+    <article class="card item" data-type="x">
+      <div class="meta-row"><span class="pill articulo">x · señal</span><span class="pill fecha">sep 2026</span></div>
+      <a class="title" href="https://codingfleet.com/blog/gpt-6-astra-vs-claude-fable-5-1/" target="_blank" rel="noopener">Veredicto de builders: Astra ≠ mejor en todo</a>
+      <p class="why">
+        La conversación en X/YouTube (p. ej. Theo / t3.gg) coincide con benches independientes:
+        Astra destaca en computer-use y eficiencia; Fable 5.1 sigue delante en front-end y code review “¿lo mergearía?”.
+      </p>
+      <div class="takeaway"><strong>Para ti:</strong> no elijas modelo por un solo hilo; mira la tarea (UI vs automatización).</div>
+    </article>
+
+    <article class="card item" data-type="x">
+      <div class="meta-row"><span class="pill articulo">x · señal</span><span class="pill fecha">sep 2026</span></div>
+      <a class="title" href="https://artificialanalysis.ai/models/deepseek-v4-1-flash" target="_blank" rel="noopener">Artificial Analysis: open-weight barato que mueve el feed</a>
+      <p class="why">
+        DeepSeek-V4.1-Flash dispara hilos en X por precio/rendimiento. El índice de Artificial Analysis ayuda a separar marketing de número comparable.
+      </p>
+      <div class="takeaway"><strong>Para ti:</strong> úsalo como check rápido cuando un tweet diga “aplasta a Astra”.</div>
+    </article>
+
+    <article class="card item" data-type="x">
+      <div class="meta-row"><span class="pill articulo">x · señal</span><span class="pill fecha">10 sep</span></div>
+      <a class="title" href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noopener">Agents API: el hilo útil vs el hype</a>
+      <p class="why">
+        En X se mezcla “ya no necesitas orquestar nada” con demos reales. La señal es el harness tipo Codex en API (sandbox, tools, sesiones) — no que desaparezca el diseño de agentes.
+      </p>
+      <div class="takeaway"><strong>Para ti:</strong> léelo como infra, no como magia.</div>
+    </article>
+
+    <article class="card item" data-type="x">
+      <div class="meta-row"><span class="pill tutorial">cuentas</span></div>
+      <a class="title" href="https://www.kdnuggets.com/10-best-x-twitter-accounts-to-follow-for-llm-updates" target="_blank" rel="noopener">Lista corta de follows (alta señal)</a>
+      <p class="why">
+        Curaduría orientativa: investigación, builders y news wires. Mejor pocas cuentas buenas que cien feeds.
+      </p>
+      <div class="takeaway" style="line-height:1.7">
+        <strong>Research:</strong>
+        <a href="https://x.com/dair_ai" target="_blank" rel="noopener" style="color:var(--accent)">@dair_ai</a>,
+        <a href="https://x.com/askalphaxiv" target="_blank" rel="noopener" style="color:var(--accent)">@askalphaxiv</a>,
+        <a href="https://x.com/_akhaliq" target="_blank" rel="noopener" style="color:var(--accent)">@_akhaliq</a><br/>
+        <strong>Fundamentos / build:</strong>
+        <a href="https://x.com/karpathy" target="_blank" rel="noopener" style="color:var(--accent)">@karpathy</a>,
+        <a href="https://x.com/rasbt" target="_blank" rel="noopener" style="color:var(--accent)">@rasbt</a>,
+        <a href="https://x.com/simonw" target="_blank" rel="noopener" style="color:var(--accent)">@simonw</a><br/>
+        <strong>Producto / impacto:</strong>
+        <a href="https://x.com/TheRundownAI" target="_blank" rel="noopener" style="color:var(--accent)">@TheRundownAI</a>,
+        <a href="https://x.com/mreflow" target="_blank" rel="noopener" style="color:var(--accent)">@mreflow</a>,
+        <a href="https://x.com/emollick" target="_blank" rel="noopener" style="color:var(--accent)">@emollick</a>,
+        <a href="https://x.com/TheAhmadOsman" target="_blank" rel="noopener" style="color:var(--accent)">@TheAhmadOsman</a>
+      </div>
+    </article>
+  </div>
+
   <section class="sources" id="fuentes">
     <h2>Fuentes que vale la pena seguir</h2>
     <div class="source-list">
@@ -485,6 +556,8 @@
       <a href="https://research.meta.ai/blog/" target="_blank" rel="noopener">Meta AI Research</a>
       <a href="https://huggingface.co/papers" target="_blank" rel="noopener">HF Papers</a>
       <a href="https://docs.anthropic.com/en/release-notes/api" target="_blank" rel="noopener">Claude API notes</a>
+      <a href="https://x.com" target="_blank" rel="noopener">X (curado)</a>
+      <a href="https://artificialanalysis.ai/" target="_blank" rel="noopener">Artificial Analysis</a>
     </div>
   </section>
 
