@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Novedades IA — resumen</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #121a2b;
+      --text: #e8eefc;
+      --muted: #9aa8c7;
+      --accent: #6ea8ff;
+      --modelo: #7dd3a7;
+      --herramienta: #f0b35a;
+      --articulo: #c4a5ff;
+      --tutorial: #ff8fab;
+      --border: #243049;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1a2744, transparent), var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    main { max-width: 880px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    header h1 { margin: 0 0 .35rem; font-size: 1.85rem; letter-spacing: -0.02em; }
+    .meta { color: var(--muted); font-size: .95rem; margin-bottom: 1.75rem; }
+    .intro {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem 1.15rem;
+      color: var(--muted);
+      margin-bottom: 1.75rem;
+    }
+    h2 {
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--muted);
+      margin: 2rem 0 .85rem;
+    }
+    .item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem 1.15rem;
+      margin: 0 0 .85rem;
+    }
+    .item a.title {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 650;
+      font-size: 1.05rem;
+    }
+    .item a.title:hover { color: var(--accent); }
+    .badges { margin: .45rem 0 .55rem; display: flex; gap: .4rem; flex-wrap: wrap; }
+    .badge {
+      font-size: .72rem;
+      font-weight: 650;
+      padding: .18rem .5rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--bg);
+    }
+    .badge.modelo { background: var(--modelo); }
+    .badge.herramienta { background: var(--herramienta); }
+    .badge.articulo { background: var(--articulo); }
+    .badge.tutorial { background: var(--tutorial); }
+    .badge.fecha { background: transparent; color: var(--muted); border-color: var(--border); }
+    .item p { margin: 0; color: var(--muted); font-size: .95rem; }
+    .sources a { color: var(--accent); }
+    footer {
+      margin-top: 2.5rem;
+      color: var(--muted);
+      font-size: .85rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Novedades IA</h1>
+      <p class="meta">Selección actualizada · 12 sep 2026 · cuenta <code>canduchix</code></p>
+    </header>
+
+    <p class="intro">
+      Resumen curado de modelos, herramientas, artículos y tutoriales relevantes.
+      Se actualiza de forma periódica; no pretende ser exhaustivo, sino útil.
+    </p>
+
+    <h2>Modelos</h2>
+
+    <article class="item">
+      <a class="title" href="https://openai.com/index/gpt-6-astra/" target="_blank" rel="noopener">GPT-6 Astra (OpenAI)</a>
+      <div class="badges"><span class="badge modelo">modelo</span><span class="badge fecha">sep 2026</span></div>
+      <p>Nuevo modelo frontier de OpenAI, orientado a uso de ordenador, ingeniería de software y trabajo profesional. Rollout en ChatGPT y API como <code>gpt-6-astra</code>.</p>
+    </article>
+
+    <article class="item">
+      <a class="title" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" target="_blank" rel="noopener">Gemini 3.8 Flash y 3.8 Flash Cyber</a>
+      <div class="badges"><span class="badge modelo">modelo</span><span class="badge fecha">2 sep 2026</span></div>
+      <p>Google DeepMind mejora coding y agentes a precio Flash; la variante Cyber apunta a defensa (vulnerabilidades y parches) vía programa Fairwind.</p>
+    </article>
+
+    <article class="item">
+      <a class="title" href="https://research.meta.ai/blog/introducing-muse-spark-1-3" target="_blank" rel="noopener">Muse Spark 1.3 (Meta)</a>
+      <div class="badges"><span class="badge modelo">modelo</span><span class="badge fecha">2 sep 2026</span></div>
+      <p>Actualización para coding y tareas agénticas: menos verbosidad y menos tool calls, disponible en Muse Code y Meta Model API.</p>
+    </article>
+
+    <article class="item">
+      <a class="title" href="https://datanorth.ai/news/deepseek-releases-deepseek-v4-1-flash" target="_blank" rel="noopener">DeepSeek-V4.1-Flash</a>
+      <div class="badges"><span class="badge modelo">modelo</span><span class="badge fecha">10 sep 2026</span></div>
+      <p>Pesos abiertos MIT, contexto de 1M tokens y API muy barata en franja off-peak. Relevantes si te interesan agentes sobre repos grandes.</p>
+    </article>
+
+    <article class="item">
+      <a class="title" href="https://datanorth.ai/news/ant-group-releases-ling-3-0-flash-vl" target="_blank" rel="noopener">Ling-3.0-flash-VL (Ant / inclusionAI)</a>
+      <div class="badges"><span class="badge modelo">modelo</span><span class="badge fecha">10 sep 2026</span></div>
+      <p>MoE multimodal open-weight (texto, imagen, vídeo), MIT, 124B con ~5.5B activos por token y contexto largo.</p>
+    </article>
+
+    <h2>Herramientas</h2>
+
+    <article class="item">
+      <a class="title" href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noopener">OpenAI Agents API (beta pública)</a>
+      <div class="badges"><span class="badge herramienta">herramienta</span><span class="badge fecha">10 sep 2026</span></div>
+      <p>API para construir y ejecutar agentes en la nube con el harness de Codex (sandbox gestionado o infra propia). Sin fee extra: pagas tokens y tools.</p>
+    </article>
+
+    <article class="item">
+      <a class="title" href="https://openai.com/index/introducing-gpt-live-1-in-the-api/" target="_blank" rel="noopener">GPT-Live-1 en la API</a>
+      <div class="badges"><span class="badge herramienta">herramienta</span><span class="badge fecha">10 sep 2026</span></div>
+      <p>Voz full-duplex para apps: escucha y habla a la vez, delegando razonamiento a otros modelos. ~0,05 $/min la capa de voz.</p>
+    </article>
+
+    <article class="item">
+      <a class="title" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/" target="_blank" rel="noopener">Agentic Video en Gemini</a>
+      <div class="badges"><span class="badge herramienta">herramienta</span><span class="badge fecha">1 sep 2026</span></div>
+      <p>Análisis de vídeo con tools nativas: menos tokens/coste y mejor precisión (momentos, anomalías, conteo). En Gemini API / AI Studio.</p>
+    </article>
+
+    <h2>Tutoriales</h2>
+
+    <article class="item">
+      <a class="title" href="https://guillermodelpino.com/hub/crear-primer-agente-ia-tutorial" target="_blank" rel="noopener">Crear un agente IA con Python, LangChain y MCP</a>
+      <div class="badges"><span class="badge tutorial">tutorial</span><span class="badge fecha">ago 2026</span></div>
+      <p>Guía práctica en español: ruta sin código (n8n) y con código (LangChain + MCP).</p>
+    </article>
+
+    <article class="item">
+      <a class="title" href="https://arkaiacorp.com/blog/crear-agente-claude-api-mcp-tutorial-python-2026" target="_blank" rel="noopener">Agente con Claude API + MCP en Python</a>
+      <div class="badges"><span class="badge tutorial">tutorial</span><span class="badge fecha">jun 2026</span></div>
+      <p>Paso a paso: tool use, servidor MCP (filesystem) y empaquetado básico para producción.</p>
+    </article>
+
+    <article class="item">
+      <a class="title" href="https://dev.to/khavel/openai-agents-sdk-como-montar-agentes-con-mcp-guardrails-y-trazas-sin-perder-el-control-2e66" target="_blank" rel="noopener">OpenAI Agents SDK: MCP, guardrails y trazas</a>
+      <div class="badges"><span class="badge tutorial">tutorial</span></div>
+      <p>Cuándo usar el SDK frente a Responses API, y cómo meter frenos y observabilidad antes de producción.</p>
+    </article>
+
+    <h2>Fuentes a seguir</h2>
+    <div class="item sources">
+      <p>
+        <a href="https://openai.com/news/" target="_blank" rel="noopener">OpenAI News</a> ·
+        <a href="https://blog.google/innovation-and-ai/" target="_blank" rel="noopener">Google AI Blog</a> ·
+        <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic News</a> ·
+        <a href="https://research.meta.ai/blog/" target="_blank" rel="noopener">Meta AI Research</a> ·
+        <a href="https://huggingface.co/papers" target="_blank" rel="noopener">Hugging Face Papers</a>
+      </p>
+    </div>
+
+    <footer>
+      Mantenido por el asistente IA · última actualización: 12 de septiembre de 2026.<br />
+      Repo: <a href="https://github.com/canduchix/novedades-ia" style="color:var(--accent)">canduchix/novedades-ia</a>
+    </footer>
+  </main>
+</body>
+</html>
