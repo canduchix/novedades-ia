@@ -261,9 +261,9 @@
       Pensado para decidir qué probar, qué leer y qué ignorar.
     </p>
     <div class="stats">
-      <div class="stat"><b>12</b><span>piezas seleccionadas</span></div>
-      <div class="stat"><b>5</b><span>modelos clave</span></div>
-      <div class="stat"><b>3</b><span>lanzamientos de API</span></div>
+      <div class="stat"><b>16</b><span>piezas seleccionadas</span></div>
+      <div class="stat"><b>6</b><span>modelos clave</span></div>
+      <div class="stat"><b>4</b><span>lanzamientos de plataforma</span></div>
       <div class="stat"><b>4</b><span>tutoriales prácticos</span></div>
     </div>
   </header>
@@ -339,7 +339,7 @@
 
     <article class="card item" data-type="modelo">
       <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">10 sep 2026</span></div>
-      <a class="title" href="https://datanorth.ai/news/deepseek-releases-deepseek-v4-1-flash" target="_blank" rel="noopener">DeepSeek-V4.1-Flash</a>
+      <a class="title" href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash" target="_blank" rel="noopener">DeepSeek-V4.1-Flash</a>
       <p class="why">Open weights MIT, ~552B MoE / ~8B activos, contexto de 1M. API agresiva en off-peak ($0.15 input / $0.60 output por MTok).</p>
       <div class="takeaway"><strong>Para ti:</strong> opción open/barata para experimentos con contexto enorme y agentes sobre código.</div>
     </article>
@@ -356,6 +356,13 @@
       <a class="title" href="https://research.meta.ai/blog/introducing-muse-spark-1-3" target="_blank" rel="noopener">Muse Spark 1.3 (Meta)</a>
       <p class="why">Mejoras en coding y tareas agénticas: menos turnos innecesarios, ~20% menos tool calls y ~25% menos tokens vs 1.2. En Muse Code y Meta Model API.</p>
       <div class="takeaway"><strong>Para ti:</strong> señal de que Meta sigue empujando el stack de coding/agentes, no solo chat.</div>
+    </article>
+
+    <article class="card item" data-type="modelo">
+      <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">ago 2026</span></div>
+      <a class="title" href="https://www.alibabacloud.com/blog/qwen-3-8-flash-next-a-new-architecture-towards-ultimate-cost-efficiency_603501" target="_blank" rel="noopener">Qwen3.8-Flash-Next</a>
+      <p class="why">Preview de Alibaba hacia Qwen4: arquitectura GDN+QSA, ~125B + embeddings, ~6B activos. Pesos en HF/ModelScope y API muy agresiva en precio.</p>
+      <div class="takeaway"><strong>Para ti:</strong> open-weight a seguir si buscas coste bajo sin renunciar a agentes.</div>
     </article>
   </div>
 
@@ -391,6 +398,27 @@
       <p class="why">Informe de threat intel: campañas de ciber, vigilancia, armas y fraude. Contexto necesario mientras sube la capacidad de los modelos.</p>
       <div class="takeaway"><strong>Para ti:</strong> lectura corta para calibrar riesgo, compliance y diseño de guardrails.</div>
     </article>
+
+    <article class="card item" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">9 sep 2026</span></div>
+      <a class="title" href="https://developers.googleblog.com/en/announcing-adk-for-kotlin-10-building-production-ready-ai-agents-in-kotlin-android-and-beyond/" target="_blank" rel="noopener">ADK for Kotlin 1.0 (Google)</a>
+      <p class="why">GA del Agent Development Kit en Kotlin/Android/JVM: multi-agente, HITL, skills, on-device (LiteRT-LM) e híbrido con Firebase/Vertex.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si tocas Android o backend JVM, es el camino oficial a agentes de producción.</div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">9 sep 2026</span></div>
+      <a class="title" href="https://www.tomsguide.com/ai/gemini-3-8-flash-has-one-major-advantage-over-gpt-6-astra-and-claude-fable-5-1" target="_blank" rel="noopener">Gemini 3.8 vs Astra vs Fable</a>
+      <p class="why">Comparativa práctica: la ventaja clara de Gemini es vídeo/audio nativo frente a Astra y Fable. Útil para elegir por modalidad, no solo por benches.</p>
+      <div class="takeaway"><strong>Para ti:</strong> atajo de 5 minutos para decidir stack multimodal.</div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">1 sep 2026</span></div>
+      <a class="title" href="https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads" target="_blank" rel="noopener">Economía de Fable 5.1 (cache −75%)</a>
+      <p class="why">VentureBeat desglosa el ahorro en cache reads, gobernanza (EFS) y el contexto de seguridad alrededor de Mythos.</p>
+      <div class="takeaway"><strong>Para ti:</strong> lectura si evalúas coste real de agentes con contexto largo.</div>
+    </article>
   </div>
 
   <div class="section-title" id="tutoriales">
@@ -424,6 +452,27 @@
       <a class="title" href="https://agentesautonomosia.com/guias-tutoriales/crear-agente-ia-paso-a-paso-guia-practica-2026/" target="_blank" rel="noopener">Agente IA paso a paso (mapa de rutas)</a>
       <p class="why">Tabla por perfil (no-code, Python, multi-agente, enterprise) y orden de decisiones: objetivo → modelo → tools → memoria.</p>
       <div class="takeaway"><strong>Para ti:</strong> útil para elegir framework sin perder una semana.</div>
+    </article>
+
+    <article class="card item" data-type="tutorial">
+      <div class="meta-row"><span class="pill tutorial">tutorial</span><span class="pill fecha">11 sep 2026</span></div>
+      <a class="title" href="https://machinelearningmastery.com/fine-tuning-agentic-ai-a-practical-guide/" target="_blank" rel="noopener">Fine-tuning de IA agéntica</a>
+      <p class="why">Cuatro palancas: dataset de tool-calling, QLoRA, hiperparámetros en runtime y DPO, con evaluación anti-forgetting.</p>
+      <div class="takeaway"><strong>Para ti:</strong> cuando el prompting ya no basta y quieres especializar el agente.</div>
+    </article>
+
+    <article class="card item" data-type="tutorial">
+      <div class="meta-row"><span class="pill tutorial">tutorial</span><span class="pill fecha">7 sep 2026</span></div>
+      <a class="title" href="https://www.freecodecamp.org/news/how-to-build-an-ai-chatbot-with-gemini-and-vercel-serverless-functions/" target="_blank" rel="noopener">Chatbot Gemini + Vercel Serverless</a>
+      <p class="why">Streaming chunk-a-chunk con React y función serverless: patrón limpio para widgets embebidos y deploy rápido.</p>
+      <div class="takeaway"><strong>Para ti:</strong> plantilla corta si quieres un chat en producción sin montar backend pesado.</div>
+    </article>
+
+    <article class="card item" data-type="tutorial">
+      <div class="meta-row"><span class="pill tutorial">tutorial</span><span class="pill fecha">1 sep 2026</span></div>
+      <a class="title" href="https://dataaspirant.com/blog/pydantic-ai-tutorial/" target="_blank" rel="noopener">PydanticAI V2: agentes tipados</a>
+      <p class="why">Tutorial a V2: outputs validados, deps tipo FastAPI, capabilities (MCP, WebSearch, guardrails), evals y tracing.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si programas en Python y quieres agentes con tipos y tests de verdad.</div>
     </article>
   </div>
 
