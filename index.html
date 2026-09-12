@@ -266,6 +266,12 @@
     .video-grid { grid-template-columns: 1fr; }
   }
 
+
+  .link-row { display: flex; flex-wrap: wrap; gap: .65rem 1rem; margin-top: .15rem; }
+  .link-row a { color: var(--accent); text-decoration: none; font-size: .86rem; font-weight: 600; }
+  .link-row a:hover { text-decoration: underline; }
+  .link-row .muted-link { color: var(--muted); font-weight: 500; }
+
 </style>
 </head>
 <body>
@@ -278,6 +284,7 @@
       <a href="#modelos">Modelos</a>
       <a href="#herramientas">Herramientas</a>
       <a href="#tutoriales">Tutoriales</a>
+      <a href="#medium">Medium</a>
       <a href="#youtube">YouTube</a>
       <a href="#desde-x">Desde X</a>
       <a href="#fuentes">Fuentes</a>
@@ -288,11 +295,11 @@
     <div class="eyebrow"><span class="dot"></span> Actualizado · 12 sep 2026</div>
     <h1>Lo que importa en <em>inteligencia artificial</em> esta semana</h1>
     <p class="lede">
-      Selección curada de modelos, herramientas, YouTube, X, lectura y tutoriales — sin ruido.
+      Selección curada de modelos, herramientas, Medium, YouTube, X, lectura y tutoriales — sin ruido.
       Cada pieza enlaza a la fuente original para que puedas profundizar.
     </p>
     <div class="stats">
-      <div class="stat"><b>27</b><span>piezas seleccionadas</span></div>
+      <div class="stat"><b>33</b><span>piezas seleccionadas</span></div>
       <div class="stat"><b>6</b><span>modelos clave</span></div>
       <div class="stat"><b>4</b><span>lanzamientos de plataforma</span></div>
       <div class="stat"><b>4</b><span>tutoriales prácticos</span></div>
@@ -305,6 +312,7 @@
     <button data-filter="herramienta">Herramientas</button>
     <button data-filter="articulo">Artículos</button>
     <button data-filter="tutorial">Tutoriales</button>
+    <button data-filter="medium">Medium</button>
     <button data-filter="youtube">YouTube</button>
     <button data-filter="x">Desde X</button>
   </div>
@@ -511,6 +519,79 @@
 
 
 
+
+  <div class="section-title" id="medium">
+    <h2>Medium</h2>
+    <span>Artículos curados · fuente + lectura</span>
+  </div>
+  <p class="lede" style="margin:0 0 1rem;font-size:.95rem;max-width:70ch;">
+    Piezas técnicas de Medium. Enlace principal a la fuente original; si hay paywall, puedes abrir también
+    <a href="https://freedium-mirror.cfd/" target="_blank" rel="noopener" style="color:var(--accent)">Freedium</a>.
+  </p>
+  <div class="grid">
+
+    <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill articulo">medium</span><span class="pill fecha">12 sep 2026</span></div>
+      <a class="title" href="https://medium.com/@surajkhaitan16/gpt-6-astra-is-not-just-a-smarter-model-it-is-a-computer-operator-2ffb8ae3f4f4" target="_blank" rel="noopener">GPT-6 Astra Is Not Just a Smarter Model. It Is a Computer Operator.</a>
+      <p class="why">Va más allá del leaderboard: Astra como operador (computer use, identidad, permisos, auditoría). Incluye checklist de despliegue empresarial. <em style="color:var(--muted)">— Suraj Khaitan</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> lectura larga si vas a dar tools/UI reales a un agente.</div>
+      <div class="link-row">
+        <a href="https://medium.com/@surajkhaitan16/gpt-6-astra-is-not-just-a-smarter-model-it-is-a-computer-operator-2ffb8ae3f4f4" target="_blank" rel="noopener">Fuente Medium ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@surajkhaitan16/gpt-6-astra-is-not-just-a-smarter-model-it-is-a-computer-operator-2ffb8ae3f4f4" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+    <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill articulo">medium</span><span class="pill fecha">6 sep 2026</span></div>
+      <a class="title" href="https://medium.com/@adrianbailador/gpt-6-astra-for-net-what-changes-in-the-api-and-where-the-sdk-hasnt-caught-up-304d25903217" target="_blank" rel="noopener">GPT-6 Astra for .NET: API changes and where the SDK lags</a>
+      <p class="why">Contrato real vs NuGet 2.13.0: Chat Completions estable, Responses experimental (OPENAI001), y el gap de xhigh/max en los enums. <em style="color:var(--muted)">— Adrian Bailador</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> imprescindible si programas .NET y tool calling.</div>
+      <div class="link-row">
+        <a href="https://medium.com/@adrianbailador/gpt-6-astra-for-net-what-changes-in-the-api-and-where-the-sdk-hasnt-caught-up-304d25903217" target="_blank" rel="noopener">Fuente Medium ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@adrianbailador/gpt-6-astra-for-net-what-changes-in-the-api-and-where-the-sdk-hasnt-caught-up-304d25903217" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+    <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill articulo">medium</span><span class="pill fecha">sep 2026</span></div>
+      <a class="title" href="https://medium.com/h7w/gpt-6-astra-vs-claude-fable-5-1-full-2026-comparison-api-pricing-selection-guide-631451fe8de5" target="_blank" rel="noopener">GPT-6 Astra vs Claude Fable 5.1: guía de selección 2026</a>
+      <p class="why">Comparativa práctica API/pricing: mismo list price, cache mucho más barato en Fable; cuándo priorizar computer use vs coding agentic. <em style="color:var(--muted)">— T3CH / Web Researcher</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> atajo para decidir stack sin leer diez benches.</div>
+      <div class="link-row">
+        <a href="https://medium.com/h7w/gpt-6-astra-vs-claude-fable-5-1-full-2026-comparison-api-pricing-selection-guide-631451fe8de5" target="_blank" rel="noopener">Fuente Medium ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/h7w/gpt-6-astra-vs-claude-fable-5-1-full-2026-comparison-api-pricing-selection-guide-631451fe8de5" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+    <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill articulo">medium</span><span class="pill fecha">sep 2026</span></div>
+      <a class="title" href="https://medium.com/@dremfind/gpt-6-astra-vs-claude-fable-5-1-the-honest-september-2026-comparison-7f69fae78aad" target="_blank" rel="noopener">The Honest September 2026 Comparison (Astra vs Fable)</a>
+      <p class="why">Enfoque en coste efectivo: Fable −75% cache reads vs Astra más caro que su predecesor pese al mismo sticker price. <em style="color:var(--muted)">— Dreamfind</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> útil para estimar factura de agentes con contexto largo.</div>
+      <div class="link-row">
+        <a href="https://medium.com/@dremfind/gpt-6-astra-vs-claude-fable-5-1-the-honest-september-2026-comparison-7f69fae78aad" target="_blank" rel="noopener">Fuente Medium ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@dremfind/gpt-6-astra-vs-claude-fable-5-1-the-honest-september-2026-comparison-7f69fae78aad" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+    <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill articulo">medium</span><span class="pill fecha">2026</span></div>
+      <a class="title" href="https://medium.com/@somrout/how-ai-agents-actually-do-things-the-full-architecture-behind-agentic-ai-007ff730dd48" target="_blank" rel="noopener">How AI Agents Actually Do Things</a>
+      <p class="why">Arquitectura clara del loop ReAct: el LLM propone tools, el runtime ejecuta. Buen antídoto al marketing de «agente». <em style="color:var(--muted)">— Som</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> base conceptual antes de elegir framework.</div>
+      <div class="link-row">
+        <a href="https://medium.com/@somrout/how-ai-agents-actually-do-things-the-full-architecture-behind-agentic-ai-007ff730dd48" target="_blank" rel="noopener">Fuente Medium ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@somrout/how-ai-agents-actually-do-things-the-full-architecture-behind-agentic-ai-007ff730dd48" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+    <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill articulo">medium</span><span class="pill fecha">2026</span></div>
+      <a class="title" href="https://medium.com/@nraman.n6/the-architecture-of-agency-a-deep-technical-guide-to-agentic-ai-systems-in-2026-9df63b37f6df" target="_blank" rel="noopener">The Architecture of Agency (2026 deep dive)</a>
+      <p class="why">Memoria, orquestación multi-agente, tool protocols y fallos no resueltos — guía técnica densa para ingenieros. <em style="color:var(--muted)">— N. Raman</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> cuando quieras el mapa completo, no solo el tutorial.</div>
+      <div class="link-row">
+        <a href="https://medium.com/@nraman.n6/the-architecture-of-agency-a-deep-technical-guide-to-agentic-ai-systems-in-2026-9df63b37f6df" target="_blank" rel="noopener">Fuente Medium ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@nraman.n6/the-architecture-of-agency-a-deep-technical-guide-to-agentic-ai-systems-in-2026-9df63b37f6df" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+  </div>
+
   <div class="section-title" id="youtube">
     <h2>YouTube</h2>
     <span>Reproducibles aquí · enlace a la fuente</span>
@@ -690,6 +771,8 @@
       <a href="https://research.meta.ai/blog/" target="_blank" rel="noopener">Meta AI Research</a>
       <a href="https://huggingface.co/papers" target="_blank" rel="noopener">HF Papers</a>
       <a href="https://docs.anthropic.com/en/release-notes/api" target="_blank" rel="noopener">Claude API notes</a>
+      <a href="https://medium.com/" target="_blank" rel="noopener">Medium</a>
+      <a href="https://freedium-mirror.cfd/" target="_blank" rel="noopener">Freedium</a>
       <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
       <a href="https://x.com" target="_blank" rel="noopener">X (curado)</a>
       <a href="https://artificialanalysis.ai/" target="_blank" rel="noopener">Artificial Analysis</a>
