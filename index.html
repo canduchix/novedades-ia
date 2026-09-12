@@ -237,6 +237,35 @@
     .filters { top: auto; position: static; border-radius: 18px; }
     h1 { max-width: none; }
   }
+
+  .video-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+  .video-card {
+    border: 1px solid var(--line); border-radius: var(--radius);
+    background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.01));
+    overflow: hidden; display: flex; flex-direction: column;
+  }
+  .video-card:hover { border-color: rgba(122,162,255,.35); }
+  .video-frame {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; background: #000;
+  }
+  .video-frame iframe {
+    position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+  }
+  .video-body { padding: 1rem 1.1rem 1.15rem; display: flex; flex-direction: column; gap: .55rem; flex: 1; }
+  .video-body h3 { margin: 0; font-size: 1.02rem; letter-spacing: -.01em; line-height: 1.3; }
+  .video-body h3 a { color: var(--text); text-decoration: none; }
+  .video-body h3 a:hover { color: var(--accent); }
+  .video-meta { color: var(--muted); font-size: .82rem; }
+  .src-link {
+    display: inline-flex; align-items: center; gap: .35rem;
+    color: var(--accent); text-decoration: none; font-size: .86rem; font-weight: 600;
+  }
+  .src-link:hover { text-decoration: underline; }
+  .card .src-row { margin-top: .15rem; }
+  @media (max-width: 860px) {
+    .video-grid { grid-template-columns: 1fr; }
+  }
+
 </style>
 </head>
 <body>
@@ -249,6 +278,7 @@
       <a href="#modelos">Modelos</a>
       <a href="#herramientas">Herramientas</a>
       <a href="#tutoriales">Tutoriales</a>
+      <a href="#youtube">YouTube</a>
       <a href="#desde-x">Desde X</a>
       <a href="#fuentes">Fuentes</a>
     </div>
@@ -258,11 +288,11 @@
     <div class="eyebrow"><span class="dot"></span> Actualizado · 12 sep 2026</div>
     <h1>Lo que importa en <em>inteligencia artificial</em> esta semana</h1>
     <p class="lede">
-      Selección curada de modelos, herramientas, lectura y tutoriales — sin ruido.
-      Pensado para decidir qué probar, qué leer y qué ignorar.
+      Selección curada de modelos, herramientas, YouTube, X, lectura y tutoriales — sin ruido.
+      Cada pieza enlaza a la fuente original para que puedas profundizar.
     </p>
     <div class="stats">
-      <div class="stat"><b>20</b><span>piezas seleccionadas</span></div>
+      <div class="stat"><b>27</b><span>piezas seleccionadas</span></div>
       <div class="stat"><b>6</b><span>modelos clave</span></div>
       <div class="stat"><b>4</b><span>lanzamientos de plataforma</span></div>
       <div class="stat"><b>4</b><span>tutoriales prácticos</span></div>
@@ -275,6 +305,7 @@
     <button data-filter="herramienta">Herramientas</button>
     <button data-filter="articulo">Artículos</button>
     <button data-filter="tutorial">Tutoriales</button>
+    <button data-filter="youtube">YouTube</button>
     <button data-filter="x">Desde X</button>
   </div>
 
@@ -479,6 +510,109 @@
   </div>
 
 
+
+  <div class="section-title" id="youtube">
+    <h2>YouTube</h2>
+    <span>Reproducibles aquí · enlace a la fuente</span>
+  </div>
+  <p class="lede" style="margin:0 0 1rem;font-size:.95rem;max-width:70ch;">
+    Vídeos curados (oficiales + builders). Puedes verlos embebidos; cada uno lleva enlace directo a YouTube por si quieres el hilo, comentarios o la descripción.
+  </p>
+  <div class="video-grid">
+
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/FluKUJyeYD8" title="Did OpenAI actually build AGI? GPT-6 Astra first look" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">4 sep 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=FluKUJyeYD8" target="_blank" rel="noopener">Did OpenAI actually build AGI? GPT-6 Astra first look</a></h3>
+        <div class="video-meta">Fireship · 7:27</div>
+        <p class="why">Roundup rápido de la semana (Fable/Mythos, Muse Spark, Astra): benches, rollout caótico y lectura developer-first.</p>
+        <div class="takeaway"><strong>Para ti:</strong> primer filtro de 7 minutos antes de leer los papers.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=FluKUJyeYD8" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+      </div>
+    </article>
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/1QNsdr-Qx_I" title="Introducing GPT-6 Astra" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">sep 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=1QNsdr-Qx_I" target="_blank" rel="noopener">Introducing GPT-6 Astra</a></h3>
+        <div class="video-meta">OpenAI · oficial</div>
+        <p class="why">Anuncio oficial de OpenAI: posicionamiento, demos y el mensaje de producto del modelo frontier.</p>
+        <div class="takeaway"><strong>Para ti:</strong> contrasta siempre el marketing con un bench independiente.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=1QNsdr-Qx_I" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+      </div>
+    </article>
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/bOC3DisEOfg" title="Introducing GPT-6 Astra for developers" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">sep 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=bOC3DisEOfg" target="_blank" rel="noopener">Introducing GPT-6 Astra for developers</a></h3>
+        <div class="video-meta">OpenAI · developers</div>
+        <p class="why">Charlie Guo sobre computer use, tool calling asíncrono y response steering en el stack de desarrolladores.</p>
+        <div class="takeaway"><strong>Para ti:</strong> si integras API, empieza por aquí y luego mira Responses/Agents.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=bOC3DisEOfg" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+      </div>
+    </article>
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/2Xiljy4xzbc" title="Misma demo: Astra vs Fable 5.1 (¿cuál es más divertida?)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">sep 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=2Xiljy4xzbc" target="_blank" rel="noopener">Misma demo: Astra vs Fable 5.1 (¿cuál es más divertida?)</a></h3>
+        <div class="video-meta">Fireship · 6:08</div>
+        <p class="why">Comparativa práctica construyendo el mismo juego/UI: dónde brilla cada modelo en diseño y polish.</p>
+        <div class="takeaway"><strong>Para ti:</strong> útil si tu criterio es “¿lo mergearía?” y no solo el leaderboard.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=2Xiljy4xzbc" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+      </div>
+    </article>
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/XeMtZeXxHqw" title="Astra vs Fable 5.1 (No Hype Assessment)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">sep 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=XeMtZeXxHqw" target="_blank" rel="noopener">Astra vs Fable 5.1 (No Hype Assessment)</a></h3>
+        <div class="video-meta">Chase AI · ~20 min</div>
+        <p class="why">Pruebas en diseño, frontend, motion y web sin marketing: números + veredicto.</p>
+        <div class="takeaway"><strong>Para ti:</strong> buena pareja con Artificial Analysis si quieres criterio de builder.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=XeMtZeXxHqw" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+      </div>
+    </article>
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/eVBJIUxv8N8" title="GPT-6 Astra Changes Everything" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">sep 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=eVBJIUxv8N8" target="_blank" rel="noopener">GPT-6 Astra Changes Everything</a></h3>
+        <div class="video-meta">Two Minute Papers</div>
+        <p class="why">Ángulo científico/visual: simulación, ray tracing y lo que implica para research reproducible.</p>
+        <div class="takeaway"><strong>Para ti:</strong> si te interesa ciencia + demos visuales más que tooling.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=eVBJIUxv8N8" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+      </div>
+    </article>
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/M1ATNRwaZ1g" title="OpenAI Agents SDK: tools (web search + Python)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=M1ATNRwaZ1g" target="_blank" rel="noopener">OpenAI Agents SDK: tools (web search + Python)</a></h3>
+        <div class="video-meta">Simple Tech</div>
+        <p class="why">Tutorial práctico del SDK: tools, tracing y el loop agente→herramienta→resultado.</p>
+        <div class="takeaway"><strong>Para ti:</strong> para pasar de anuncio de Agents API a código que corre.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=M1ATNRwaZ1g" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+      </div>
+    </article>
+  </div>
+
   <div class="section-title" id="desde-x">
     <h2>Desde X</h2>
     <span>Señal alta · sin hype</span>
@@ -556,6 +690,7 @@
       <a href="https://research.meta.ai/blog/" target="_blank" rel="noopener">Meta AI Research</a>
       <a href="https://huggingface.co/papers" target="_blank" rel="noopener">HF Papers</a>
       <a href="https://docs.anthropic.com/en/release-notes/api" target="_blank" rel="noopener">Claude API notes</a>
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
       <a href="https://x.com" target="_blank" rel="noopener">X (curado)</a>
       <a href="https://artificialanalysis.ai/" target="_blank" rel="noopener">Artificial Analysis</a>
     </div>
