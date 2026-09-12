@@ -1,186 +1,465 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Novedades IA — resumen</title>
-  <style>
-    :root {
-      --bg: #0b1220;
-      --card: #121a2b;
-      --text: #e8eefc;
-      --muted: #9aa8c7;
-      --accent: #6ea8ff;
-      --modelo: #7dd3a7;
-      --herramienta: #f0b35a;
-      --articulo: #c4a5ff;
-      --tutorial: #ff8fab;
-      --border: #243049;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      background: radial-gradient(1200px 600px at 10% -10%, #1a2744, transparent), var(--bg);
-      color: var(--text);
-      line-height: 1.55;
-    }
-    main { max-width: 880px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
-    header h1 { margin: 0 0 .35rem; font-size: 1.85rem; letter-spacing: -0.02em; }
-    .meta { color: var(--muted); font-size: .95rem; margin-bottom: 1.75rem; }
-    .intro {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 1rem 1.15rem;
-      color: var(--muted);
-      margin-bottom: 1.75rem;
-    }
-    h2 {
-      font-size: 1.05rem;
-      text-transform: uppercase;
-      letter-spacing: .06em;
-      color: var(--muted);
-      margin: 2rem 0 .85rem;
-    }
-    .item {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 1rem 1.15rem;
-      margin: 0 0 .85rem;
-    }
-    .item a.title {
-      color: var(--text);
-      text-decoration: none;
-      font-weight: 650;
-      font-size: 1.05rem;
-    }
-    .item a.title:hover { color: var(--accent); }
-    .badges { margin: .45rem 0 .55rem; display: flex; gap: .4rem; flex-wrap: wrap; }
-    .badge {
-      font-size: .72rem;
-      font-weight: 650;
-      padding: .18rem .5rem;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      color: var(--bg);
-    }
-    .badge.modelo { background: var(--modelo); }
-    .badge.herramienta { background: var(--herramienta); }
-    .badge.articulo { background: var(--articulo); }
-    .badge.tutorial { background: var(--tutorial); }
-    .badge.fecha { background: transparent; color: var(--muted); border-color: var(--border); }
-    .item p { margin: 0; color: var(--muted); font-size: .95rem; }
-    .sources a { color: var(--accent); }
-    footer {
-      margin-top: 2.5rem;
-      color: var(--muted);
-      font-size: .85rem;
-      border-top: 1px solid var(--border);
-      padding-top: 1rem;
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Novedades IA · Selección curada</title>
+<meta name="description" content="Resumen actualizado de modelos, herramientas, artículos y tutoriales de inteligencia artificial." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #07090f;
+    --bg2: #0d1220;
+    --card: rgba(18, 24, 40, 0.72);
+    --card-solid: #121828;
+    --line: rgba(255,255,255,0.08);
+    --text: #f4f6fb;
+    --muted: #9aa3b8;
+    --soft: #c7cddc;
+    --accent: #7aa2ff;
+    --accent2: #b388ff;
+    --green: #5ee4a4;
+    --amber: #ffc857;
+    --pink: #ff7ab6;
+    --cyan: #5ce1e6;
+    --shadow: 0 24px 80px rgba(0,0,0,.45);
+    --radius: 22px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: "Outfit", system-ui, sans-serif;
+    color: var(--text);
+    background:
+      radial-gradient(1000px 500px at 85% -10%, rgba(179,136,255,.18), transparent 55%),
+      radial-gradient(900px 480px at -10% 10%, rgba(122,162,255,.16), transparent 50%),
+      radial-gradient(700px 400px at 50% 100%, rgba(92,225,230,.08), transparent 60%),
+      var(--bg);
+    min-height: 100vh;
+    line-height: 1.55;
+  }
+  .noise {
+    pointer-events: none;
+    position: fixed; inset: 0; z-index: 0; opacity: .035;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .wrap { position: relative; z-index: 1; max-width: 1120px; margin: 0 auto; padding: 1.25rem 1.25rem 4rem; }
+
+  /* NAV */
+  .nav {
+    position: sticky; top: .85rem; z-index: 20;
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    padding: .7rem .9rem .7rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: rgba(10,13,22,.65);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 10px 40px rgba(0,0,0,.25);
+  }
+  .brand { display: flex; align-items: center; gap: .65rem; font-weight: 600; letter-spacing: -.01em; }
+  .logo {
+    width: 28px; height: 28px; border-radius: 9px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    box-shadow: 0 0 24px rgba(122,162,255,.45);
+  }
+  .nav-links { display: flex; gap: .35rem; flex-wrap: wrap; justify-content: flex-end; }
+  .nav-links a {
+    color: var(--muted); text-decoration: none; font-size: .86rem; font-weight: 500;
+    padding: .4rem .7rem; border-radius: 999px; transition: .2s ease;
+  }
+  .nav-links a:hover { color: var(--text); background: rgba(255,255,255,.05); }
+
+  /* HERO */
+  .hero { padding: 3.4rem 0 1.5rem; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--cyan); margin-bottom: 1rem;
+  }
+  .dot {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--cyan);
+    box-shadow: 0 0 0 4px rgba(92,225,230,.15); animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 4px rgba(92,225,230,.15); }
+    50% { box-shadow: 0 0 0 8px rgba(92,225,230,.05); }
+  }
+  h1 {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2.6rem, 6vw, 4.4rem);
+    line-height: 1.05;
+    letter-spacing: -.03em;
+    margin: 0 0 1rem;
+    max-width: 14ch;
+  }
+  h1 em {
+    font-style: italic;
+    background: linear-gradient(120deg, var(--accent), var(--accent2), var(--cyan));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .lede {
+    max-width: 58ch; color: var(--soft); font-size: 1.08rem; font-weight: 300;
+    margin: 0 0 1.75rem;
+  }
+  .stats {
+    display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: .75rem;
+    margin-top: 1.5rem;
+  }
+  .stat {
+    border: 1px solid var(--line); border-radius: 18px; padding: 1rem 1.05rem;
+    background: linear-gradient(180deg, rgba(255,255,255,.03), transparent);
+  }
+  .stat b { display: block; font-size: 1.45rem; letter-spacing: -.02em; }
+  .stat span { color: var(--muted); font-size: .82rem; }
+
+  /* FILTERS */
+  .filters {
+    display: flex; gap: .5rem; flex-wrap: wrap; margin: 2.2rem 0 1.2rem; position: sticky; top: 4.4rem; z-index: 15;
+    padding: .45rem; border-radius: 999px; width: fit-content; max-width: 100%;
+    background: rgba(10,13,22,.7); border: 1px solid var(--line); backdrop-filter: blur(14px);
+  }
+  .filters button {
+    border: 0; cursor: pointer; font: inherit; font-size: .86rem; font-weight: 500;
+    color: var(--muted); background: transparent; padding: .5rem .9rem; border-radius: 999px;
+  }
+  .filters button.active, .filters button:hover { color: var(--bg); background: var(--text); }
+
+  /* FEATURED */
+  .featured {
+    display: grid; grid-template-columns: 1.35fr .9fr; gap: 1rem; margin-bottom: 1.4rem;
+  }
+  .spotlight, .side-card {
+    position: relative; overflow: hidden;
+    border: 1px solid var(--line); border-radius: calc(var(--radius) + 4px);
+    background: var(--card); backdrop-filter: blur(10px); box-shadow: var(--shadow);
+  }
+  .spotlight { padding: 1.6rem 1.6rem 1.4rem; min-height: 320px; display: flex; flex-direction: column; justify-content: flex-end; }
+  .spotlight::before {
+    content: ""; position: absolute; inset: -20% -10% auto auto; width: 280px; height: 280px;
+    background: radial-gradient(circle, rgba(122,162,255,.35), transparent 70%);
+  }
+  .spotlight::after {
+    content: ""; position: absolute; inset: auto auto -30% -10%; width: 260px; height: 260px;
+    background: radial-gradient(circle, rgba(179,136,255,.25), transparent 70%);
+  }
+  .spotlight > * { position: relative; z-index: 1; }
+  .kicker { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: .7rem; }
+  .spotlight h2 {
+    font-family: "Instrument Serif", Georgia, serif; font-weight: 400;
+    font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.12; margin: 0 0 .8rem; letter-spacing: -.02em;
+  }
+  .spotlight p { color: var(--soft); margin: 0 0 1.2rem; max-width: 52ch; }
+  .cta {
+    display: inline-flex; align-items: center; gap: .45rem;
+    text-decoration: none; color: var(--bg); background: var(--text);
+    font-weight: 600; font-size: .92rem; padding: .7rem 1rem; border-radius: 999px;
+  }
+  .cta:hover { transform: translateY(-1px); }
+  .side-stack { display: grid; gap: 1rem; }
+  .side-card { padding: 1.15rem 1.2rem; }
+  .side-card h3 { margin: .35rem 0 .45rem; font-size: 1.05rem; letter-spacing: -.01em; }
+  .side-card p { margin: 0; color: var(--muted); font-size: .92rem; }
+  .side-card a { color: inherit; text-decoration: none; }
+  .side-card a:hover h3 { color: var(--accent); }
+
+  /* GRID */
+  .section-title {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+    margin: 2.2rem 0 .9rem;
+  }
+  .section-title h2 {
+    font-family: "Instrument Serif", Georgia, serif; font-weight: 400;
+    font-size: 1.9rem; margin: 0; letter-spacing: -.02em;
+  }
+  .section-title span { color: var(--muted); font-size: .88rem; }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+  .card {
+    border: 1px solid var(--line); border-radius: var(--radius);
+    background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.01));
+    padding: 1.25rem 1.25rem 1.15rem; transition: transform .2s ease, border-color .2s ease, background .2s ease;
+    display: flex; flex-direction: column; gap: .65rem; min-height: 100%;
+  }
+  .card:hover { transform: translateY(-3px); border-color: rgba(122,162,255,.35); background: rgba(22,30,50,.85); }
+  .card a.title { color: var(--text); text-decoration: none; font-size: 1.12rem; font-weight: 600; letter-spacing: -.015em; }
+  .card a.title:hover { color: var(--accent); }
+  .meta-row { display: flex; flex-wrap: wrap; gap: .4rem; }
+  .pill {
+    font-size: .72rem; font-weight: 650; letter-spacing: .02em;
+    padding: .22rem .55rem; border-radius: 999px; border: 1px solid var(--line);
+  }
+  .pill.modelo { color: #052e1c; background: var(--green); border-color: transparent; }
+  .pill.herramienta { color: #3a2400; background: var(--amber); border-color: transparent; }
+  .pill.articulo { color: #2a0f55; background: #d2b8ff; border-color: transparent; }
+  .pill.tutorial { color: #4a0b2d; background: var(--pink); border-color: transparent; }
+  .pill.fecha { color: var(--muted); background: transparent; }
+  .why {
+    margin: 0; color: var(--muted); font-size: .94rem; flex: 1;
+  }
+  .takeaway {
+    margin-top: .2rem; padding: .75rem .85rem; border-radius: 14px;
+    background: rgba(122,162,255,.08); border: 1px solid rgba(122,162,255,.15);
+    color: var(--soft); font-size: .88rem;
+  }
+  .takeaway strong { color: var(--accent); font-weight: 600; }
+
+  /* SOURCES */
+  .sources {
+    margin-top: 2.5rem; padding: 1.4rem 1.5rem;
+    border-radius: calc(var(--radius) + 2px);
+    border: 1px solid var(--line);
+    background: linear-gradient(135deg, rgba(122,162,255,.08), rgba(179,136,255,.06));
+  }
+  .sources h2 { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; font-size: 1.6rem; margin: 0 0 .7rem; }
+  .source-list { display: flex; flex-wrap: wrap; gap: .55rem; }
+  .source-list a {
+    text-decoration: none; color: var(--text); font-size: .9rem; font-weight: 500;
+    padding: .55rem .85rem; border-radius: 999px; border: 1px solid var(--line);
+    background: rgba(0,0,0,.2);
+  }
+  .source-list a:hover { border-color: rgba(122,162,255,.5); color: var(--accent); }
+
+  footer {
+    margin-top: 2.8rem; padding-top: 1.2rem; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: .86rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  .hidden { display: none !important; }
+
+  @media (max-width: 860px) {
+    .featured, .grid, .stats { grid-template-columns: 1fr; }
+    .nav { border-radius: 18px; flex-direction: column; align-items: stretch; }
+    .nav-links { justify-content: flex-start; }
+    .filters { top: auto; position: static; border-radius: 18px; }
+    h1 { max-width: none; }
+  }
+</style>
 </head>
 <body>
-  <main>
-    <header>
-      <h1>Novedades IA</h1>
-      <p class="meta">Selección actualizada · 12 sep 2026 · cuenta <code>canduchix</code></p>
-    </header>
-
-    <p class="intro">
-      Resumen curado de modelos, herramientas, artículos y tutoriales relevantes.
-      Se actualiza de forma periódica; no pretende ser exhaustivo, sino útil.
-    </p>
-
-    <h2>Modelos</h2>
-
-    <article class="item">
-      <a class="title" href="https://openai.com/index/gpt-6-astra/" target="_blank" rel="noopener">GPT-6 Astra (OpenAI)</a>
-      <div class="badges"><span class="badge modelo">modelo</span><span class="badge fecha">sep 2026</span></div>
-      <p>Nuevo modelo frontier de OpenAI, orientado a uso de ordenador, ingeniería de software y trabajo profesional. Rollout en ChatGPT y API como <code>gpt-6-astra</code>.</p>
-    </article>
-
-    <article class="item">
-      <a class="title" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" target="_blank" rel="noopener">Gemini 3.8 Flash y 3.8 Flash Cyber</a>
-      <div class="badges"><span class="badge modelo">modelo</span><span class="badge fecha">2 sep 2026</span></div>
-      <p>Google DeepMind mejora coding y agentes a precio Flash; la variante Cyber apunta a defensa (vulnerabilidades y parches) vía programa Fairwind.</p>
-    </article>
-
-    <article class="item">
-      <a class="title" href="https://research.meta.ai/blog/introducing-muse-spark-1-3" target="_blank" rel="noopener">Muse Spark 1.3 (Meta)</a>
-      <div class="badges"><span class="badge modelo">modelo</span><span class="badge fecha">2 sep 2026</span></div>
-      <p>Actualización para coding y tareas agénticas: menos verbosidad y menos tool calls, disponible en Muse Code y Meta Model API.</p>
-    </article>
-
-    <article class="item">
-      <a class="title" href="https://datanorth.ai/news/deepseek-releases-deepseek-v4-1-flash" target="_blank" rel="noopener">DeepSeek-V4.1-Flash</a>
-      <div class="badges"><span class="badge modelo">modelo</span><span class="badge fecha">10 sep 2026</span></div>
-      <p>Pesos abiertos MIT, contexto de 1M tokens y API muy barata en franja off-peak. Relevantes si te interesan agentes sobre repos grandes.</p>
-    </article>
-
-    <article class="item">
-      <a class="title" href="https://datanorth.ai/news/ant-group-releases-ling-3-0-flash-vl" target="_blank" rel="noopener">Ling-3.0-flash-VL (Ant / inclusionAI)</a>
-      <div class="badges"><span class="badge modelo">modelo</span><span class="badge fecha">10 sep 2026</span></div>
-      <p>MoE multimodal open-weight (texto, imagen, vídeo), MIT, 124B con ~5.5B activos por token y contexto largo.</p>
-    </article>
-
-    <h2>Herramientas</h2>
-
-    <article class="item">
-      <a class="title" href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noopener">OpenAI Agents API (beta pública)</a>
-      <div class="badges"><span class="badge herramienta">herramienta</span><span class="badge fecha">10 sep 2026</span></div>
-      <p>API para construir y ejecutar agentes en la nube con el harness de Codex (sandbox gestionado o infra propia). Sin fee extra: pagas tokens y tools.</p>
-    </article>
-
-    <article class="item">
-      <a class="title" href="https://openai.com/index/introducing-gpt-live-1-in-the-api/" target="_blank" rel="noopener">GPT-Live-1 en la API</a>
-      <div class="badges"><span class="badge herramienta">herramienta</span><span class="badge fecha">10 sep 2026</span></div>
-      <p>Voz full-duplex para apps: escucha y habla a la vez, delegando razonamiento a otros modelos. ~0,05 $/min la capa de voz.</p>
-    </article>
-
-    <article class="item">
-      <a class="title" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/" target="_blank" rel="noopener">Agentic Video en Gemini</a>
-      <div class="badges"><span class="badge herramienta">herramienta</span><span class="badge fecha">1 sep 2026</span></div>
-      <p>Análisis de vídeo con tools nativas: menos tokens/coste y mejor precisión (momentos, anomalías, conteo). En Gemini API / AI Studio.</p>
-    </article>
-
-    <h2>Tutoriales</h2>
-
-    <article class="item">
-      <a class="title" href="https://guillermodelpino.com/hub/crear-primer-agente-ia-tutorial" target="_blank" rel="noopener">Crear un agente IA con Python, LangChain y MCP</a>
-      <div class="badges"><span class="badge tutorial">tutorial</span><span class="badge fecha">ago 2026</span></div>
-      <p>Guía práctica en español: ruta sin código (n8n) y con código (LangChain + MCP).</p>
-    </article>
-
-    <article class="item">
-      <a class="title" href="https://arkaiacorp.com/blog/crear-agente-claude-api-mcp-tutorial-python-2026" target="_blank" rel="noopener">Agente con Claude API + MCP en Python</a>
-      <div class="badges"><span class="badge tutorial">tutorial</span><span class="badge fecha">jun 2026</span></div>
-      <p>Paso a paso: tool use, servidor MCP (filesystem) y empaquetado básico para producción.</p>
-    </article>
-
-    <article class="item">
-      <a class="title" href="https://dev.to/khavel/openai-agents-sdk-como-montar-agentes-con-mcp-guardrails-y-trazas-sin-perder-el-control-2e66" target="_blank" rel="noopener">OpenAI Agents SDK: MCP, guardrails y trazas</a>
-      <div class="badges"><span class="badge tutorial">tutorial</span></div>
-      <p>Cuándo usar el SDK frente a Responses API, y cómo meter frenos y observabilidad antes de producción.</p>
-    </article>
-
-    <h2>Fuentes a seguir</h2>
-    <div class="item sources">
-      <p>
-        <a href="https://openai.com/news/" target="_blank" rel="noopener">OpenAI News</a> ·
-        <a href="https://blog.google/innovation-and-ai/" target="_blank" rel="noopener">Google AI Blog</a> ·
-        <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic News</a> ·
-        <a href="https://research.meta.ai/blog/" target="_blank" rel="noopener">Meta AI Research</a> ·
-        <a href="https://huggingface.co/papers" target="_blank" rel="noopener">Hugging Face Papers</a>
-      </p>
+<div class="noise"></div>
+<div class="wrap">
+  <nav class="nav">
+    <div class="brand"><span class="logo" aria-hidden="true"></span> Novedades IA</div>
+    <div class="nav-links">
+      <a href="#destacados">Destacados</a>
+      <a href="#modelos">Modelos</a>
+      <a href="#herramientas">Herramientas</a>
+      <a href="#tutoriales">Tutoriales</a>
+      <a href="#fuentes">Fuentes</a>
     </div>
+  </nav>
 
-    <footer>
-      Mantenido por el asistente IA · última actualización: 12 de septiembre de 2026.<br />
-      Repo: <a href="https://github.com/canduchix/novedades-ia" style="color:var(--accent)">canduchix/novedades-ia</a>
-    </footer>
-  </main>
+  <header class="hero">
+    <div class="eyebrow"><span class="dot"></span> Actualizado · 12 sep 2026</div>
+    <h1>Lo que importa en <em>inteligencia artificial</em> esta semana</h1>
+    <p class="lede">
+      Selección curada de modelos, herramientas, lectura y tutoriales — sin ruido.
+      Pensado para decidir qué probar, qué leer y qué ignorar.
+    </p>
+    <div class="stats">
+      <div class="stat"><b>12</b><span>piezas seleccionadas</span></div>
+      <div class="stat"><b>5</b><span>modelos clave</span></div>
+      <div class="stat"><b>3</b><span>lanzamientos de API</span></div>
+      <div class="stat"><b>4</b><span>tutoriales prácticos</span></div>
+    </div>
+  </header>
+
+  <div class="filters" role="tablist" aria-label="Filtrar por tipo">
+    <button class="active" data-filter="all">Todo</button>
+    <button data-filter="modelo">Modelos</button>
+    <button data-filter="herramienta">Herramientas</button>
+    <button data-filter="articulo">Artículos</button>
+    <button data-filter="tutorial">Tutoriales</button>
+  </div>
+
+  <section id="destacados" class="featured">
+    <article class="spotlight item" data-type="modelo">
+      <div class="kicker">Historia principal</div>
+      <h2>GPT-6 Astra redefine el listón frontier</h2>
+      <p>
+        OpenAI presenta Astra como su modelo más capaz en uso de ordenador, ingeniería de software
+        y trabajo profesional. Rollout en ChatGPT y API (<code>gpt-6-astra</code>), Azure y Bedrock.
+      </p>
+      <a class="cta" href="https://openai.com/index/gpt-6-astra/" target="_blank" rel="noopener">Leer anuncio oficial →</a>
+    </article>
+    <div class="side-stack">
+      <article class="side-card item" data-type="modelo">
+        <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">2 sep</span></div>
+        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" target="_blank" rel="noopener">
+          <h3>Gemini 3.8 Flash (+ Cyber)</h3>
+          <p>Más coding y agentes al precio Flash; Cyber para defensores vía Fairwind.</p>
+        </a>
+      </article>
+      <article class="side-card item" data-type="herramienta">
+        <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">10 sep</span></div>
+        <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noopener">
+          <h3>Agents API en beta pública</h3>
+          <p>El harness de Codex, expuesto como API para agentes en sandbox o infra propia.</p>
+        </a>
+      </article>
+      <article class="side-card item" data-type="modelo">
+        <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">1 sep</span></div>
+        <a href="https://www.anthropic.com/claude-fable-and-mythos-5-1" target="_blank" rel="noopener">
+          <h3>Claude Fable 5.1 / Mythos 5.1</h3>
+          <p>1M de contexto, coding agéntico largo; Mythos con salvaguardas más permisivas.</p>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <div class="section-title" id="modelos">
+    <h2>Modelos</h2>
+    <span>Open, frontier y open-weight</span>
+  </div>
+  <div class="grid">
+    <article class="card item" data-type="modelo">
+      <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">sep 2026</span></div>
+      <a class="title" href="https://openai.com/index/gpt-6-astra/" target="_blank" rel="noopener">GPT-6 Astra</a>
+      <p class="why">Frontier de OpenAI orientado a computer use, browsing, software engineering y trabajo profesional. Disponible progresivamente en ChatGPT Plus/Pro/Business/Enterprise y en API.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si construyes agentes o flujos de coding, es el nuevo baseline cerrado a vigilar junto a Claude y Gemini.</div>
+    </article>
+
+    <article class="card item" data-type="modelo">
+      <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">2 sep 2026</span></div>
+      <a class="title" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" target="_blank" rel="noopener">Gemini 3.8 Flash &amp; Flash Cyber</a>
+      <p class="why">Mejoras fuertes en ingeniería de software y bucles agénticos manteniendo precio Flash ($0.75 / $3.75 por MTok). Cyber se limita a defensores de confianza.</p>
+      <div class="takeaway"><strong>Para ti:</strong> candidato claro si quieres rendimiento “casi frontier” con coste de modelo rápido.</div>
+    </article>
+
+    <article class="card item" data-type="modelo">
+      <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">1 sep 2026</span></div>
+      <a class="title" href="https://www.anthropic.com/claude-fable-and-mythos-5-1" target="_blank" rel="noopener">Claude Fable 5.1</a>
+      <p class="why">Sucesor de Fable 5 para coding largo, research y conocimiento. Contexto 1M, salida hasta 128k, thinking adaptativo. Cache reads a $0.25 / MTok.</p>
+      <div class="takeaway"><strong>Para ti:</strong> muy relevante si ya usas Claude en agentes o repos grandes; Mythos 5.1 es el gemelo con menos frenos (acceso restringido).</div>
+    </article>
+
+    <article class="card item" data-type="modelo">
+      <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">10 sep 2026</span></div>
+      <a class="title" href="https://datanorth.ai/news/deepseek-releases-deepseek-v4-1-flash" target="_blank" rel="noopener">DeepSeek-V4.1-Flash</a>
+      <p class="why">Open weights MIT, ~552B MoE / ~8B activos, contexto de 1M. API agresiva en off-peak ($0.15 input / $0.60 output por MTok).</p>
+      <div class="takeaway"><strong>Para ti:</strong> opción open/barata para experimentos con contexto enorme y agentes sobre código.</div>
+    </article>
+
+    <article class="card item" data-type="modelo">
+      <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">10 sep 2026</span></div>
+      <a class="title" href="https://datanorth.ai/news/ant-group-releases-ling-3-0-flash-vl" target="_blank" rel="noopener">Ling-3.0-flash-VL</a>
+      <p class="why">Ant inclusionAI: multimodal (texto, imagen, vídeo), 124B MoE / ~5.5B activos, MIT, contexto 262k. Formatos fp8/fp4/int4.</p>
+      <div class="takeaway"><strong>Para ti:</strong> interesante si necesitas visión + vídeo open-weight con licencia permisiva.</div>
+    </article>
+
+    <article class="card item" data-type="modelo">
+      <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">2 sep 2026</span></div>
+      <a class="title" href="https://research.meta.ai/blog/introducing-muse-spark-1-3" target="_blank" rel="noopener">Muse Spark 1.3 (Meta)</a>
+      <p class="why">Mejoras en coding y tareas agénticas: menos turnos innecesarios, ~20% menos tool calls y ~25% menos tokens vs 1.2. En Muse Code y Meta Model API.</p>
+      <div class="takeaway"><strong>Para ti:</strong> señal de que Meta sigue empujando el stack de coding/agentes, no solo chat.</div>
+    </article>
+  </div>
+
+  <div class="section-title" id="herramientas">
+    <h2>Herramientas</h2>
+    <span>APIs y plataformas para construir</span>
+  </div>
+  <div class="grid">
+    <article class="card item" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">10 sep 2026</span></div>
+      <a class="title" href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noopener">OpenAI Agents API</a>
+      <p class="why">Beta pública del harness que mueve Codex: agentes en sandbox de OpenAI, en tu infra o partners. Sin fee del harness; pagas tokens y tools.</p>
+      <div class="takeaway"><strong>Para ti:</strong> atajo para pasar de demos locales a agentes cloud con menos glue code.</div>
+    </article>
+
+    <article class="card item" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">10 sep 2026</span></div>
+      <a class="title" href="https://openai.com/index/introducing-gpt-live-1-in-the-api/" target="_blank" rel="noopener">GPT-Live-1 (voz full-duplex)</a>
+      <p class="why">Escucha y habla a la vez; delega razonamiento a otros modelos. ~$0.05/min la capa de voz. Pensado para apps y flujos de negocio.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si tienes soporte, tutores o IVR, baja la fricción de turn-taking.</div>
+    </article>
+
+    <article class="card item" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">1 sep 2026</span></div>
+      <a class="title" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/" target="_blank" rel="noopener">Agentic Video en Gemini</a>
+      <p class="why">El modelo usa tools de vídeo (buscar, escanear, inspeccionar) en vez de tragar todo el stream. Hasta −88% tokens y −66% coste, +calidad.</p>
+      <div class="takeaway"><strong>Para ti:</strong> útil para OCR de vídeo, QA, anomalías o “pregunta sobre este clip” a escala.</div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">11 sep 2026</span></div>
+      <a class="title" href="https://www.reuters.com/world/china/how-anthropic-says-claude-was-used-weapons-spying-cyber-operations-2026-09-11/" target="_blank" rel="noopener">Anthropic: usos maliciosos de Claude</a>
+      <p class="why">Informe de threat intel: campañas de ciber, vigilancia, armas y fraude. Contexto necesario mientras sube la capacidad de los modelos.</p>
+      <div class="takeaway"><strong>Para ti:</strong> lectura corta para calibrar riesgo, compliance y diseño de guardrails.</div>
+    </article>
+  </div>
+
+  <div class="section-title" id="tutoriales">
+    <h2>Tutoriales</h2>
+    <span>Para pasar de idea a agente</span>
+  </div>
+  <div class="grid">
+    <article class="card item" data-type="tutorial">
+      <div class="meta-row"><span class="pill tutorial">tutorial</span><span class="pill fecha">ago 2026</span></div>
+      <a class="title" href="https://guillermodelpino.com/hub/crear-primer-agente-ia-tutorial" target="_blank" rel="noopener">Primer agente: n8n o LangChain + MCP</a>
+      <p class="why">Guía en español con dos vías: low-code y Python. Buen punto de entrada si quieres herramientas reales (GitHub, Drive, etc.) vía MCP.</p>
+      <div class="takeaway"><strong>Para ti:</strong> empieza aquí si aún no tienes un agente “con manos”.</div>
+    </article>
+
+    <article class="card item" data-type="tutorial">
+      <div class="meta-row"><span class="pill tutorial">tutorial</span><span class="pill fecha">jun 2026</span></div>
+      <a class="title" href="https://arkaiacorp.com/blog/crear-agente-claude-api-mcp-tutorial-python-2026" target="_blank" rel="noopener">Claude API + MCP en Python</a>
+      <p class="why">Del “hello Claude” a tool use y un servidor MCP de filesystem, con foco en el estándar que ya usan OpenAI, Google y Cursor.</p>
+      <div class="takeaway"><strong>Para ti:</strong> encaja si tu stack es Anthropic y quieres interoperabilidad de tools.</div>
+    </article>
+
+    <article class="card item" data-type="tutorial">
+      <div class="meta-row"><span class="pill tutorial">tutorial</span></div>
+      <a class="title" href="https://dev.to/khavel/openai-agents-sdk-como-montar-agentes-con-mcp-guardrails-y-trazas-sin-perder-el-control-2e66" target="_blank" rel="noopener">Agents SDK: MCP, guardrails y trazas</a>
+      <p class="why">Cuándo usar el SDK frente a Responses API, y cómo meter frenos + observabilidad antes de producción.</p>
+      <div class="takeaway"><strong>Para ti:</strong> lectura obligada si vas a dejar que un agente toque sistemas reales.</div>
+    </article>
+
+    <article class="card item" data-type="tutorial">
+      <div class="meta-row"><span class="pill tutorial">tutorial</span><span class="pill fecha">2026</span></div>
+      <a class="title" href="https://agentesautonomosia.com/guias-tutoriales/crear-agente-ia-paso-a-paso-guia-practica-2026/" target="_blank" rel="noopener">Agente IA paso a paso (mapa de rutas)</a>
+      <p class="why">Tabla por perfil (no-code, Python, multi-agente, enterprise) y orden de decisiones: objetivo → modelo → tools → memoria.</p>
+      <div class="takeaway"><strong>Para ti:</strong> útil para elegir framework sin perder una semana.</div>
+    </article>
+  </div>
+
+  <section class="sources" id="fuentes">
+    <h2>Fuentes que vale la pena seguir</h2>
+    <div class="source-list">
+      <a href="https://openai.com/news/" target="_blank" rel="noopener">OpenAI News</a>
+      <a href="https://blog.google/innovation-and-ai/" target="_blank" rel="noopener">Google AI Blog</a>
+      <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic News</a>
+      <a href="https://research.meta.ai/blog/" target="_blank" rel="noopener">Meta AI Research</a>
+      <a href="https://huggingface.co/papers" target="_blank" rel="noopener">HF Papers</a>
+      <a href="https://docs.anthropic.com/en/release-notes/api" target="_blank" rel="noopener">Claude API notes</a>
+    </div>
+  </section>
+
+  <footer>
+    <div>Mantenido por <strong>IA</strong> · última actualización 12 sep 2026</div>
+    <div>
+      <a href="https://github.com/canduchix/novedades-ia">Repo</a> ·
+      <a href="https://canduchix.github.io/novedades-ia/">GitHub Pages</a>
+    </div>
+  </footer>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.filters button');
+  const items = document.querySelectorAll('.item');
+  buttons.forEach(btn => btn.addEventListener('click', () => {
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    items.forEach(el => {
+      if (f === 'all' || el.dataset.type === f) el.classList.remove('hidden');
+      else el.classList.add('hidden');
+    });
+  }));
+</script>
 </body>
 </html>
