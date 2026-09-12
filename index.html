@@ -263,6 +263,12 @@
   .link-row a { color: var(--accent); text-decoration: none; font-size: .86rem; font-weight: 600; }
   .link-row a:hover { text-decoration: underline; }
   .link-row .muted-link { color: var(--muted); font-weight: 500; }
+  .fuente-original {
+    display: inline-flex; align-items: center; gap: .3rem;
+    color: var(--accent); text-decoration: none; font-size: .86rem; font-weight: 650;
+    margin-top: .15rem;
+  }
+  .fuente-original:hover { text-decoration: underline; }
 
   /* —— Mobile polish —— */
   html { -webkit-text-size-adjust: 100%; }
@@ -441,7 +447,7 @@
     <h1>Lo que importa en <em>inteligencia artificial</em> esta semana</h1>
     <p class="lede">
       Selección curada de modelos, herramientas, Medium, YouTube, X, lectura y tutoriales — sin ruido.
-      Cada pieza enlaza a la fuente original para que puedas profundizar.
+      Cada pieza incluye un enlace explícito a la <strong>fuente original</strong> para profundizar.
     </p>
     <div class="stats">
       <div class="stat"><b>33</b><span>piezas seleccionadas</span></div>
@@ -471,6 +477,9 @@
         y trabajo profesional. Rollout en ChatGPT y API (<code>gpt-6-astra</code>), Azure y Bedrock.
       </p>
       <a class="cta" href="https://openai.com/index/gpt-6-astra/" target="_blank" rel="noopener">Leer anuncio oficial →</a>
+      <div class="link-row">
+        <a class="fuente-original" href="https://openai.com/index/gpt-6-astra/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
     <div class="side-stack">
       <article class="side-card item" data-type="modelo">
@@ -479,21 +488,30 @@
           <h3>Gemini 3.8 Flash (+ Cyber)</h3>
           <p>Más coding y agentes al precio Flash; Cyber para defensores vía Fairwind.</p>
         </a>
-      </article>
+      <div class="link-row">
+        <a class="fuente-original" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
+    </article>
       <article class="side-card item" data-type="herramienta">
         <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">10 sep</span></div>
         <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noopener">
           <h3>Agents API en beta pública</h3>
           <p>El harness de Codex, expuesto como API para agentes en sandbox o infra propia.</p>
         </a>
-      </article>
+      <div class="link-row">
+        <a class="fuente-original" href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
+    </article>
       <article class="side-card item" data-type="modelo">
         <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">1 sep</span></div>
         <a href="https://www.anthropic.com/claude-fable-and-mythos-5-1" target="_blank" rel="noopener">
           <h3>Claude Fable 5.1 / Mythos 5.1</h3>
           <p>1M de contexto, coding agéntico largo; Mythos con salvaguardas más permisivas.</p>
         </a>
-      </article>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.anthropic.com/claude-fable-and-mythos-5-1" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
+    </article>
     </div>
   </section>
 
@@ -507,6 +525,9 @@
       <a class="title" href="https://openai.com/index/gpt-6-astra/" target="_blank" rel="noopener">GPT-6 Astra</a>
       <p class="why">Frontier de OpenAI orientado a computer use, browsing, software engineering y trabajo profesional. Disponible progresivamente en ChatGPT Plus/Pro/Business/Enterprise y en API.</p>
       <div class="takeaway"><strong>Para ti:</strong> si construyes agentes o flujos de coding, es el nuevo baseline cerrado a vigilar junto a Claude y Gemini.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://openai.com/index/gpt-6-astra/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="modelo">
@@ -514,6 +535,9 @@
       <a class="title" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" target="_blank" rel="noopener">Gemini 3.8 Flash &amp; Flash Cyber</a>
       <p class="why">Mejoras fuertes en ingeniería de software y bucles agénticos manteniendo precio Flash ($0.75 / $3.75 por MTok). Cyber se limita a defensores de confianza.</p>
       <div class="takeaway"><strong>Para ti:</strong> candidato claro si quieres rendimiento “casi frontier” con coste de modelo rápido.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="modelo">
@@ -521,6 +545,9 @@
       <a class="title" href="https://www.anthropic.com/claude-fable-and-mythos-5-1" target="_blank" rel="noopener">Claude Fable 5.1</a>
       <p class="why">Sucesor de Fable 5 para coding largo, research y conocimiento. Contexto 1M, salida hasta 128k, thinking adaptativo. Cache reads a $0.25 / MTok.</p>
       <div class="takeaway"><strong>Para ti:</strong> muy relevante si ya usas Claude en agentes o repos grandes; Mythos 5.1 es el gemelo con menos frenos (acceso restringido).</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.anthropic.com/claude-fable-and-mythos-5-1" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="modelo">
@@ -528,6 +555,9 @@
       <a class="title" href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash" target="_blank" rel="noopener">DeepSeek-V4.1-Flash</a>
       <p class="why">Open weights MIT, ~552B MoE / ~8B activos, contexto de 1M. API agresiva en off-peak ($0.15 input / $0.60 output por MTok).</p>
       <div class="takeaway"><strong>Para ti:</strong> opción open/barata para experimentos con contexto enorme y agentes sobre código.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="modelo">
@@ -535,6 +565,9 @@
       <a class="title" href="https://datanorth.ai/news/ant-group-releases-ling-3-0-flash-vl" target="_blank" rel="noopener">Ling-3.0-flash-VL</a>
       <p class="why">Ant inclusionAI: multimodal (texto, imagen, vídeo), 124B MoE / ~5.5B activos, MIT, contexto 262k. Formatos fp8/fp4/int4.</p>
       <div class="takeaway"><strong>Para ti:</strong> interesante si necesitas visión + vídeo open-weight con licencia permisiva.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://datanorth.ai/news/ant-group-releases-ling-3-0-flash-vl" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="modelo">
@@ -542,6 +575,9 @@
       <a class="title" href="https://research.meta.ai/blog/introducing-muse-spark-1-3" target="_blank" rel="noopener">Muse Spark 1.3 (Meta)</a>
       <p class="why">Mejoras en coding y tareas agénticas: menos turnos innecesarios, ~20% menos tool calls y ~25% menos tokens vs 1.2. En Muse Code y Meta Model API.</p>
       <div class="takeaway"><strong>Para ti:</strong> señal de que Meta sigue empujando el stack de coding/agentes, no solo chat.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://research.meta.ai/blog/introducing-muse-spark-1-3" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="modelo">
@@ -549,6 +585,9 @@
       <a class="title" href="https://www.alibabacloud.com/blog/qwen-3-8-flash-next-a-new-architecture-towards-ultimate-cost-efficiency_603501" target="_blank" rel="noopener">Qwen3.8-Flash-Next</a>
       <p class="why">Preview de Alibaba hacia Qwen4: arquitectura GDN+QSA, ~125B + embeddings, ~6B activos. Pesos en HF/ModelScope y API muy agresiva en precio.</p>
       <div class="takeaway"><strong>Para ti:</strong> open-weight a seguir si buscas coste bajo sin renunciar a agentes.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.alibabacloud.com/blog/qwen-3-8-flash-next-a-new-architecture-towards-ultimate-cost-efficiency_603501" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
   </div>
 
@@ -562,6 +601,9 @@
       <a class="title" href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noopener">OpenAI Agents API</a>
       <p class="why">Beta pública del harness que mueve Codex: agentes en sandbox de OpenAI, en tu infra o partners. Sin fee del harness; pagas tokens y tools.</p>
       <div class="takeaway"><strong>Para ti:</strong> atajo para pasar de demos locales a agentes cloud con menos glue code.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="herramienta">
@@ -569,6 +611,9 @@
       <a class="title" href="https://openai.com/index/introducing-gpt-live-1-in-the-api/" target="_blank" rel="noopener">GPT-Live-1 (voz full-duplex)</a>
       <p class="why">Escucha y habla a la vez; delega razonamiento a otros modelos. ~$0.05/min la capa de voz. Pensado para apps y flujos de negocio.</p>
       <div class="takeaway"><strong>Para ti:</strong> si tienes soporte, tutores o IVR, baja la fricción de turn-taking.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://openai.com/index/introducing-gpt-live-1-in-the-api/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="herramienta">
@@ -576,6 +621,9 @@
       <a class="title" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/" target="_blank" rel="noopener">Agentic Video en Gemini</a>
       <p class="why">El modelo usa tools de vídeo (buscar, escanear, inspeccionar) en vez de tragar todo el stream. Hasta −88% tokens y −66% coste, +calidad.</p>
       <div class="takeaway"><strong>Para ti:</strong> útil para OCR de vídeo, QA, anomalías o “pregunta sobre este clip” a escala.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="articulo">
@@ -583,6 +631,9 @@
       <a class="title" href="https://www.reuters.com/world/china/how-anthropic-says-claude-was-used-weapons-spying-cyber-operations-2026-09-11/" target="_blank" rel="noopener">Anthropic: usos maliciosos de Claude</a>
       <p class="why">Informe de threat intel: campañas de ciber, vigilancia, armas y fraude. Contexto necesario mientras sube la capacidad de los modelos.</p>
       <div class="takeaway"><strong>Para ti:</strong> lectura corta para calibrar riesgo, compliance y diseño de guardrails.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.reuters.com/world/china/how-anthropic-says-claude-was-used-weapons-spying-cyber-operations-2026-09-11/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="herramienta">
@@ -590,6 +641,9 @@
       <a class="title" href="https://developers.googleblog.com/en/announcing-adk-for-kotlin-10-building-production-ready-ai-agents-in-kotlin-android-and-beyond/" target="_blank" rel="noopener">ADK for Kotlin 1.0 (Google)</a>
       <p class="why">GA del Agent Development Kit en Kotlin/Android/JVM: multi-agente, HITL, skills, on-device (LiteRT-LM) e híbrido con Firebase/Vertex.</p>
       <div class="takeaway"><strong>Para ti:</strong> si tocas Android o backend JVM, es el camino oficial a agentes de producción.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://developers.googleblog.com/en/announcing-adk-for-kotlin-10-building-production-ready-ai-agents-in-kotlin-android-and-beyond/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="articulo">
@@ -597,6 +651,9 @@
       <a class="title" href="https://www.tomsguide.com/ai/gemini-3-8-flash-has-one-major-advantage-over-gpt-6-astra-and-claude-fable-5-1" target="_blank" rel="noopener">Gemini 3.8 vs Astra vs Fable</a>
       <p class="why">Comparativa práctica: la ventaja clara de Gemini es vídeo/audio nativo frente a Astra y Fable. Útil para elegir por modalidad, no solo por benches.</p>
       <div class="takeaway"><strong>Para ti:</strong> atajo de 5 minutos para decidir stack multimodal.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.tomsguide.com/ai/gemini-3-8-flash-has-one-major-advantage-over-gpt-6-astra-and-claude-fable-5-1" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="articulo">
@@ -604,6 +661,9 @@
       <a class="title" href="https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads" target="_blank" rel="noopener">Economía de Fable 5.1 (cache −75%)</a>
       <p class="why">VentureBeat desglosa el ahorro en cache reads, gobernanza (EFS) y el contexto de seguridad alrededor de Mythos.</p>
       <div class="takeaway"><strong>Para ti:</strong> lectura si evalúas coste real de agentes con contexto largo.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
   </div>
 
@@ -617,6 +677,9 @@
       <a class="title" href="https://guillermodelpino.com/hub/crear-primer-agente-ia-tutorial" target="_blank" rel="noopener">Primer agente: n8n o LangChain + MCP</a>
       <p class="why">Guía en español con dos vías: low-code y Python. Buen punto de entrada si quieres herramientas reales (GitHub, Drive, etc.) vía MCP.</p>
       <div class="takeaway"><strong>Para ti:</strong> empieza aquí si aún no tienes un agente “con manos”.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://guillermodelpino.com/hub/crear-primer-agente-ia-tutorial" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="tutorial">
@@ -624,6 +687,9 @@
       <a class="title" href="https://arkaiacorp.com/blog/crear-agente-claude-api-mcp-tutorial-python-2026" target="_blank" rel="noopener">Claude API + MCP en Python</a>
       <p class="why">Del “hello Claude” a tool use y un servidor MCP de filesystem, con foco en el estándar que ya usan OpenAI, Google y Cursor.</p>
       <div class="takeaway"><strong>Para ti:</strong> encaja si tu stack es Anthropic y quieres interoperabilidad de tools.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://arkaiacorp.com/blog/crear-agente-claude-api-mcp-tutorial-python-2026" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="tutorial">
@@ -631,6 +697,9 @@
       <a class="title" href="https://dev.to/khavel/openai-agents-sdk-como-montar-agentes-con-mcp-guardrails-y-trazas-sin-perder-el-control-2e66" target="_blank" rel="noopener">Agents SDK: MCP, guardrails y trazas</a>
       <p class="why">Cuándo usar el SDK frente a Responses API, y cómo meter frenos + observabilidad antes de producción.</p>
       <div class="takeaway"><strong>Para ti:</strong> lectura obligada si vas a dejar que un agente toque sistemas reales.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://dev.to/khavel/openai-agents-sdk-como-montar-agentes-con-mcp-guardrails-y-trazas-sin-perder-el-control-2e66" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="tutorial">
@@ -638,6 +707,9 @@
       <a class="title" href="https://agentesautonomosia.com/guias-tutoriales/crear-agente-ia-paso-a-paso-guia-practica-2026/" target="_blank" rel="noopener">Agente IA paso a paso (mapa de rutas)</a>
       <p class="why">Tabla por perfil (no-code, Python, multi-agente, enterprise) y orden de decisiones: objetivo → modelo → tools → memoria.</p>
       <div class="takeaway"><strong>Para ti:</strong> útil para elegir framework sin perder una semana.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://agentesautonomosia.com/guias-tutoriales/crear-agente-ia-paso-a-paso-guia-practica-2026/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="tutorial">
@@ -645,6 +717,9 @@
       <a class="title" href="https://machinelearningmastery.com/fine-tuning-agentic-ai-a-practical-guide/" target="_blank" rel="noopener">Fine-tuning de IA agéntica</a>
       <p class="why">Cuatro palancas: dataset de tool-calling, QLoRA, hiperparámetros en runtime y DPO, con evaluación anti-forgetting.</p>
       <div class="takeaway"><strong>Para ti:</strong> cuando el prompting ya no basta y quieres especializar el agente.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://machinelearningmastery.com/fine-tuning-agentic-ai-a-practical-guide/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="tutorial">
@@ -652,6 +727,9 @@
       <a class="title" href="https://www.freecodecamp.org/news/how-to-build-an-ai-chatbot-with-gemini-and-vercel-serverless-functions/" target="_blank" rel="noopener">Chatbot Gemini + Vercel Serverless</a>
       <p class="why">Streaming chunk-a-chunk con React y función serverless: patrón limpio para widgets embebidos y deploy rápido.</p>
       <div class="takeaway"><strong>Para ti:</strong> plantilla corta si quieres un chat en producción sin montar backend pesado.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.freecodecamp.org/news/how-to-build-an-ai-chatbot-with-gemini-and-vercel-serverless-functions/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="tutorial">
@@ -659,6 +737,9 @@
       <a class="title" href="https://dataaspirant.com/blog/pydantic-ai-tutorial/" target="_blank" rel="noopener">PydanticAI V2: agentes tipados</a>
       <p class="why">Tutorial a V2: outputs validados, deps tipo FastAPI, capabilities (MCP, WebSearch, guardrails), evals y tracing.</p>
       <div class="takeaway"><strong>Para ti:</strong> si programas en Python y quieres agentes con tipos y tests de verdad.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://dataaspirant.com/blog/pydantic-ai-tutorial/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
   </div>
 
@@ -681,7 +762,7 @@
       <p class="why">Va más allá del leaderboard: Astra como operador (computer use, identidad, permisos, auditoría). Incluye checklist de despliegue empresarial. <em style="color:var(--muted)">— Suraj Khaitan</em></p>
       <div class="takeaway"><strong>Para ti:</strong> lectura larga si vas a dar tools/UI reales a un agente.</div>
       <div class="link-row">
-        <a href="https://medium.com/@surajkhaitan16/gpt-6-astra-is-not-just-a-smarter-model-it-is-a-computer-operator-2ffb8ae3f4f4" target="_blank" rel="noopener">Fuente Medium ↗</a>
+        <a href="https://medium.com/@surajkhaitan16/gpt-6-astra-is-not-just-a-smarter-model-it-is-a-computer-operator-2ffb8ae3f4f4" target="_blank" rel="noopener">Fuente original ↗</a>
         <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@surajkhaitan16/gpt-6-astra-is-not-just-a-smarter-model-it-is-a-computer-operator-2ffb8ae3f4f4" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
       </div>
     </article>
@@ -691,7 +772,7 @@
       <p class="why">Contrato real vs NuGet 2.13.0: Chat Completions estable, Responses experimental (OPENAI001), y el gap de xhigh/max en los enums. <em style="color:var(--muted)">— Adrian Bailador</em></p>
       <div class="takeaway"><strong>Para ti:</strong> imprescindible si programas .NET y tool calling.</div>
       <div class="link-row">
-        <a href="https://medium.com/@adrianbailador/gpt-6-astra-for-net-what-changes-in-the-api-and-where-the-sdk-hasnt-caught-up-304d25903217" target="_blank" rel="noopener">Fuente Medium ↗</a>
+        <a href="https://medium.com/@adrianbailador/gpt-6-astra-for-net-what-changes-in-the-api-and-where-the-sdk-hasnt-caught-up-304d25903217" target="_blank" rel="noopener">Fuente original ↗</a>
         <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@adrianbailador/gpt-6-astra-for-net-what-changes-in-the-api-and-where-the-sdk-hasnt-caught-up-304d25903217" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
       </div>
     </article>
@@ -701,7 +782,7 @@
       <p class="why">Comparativa práctica API/pricing: mismo list price, cache mucho más barato en Fable; cuándo priorizar computer use vs coding agentic. <em style="color:var(--muted)">— T3CH / Web Researcher</em></p>
       <div class="takeaway"><strong>Para ti:</strong> atajo para decidir stack sin leer diez benches.</div>
       <div class="link-row">
-        <a href="https://medium.com/h7w/gpt-6-astra-vs-claude-fable-5-1-full-2026-comparison-api-pricing-selection-guide-631451fe8de5" target="_blank" rel="noopener">Fuente Medium ↗</a>
+        <a href="https://medium.com/h7w/gpt-6-astra-vs-claude-fable-5-1-full-2026-comparison-api-pricing-selection-guide-631451fe8de5" target="_blank" rel="noopener">Fuente original ↗</a>
         <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/h7w/gpt-6-astra-vs-claude-fable-5-1-full-2026-comparison-api-pricing-selection-guide-631451fe8de5" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
       </div>
     </article>
@@ -711,7 +792,7 @@
       <p class="why">Enfoque en coste efectivo: Fable −75% cache reads vs Astra más caro que su predecesor pese al mismo sticker price. <em style="color:var(--muted)">— Dreamfind</em></p>
       <div class="takeaway"><strong>Para ti:</strong> útil para estimar factura de agentes con contexto largo.</div>
       <div class="link-row">
-        <a href="https://medium.com/@dremfind/gpt-6-astra-vs-claude-fable-5-1-the-honest-september-2026-comparison-7f69fae78aad" target="_blank" rel="noopener">Fuente Medium ↗</a>
+        <a href="https://medium.com/@dremfind/gpt-6-astra-vs-claude-fable-5-1-the-honest-september-2026-comparison-7f69fae78aad" target="_blank" rel="noopener">Fuente original ↗</a>
         <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@dremfind/gpt-6-astra-vs-claude-fable-5-1-the-honest-september-2026-comparison-7f69fae78aad" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
       </div>
     </article>
@@ -721,7 +802,7 @@
       <p class="why">Arquitectura clara del loop ReAct: el LLM propone tools, el runtime ejecuta. Buen antídoto al marketing de «agente». <em style="color:var(--muted)">— Som</em></p>
       <div class="takeaway"><strong>Para ti:</strong> base conceptual antes de elegir framework.</div>
       <div class="link-row">
-        <a href="https://medium.com/@somrout/how-ai-agents-actually-do-things-the-full-architecture-behind-agentic-ai-007ff730dd48" target="_blank" rel="noopener">Fuente Medium ↗</a>
+        <a href="https://medium.com/@somrout/how-ai-agents-actually-do-things-the-full-architecture-behind-agentic-ai-007ff730dd48" target="_blank" rel="noopener">Fuente original ↗</a>
         <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@somrout/how-ai-agents-actually-do-things-the-full-architecture-behind-agentic-ai-007ff730dd48" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
       </div>
     </article>
@@ -731,7 +812,7 @@
       <p class="why">Memoria, orquestación multi-agente, tool protocols y fallos no resueltos — guía técnica densa para ingenieros. <em style="color:var(--muted)">— N. Raman</em></p>
       <div class="takeaway"><strong>Para ti:</strong> cuando quieras el mapa completo, no solo el tutorial.</div>
       <div class="link-row">
-        <a href="https://medium.com/@nraman.n6/the-architecture-of-agency-a-deep-technical-guide-to-agentic-ai-systems-in-2026-9df63b37f6df" target="_blank" rel="noopener">Fuente Medium ↗</a>
+        <a href="https://medium.com/@nraman.n6/the-architecture-of-agency-a-deep-technical-guide-to-agentic-ai-systems-in-2026-9df63b37f6df" target="_blank" rel="noopener">Fuente original ↗</a>
         <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@nraman.n6/the-architecture-of-agency-a-deep-technical-guide-to-agentic-ai-systems-in-2026-9df63b37f6df" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
       </div>
     </article>
@@ -756,7 +837,7 @@
         <div class="video-meta">Fireship · 7:27</div>
         <p class="why">Roundup rápido de la semana (Fable/Mythos, Muse Spark, Astra): benches, rollout caótico y lectura developer-first.</p>
         <div class="takeaway"><strong>Para ti:</strong> primer filtro de 7 minutos antes de leer los papers.</div>
-        <a class="src-link" href="https://www.youtube.com/watch?v=FluKUJyeYD8" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <a class="src-link" href="https://www.youtube.com/watch?v=FluKUJyeYD8" target="_blank" rel="noopener">Fuente original (YouTube) ↗</a>
       </div>
     </article>
     <article class="video-card item" data-type="youtube">
@@ -769,7 +850,7 @@
         <div class="video-meta">OpenAI · oficial</div>
         <p class="why">Anuncio oficial de OpenAI: posicionamiento, demos y el mensaje de producto del modelo frontier.</p>
         <div class="takeaway"><strong>Para ti:</strong> contrasta siempre el marketing con un bench independiente.</div>
-        <a class="src-link" href="https://www.youtube.com/watch?v=1QNsdr-Qx_I" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <a class="src-link" href="https://www.youtube.com/watch?v=1QNsdr-Qx_I" target="_blank" rel="noopener">Fuente original (YouTube) ↗</a>
       </div>
     </article>
     <article class="video-card item" data-type="youtube">
@@ -782,7 +863,7 @@
         <div class="video-meta">OpenAI · developers</div>
         <p class="why">Charlie Guo sobre computer use, tool calling asíncrono y response steering en el stack de desarrolladores.</p>
         <div class="takeaway"><strong>Para ti:</strong> si integras API, empieza por aquí y luego mira Responses/Agents.</div>
-        <a class="src-link" href="https://www.youtube.com/watch?v=bOC3DisEOfg" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <a class="src-link" href="https://www.youtube.com/watch?v=bOC3DisEOfg" target="_blank" rel="noopener">Fuente original (YouTube) ↗</a>
       </div>
     </article>
     <article class="video-card item" data-type="youtube">
@@ -795,7 +876,7 @@
         <div class="video-meta">Fireship · 6:08</div>
         <p class="why">Comparativa práctica construyendo el mismo juego/UI: dónde brilla cada modelo en diseño y polish.</p>
         <div class="takeaway"><strong>Para ti:</strong> útil si tu criterio es “¿lo mergearía?” y no solo el leaderboard.</div>
-        <a class="src-link" href="https://www.youtube.com/watch?v=2Xiljy4xzbc" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <a class="src-link" href="https://www.youtube.com/watch?v=2Xiljy4xzbc" target="_blank" rel="noopener">Fuente original (YouTube) ↗</a>
       </div>
     </article>
     <article class="video-card item" data-type="youtube">
@@ -808,7 +889,7 @@
         <div class="video-meta">Chase AI · ~20 min</div>
         <p class="why">Pruebas en diseño, frontend, motion y web sin marketing: números + veredicto.</p>
         <div class="takeaway"><strong>Para ti:</strong> buena pareja con Artificial Analysis si quieres criterio de builder.</div>
-        <a class="src-link" href="https://www.youtube.com/watch?v=XeMtZeXxHqw" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <a class="src-link" href="https://www.youtube.com/watch?v=XeMtZeXxHqw" target="_blank" rel="noopener">Fuente original (YouTube) ↗</a>
       </div>
     </article>
     <article class="video-card item" data-type="youtube">
@@ -821,7 +902,7 @@
         <div class="video-meta">Two Minute Papers</div>
         <p class="why">Ángulo científico/visual: simulación, ray tracing y lo que implica para research reproducible.</p>
         <div class="takeaway"><strong>Para ti:</strong> si te interesa ciencia + demos visuales más que tooling.</div>
-        <a class="src-link" href="https://www.youtube.com/watch?v=eVBJIUxv8N8" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <a class="src-link" href="https://www.youtube.com/watch?v=eVBJIUxv8N8" target="_blank" rel="noopener">Fuente original (YouTube) ↗</a>
       </div>
     </article>
     <article class="video-card item" data-type="youtube">
@@ -834,7 +915,7 @@
         <div class="video-meta">Simple Tech</div>
         <p class="why">Tutorial práctico del SDK: tools, tracing y el loop agente→herramienta→resultado.</p>
         <div class="takeaway"><strong>Para ti:</strong> para pasar de anuncio de Agents API a código que corre.</div>
-        <a class="src-link" href="https://www.youtube.com/watch?v=M1ATNRwaZ1g" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <a class="src-link" href="https://www.youtube.com/watch?v=M1ATNRwaZ1g" target="_blank" rel="noopener">Fuente original (YouTube) ↗</a>
       </div>
     </article>
   </div>
@@ -846,7 +927,7 @@
 
   <article class="card item" data-type="x" style="margin-bottom:1rem; grid-column: 1 / -1;">
     <div class="meta-row"><span class="pill" style="background:var(--text);color:var(--bg);border:0;">criterio</span></div>
-    <a class="title" href="#desde-x">Cómo filtramos X</a>
+    <span class="title" style="font-weight:650;font-size:1.12rem;">Cómo filtramos X</span>
     <p class="why">
       En X hay señal temprana (lanzamientos, benches independientes, demos de builders) y mucho ruido.
       Solo entra aquí lo que: (1) viene de cuentas con historial técnico, (2) se puede contrastar con anuncio oficial o bench público, y (3) cambia una decisión práctica (qué modelo probar, qué API mirar, qué ignorar).
@@ -863,6 +944,9 @@
         Astra destaca en computer-use y eficiencia; Fable 5.1 sigue delante en front-end y code review “¿lo mergearía?”.
       </p>
       <div class="takeaway"><strong>Para ti:</strong> no elijas modelo por un solo hilo; mira la tarea (UI vs automatización).</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://codingfleet.com/blog/gpt-6-astra-vs-claude-fable-5-1/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="x">
@@ -872,6 +956,9 @@
         DeepSeek-V4.1-Flash dispara hilos en X por precio/rendimiento. El índice de Artificial Analysis ayuda a separar marketing de número comparable.
       </p>
       <div class="takeaway"><strong>Para ti:</strong> úsalo como check rápido cuando un tweet diga “aplasta a Astra”.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://artificialanalysis.ai/models/deepseek-v4-1-flash" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="x">
@@ -881,6 +968,9 @@
         En X se mezcla “ya no necesitas orquestar nada” con demos reales. La señal es el harness tipo Codex en API (sandbox, tools, sesiones) — no que desaparezca el diseño de agentes.
       </p>
       <div class="takeaway"><strong>Para ti:</strong> léelo como infra, no como magia.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
     </article>
 
     <article class="card item" data-type="x">
@@ -903,6 +993,9 @@
         <a href="https://x.com/mreflow" target="_blank" rel="noopener" style="color:var(--accent)">@mreflow</a>,
         <a href="https://x.com/emollick" target="_blank" rel="noopener" style="color:var(--accent)">@emollick</a>,
         <a href="https://x.com/TheAhmadOsman" target="_blank" rel="noopener" style="color:var(--accent)">@TheAhmadOsman</a>
+      </div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.kdnuggets.com/10-best-x-twitter-accounts-to-follow-for-llm-updates" target="_blank" rel="noopener">Fuente original ↗</a>
       </div>
     </article>
   </div>
