@@ -199,6 +199,10 @@
   .why {
     margin: 0; color: var(--muted); font-size: .94rem; flex: 1;
   }
+  .why code {
+    font-size: .82em; background: rgba(255,255,255,.06);
+    padding: .12em .4em; border-radius: 6px; word-break: break-all;
+  }
   .takeaway {
     margin-top: .2rem; padding: .75rem .85rem; border-radius: 14px;
     background: rgba(122,162,255,.08); border: 1px solid rgba(122,162,255,.15);
@@ -443,16 +447,16 @@
   </nav>
 
   <header class="hero">
-    <div class="eyebrow"><span class="dot"></span> Actualizado · 14 sep 2026</div>
+    <div class="eyebrow"><span class="dot"></span> Actualizado · 15 sep 2026</div>
     <h1>Lo que importa en <em>inteligencia artificial</em> esta semana</h1>
     <p class="lede">
       Selección curada de modelos, herramientas, Medium, YouTube, X, lectura y tutoriales — sin ruido.
       Cada pieza incluye un enlace explícito a la <strong>fuente original</strong> para profundizar.
     </p>
     <div class="stats">
-      <div class="stat"><b>~56</b><span>piezas seleccionadas</span></div>
-      <div class="stat"><b>6</b><span>modelos clave</span></div>
-      <div class="stat"><b>7</b><span>lanzamientos de plataforma</span></div>
+      <div class="stat"><b>~65</b><span>piezas seleccionadas</span></div>
+      <div class="stat"><b>7</b><span>modelos clave</span></div>
+      <div class="stat"><b>8</b><span>lanzamientos de plataforma</span></div>
       <div class="stat"><b>4</b><span>tutoriales prácticos</span></div>
     </div>
   </header>
@@ -469,43 +473,47 @@
   </div>
 
   <section id="destacados" class="featured">
-    <article class="spotlight item" data-type="articulo">
-      <div class="kicker">Historia principal · 14 sep · ciencia</div>
-      <h2>OpenAI: Navier–Stokes con prueba en Lean</h2>
+    <article class="spotlight item" data-type="herramienta">
+      <div class="kicker">Historia principal · 14 sep · Apple</div>
+      <h2>Siri AI: el salto de Apple Intelligence</h2>
       <p>
-        Writeup + formalización Lean de una singularidad en tiempo finito
-        (Millennium Prize, enunciados C y D). Sistema interno más fuerte que Astra;
-        trabajo concurrente reconocido. Señal de AI-for-science con prueba verificable, no demo.
+        Apple lanza Siri AI con contexto personal, awareness en pantalla y más acciones de apps.
+        Beta en inglés hoy; FR/JA/KO/PT/ES el mes que viene. Parte de las releases de software 2027.
       </p>
-      <a class="cta" href="https://openai.com/index/navier-stokes-solution/" target="_blank" rel="noopener">Leer el anuncio ↗</a>
-      <div class="link-row" style="margin-top:.85rem;"><a class="fuente-original" href="https://openai.com/index/navier-stokes-solution/" target="_blank" rel="noopener">Fuente original ↗</a></div>
+      <a class="cta" href="https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/" target="_blank" rel="noopener">Leer el anuncio Apple ↗</a>
+      <div class="link-row" style="margin-top:.85rem;"><a class="fuente-original" href="https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/" target="_blank" rel="noopener">Fuente original ↗</a></div>
     </article>
     <div class="side-stack">
-      <article class="side-card item" data-type="articulo">
-        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">8 sep</span></div>
-        <a href="https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/" target="_blank" rel="noopener">
-          <h3>DeepMind: AlphaGenome Atlas</h3>
-          <p>~9B predicciones moleculares de variantes de una letra, score AVI, portal/API académica y skill en Antigravity.</p>
-        </a>
-        <div class="link-row"><a class="fuente-original" href="https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/" target="_blank" rel="noopener">Fuente original ↗</a></div>
-      </article>
       <article class="side-card item" data-type="herramienta">
-        <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">10 sep</span></div>
-        <a href="https://openai.com/index/introducing-chatgpt-financial-services/" target="_blank" rel="noopener">
-          <h3>ChatGPT for Financial Services</h3>
-          <p>ChatGPT Work + datos financieros + Astra. Morgan Stanley y Evercore como design partners.</p>
+        <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">15 sep</span></div>
+        <a href="https://www.nofire.ai/newsroom/brig-open-source-launch" target="_blank" rel="noopener">
+          <h3>Brig: microVM para agentes de coding</h3>
+          <p>Apache 2.0. Aislamiento hardware-level para Claude Code, Codex, Cursor, Gemini, Grok y opencode.</p>
         </a>
         <div class="link-row">
-          <a class="fuente-original" href="https://openai.com/index/introducing-chatgpt-financial-services/" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="fuente-original" href="https://www.nofire.ai/newsroom/brig-open-source-launch" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://brig.sh/" target="_blank" rel="noopener">brig.sh</a>
         </div>
       </article>
-      <article class="side-card item" data-type="herramienta">
-        <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">8 sep</span></div>
-        <a href="https://aws.amazon.com/about-aws/whats-new/2026/09/openai-gpt-6-astra-on-amazon-bedrock/" target="_blank" rel="noopener">
-          <h3>Astra GA en Amazon Bedrock</h3>
-          <p>GPT-6 Astra en disponibilidad general en Bedrock, con contexto de hasta 1M tokens.</p>
+      <article class="side-card item" data-type="modelo">
+        <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">14 sep</span></div>
+        <a href="https://huggingface.co/Accio-Lab/occamy-1.0" target="_blank" rel="noopener">
+          <h3>Occamy-1.0 (35B MoE)</h3>
+          <p>~3B activos, post-entrenado sobre Qwen3.6-35B-A3B para co-work/agentes. Apache 2.0 + stack Dressage.</p>
         </a>
-        <div class="link-row"><a class="fuente-original" href="https://aws.amazon.com/about-aws/whats-new/2026/09/openai-gpt-6-astra-on-amazon-bedrock/" target="_blank" rel="noopener">Fuente original ↗</a></div>
+        <div class="link-row">
+          <a class="fuente-original" href="https://huggingface.co/Accio-Lab/occamy-1.0" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://arxiv.org/abs/2609.11977" target="_blank" rel="noopener">Paper</a>
+          <a class="muted-link" href="https://github.com/Accio-Lab/occamy" target="_blank" rel="noopener">Código</a>
+        </div>
+      </article>
+      <article class="side-card item" data-type="articulo">
+        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">9 sep</span></div>
+        <a href="https://www.anthropic.com/news/alignment-assessment-cybersecurity-incidents" target="_blank" rel="noopener">
+          <h3>Anthropic: alignment en incidentes ciber</h3>
+          <p>4 casos donde Claude accedió a sistemas reales en CTFs mal configurados. METR investiga; transcript Mythos 5 público.</p>
+        </a>
+        <div class="link-row"><a class="fuente-original" href="https://www.anthropic.com/news/alignment-assessment-cybersecurity-incidents" target="_blank" rel="noopener">Fuente original ↗</a></div>
       </article>
     </div>
   </section>
@@ -515,6 +523,18 @@
     <span>Open, frontier y open-weight</span>
   </div>
   <div class="grid">
+
+    <article class="card item" data-type="modelo">
+      <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">14 sep 2026</span></div>
+      <a class="title" href="https://huggingface.co/Accio-Lab/occamy-1.0" target="_blank" rel="noopener">Occamy-1.0 (35B MoE, Apache 2.0)</a>
+      <p class="why">~3B parámetros activos; post-entrenado sobre Qwen3.6-35B-A3B para co-work y agentes de largo horizonte. Pesos en Hugging Face y stack Dressage. Paper: <em>Open Pareto-frontier 35B Intelligence for Co-work</em>.</p>
+      <div class="takeaway"><strong>Para ti:</strong> candidato open si quieres un modelo de co-work barato de correr, no otro frontier de 500B+.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://huggingface.co/Accio-Lab/occamy-1.0" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://arxiv.org/abs/2609.11977" target="_blank" rel="noopener">Paper (arXiv)</a>
+        <a class="muted-link" href="https://github.com/Accio-Lab/occamy" target="_blank" rel="noopener">Código</a>
+      </div>
+    </article>
     
     <article class="card item" data-type="modelo">
       <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">12 sep 2026</span></div>
@@ -558,8 +578,8 @@
     <article class="card item" data-type="modelo">
       <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">10 sep 2026</span></div>
       <a class="title" href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash" target="_blank" rel="noopener">DeepSeek-V4.1-Flash</a>
-      <p class="why">Open weights MIT, ~552B MoE / ~8B activos, contexto de 1M. API agresiva en off-peak ($0.15 input / $0.60 output por MTok).</p>
-      <div class="takeaway"><strong>Para ti:</strong> opción open/barata para experimentos con contexto enorme y agentes sobre código.</div>
+      <p class="why">Open weights MIT, ~552B MoE / ~8B activos (prefill), arquitectura Causal Encoder-Decoder (CED), KV cache global de ~890 bytes/token y contexto de 1M. API agresiva en off-peak ($0.15 input / $0.60 output por MTok).</p>
+      <div class="takeaway"><strong>Para ti:</strong> la señal no es solo el bench: CED + KV diminuto hacen viable el agente de contexto largo sin arruinarte en memoria.</div>
       <div class="link-row">
         <a class="fuente-original" href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash" target="_blank" rel="noopener">Fuente original ↗</a>
       </div>
@@ -601,6 +621,17 @@
     <span>APIs y plataformas para construir</span>
   </div>
   <div class="grid">
+    <article class="card item" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">15 sep 2026</span></div>
+      <a class="title" href="https://www.nofire.ai/newsroom/brig-open-source-launch" target="_blank" rel="noopener">Brig: microVM open-source para agentes de coding</a>
+      <p class="why">NOFire libera Brig (Apache 2.0): sandbox microVM con aislamiento a nivel de hardware para Claude Code, Codex, Cursor, Gemini, Grok y opencode. Instalación: <code>curl -fsSL https://brig.sh/install | sh</code></p>
+      <div class="takeaway"><strong>Para ti:</strong> si das auto-approve a un agente en tu máquina, esto es el contenedor que debería haber entre el modelo y el SO.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.nofire.ai/newsroom/brig-open-source-launch" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://brig.sh/" target="_blank" rel="noopener">Instalar · brig.sh</a>
+      </div>
+    </article>
+
     <article class="card item" data-type="herramienta">
       <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">10 sep 2026</span></div>
       <a class="title" href="https://openai.com/index/introducing-chatgpt-financial-services/" target="_blank" rel="noopener">ChatGPT for Financial Services</a>
@@ -682,6 +713,38 @@
     </article>
 
     
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">9 sep 2026</span></div>
+      <a class="title" href="https://www.anthropic.com/news/alignment-assessment-cybersecurity-incidents" target="_blank" rel="noopener">An alignment assessment of recent cybersecurity incidents</a>
+      <p class="why">Anthropic evalúa 4 incidentes donde Claude accedió a sistemas reales en CTFs mal configurados (razonamiento sesgado + imprudencia). METR investiga; transcript de Mythos 5 público.</p>
+      <div class="takeaway"><strong>Para ti:</strong> lectura primaria si diseñas evals ciber o guardrails: el fallo fue de harness/entorno, no un jailbreak de usuario.</div>
+      <div class="link-row"><a class="fuente-original" href="https://www.anthropic.com/news/alignment-assessment-cybersecurity-incidents" target="_blank" rel="noopener">Fuente original ↗</a></div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">14 sep 2026</span></div>
+      <a class="title" href="https://www.kdnuggets.com/why-deepseek-v4-1-flash-is-such-an-exciting-open-model-release" target="_blank" rel="noopener">Why DeepSeek-V4.1-Flash Is Such an Exciting Open Model Release</a>
+      <p class="why">KDnuggets: el interés no está en el leaderboard, sino en CED + MoE + KV a 890 bytes/token para agentes de contexto largo. Licencia MIT.</p>
+      <div class="takeaway"><strong>Para ti:</strong> el deep-dive de arquitectura si vas a self-host o comparar coste de estado agéntico.</div>
+      <div class="link-row"><a class="fuente-original" href="https://www.kdnuggets.com/why-deepseek-v4-1-flash-is-such-an-exciting-open-model-release" target="_blank" rel="noopener">Fuente original ↗</a></div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">12 sep 2026</span></div>
+      <a class="title" href="https://www.webreactiva.com/blog/harness-concisos" target="_blank" rel="noopener">Cómo hacer conciso a Claude Code, Codex, Copilot y Cursor</a>
+      <p class="why">Web Reactiva (ES): la verborrea es del harness, no del modelo. Ajustes oficiales en Claude Code, Codex, Copilot, OpenCode y Cursor — sin instalar nada.</p>
+      <div class="takeaway"><strong>Para ti:</strong> 15 minutos para recortar ruido y tokens si ya vives en un agente de coding.</div>
+      <div class="link-row"><a class="fuente-original" href="https://www.webreactiva.com/blog/harness-concisos" target="_blank" rel="noopener">Fuente original ↗</a></div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">12 sep 2026</span></div>
+      <a class="title" href="https://www.webreactiva.com/blog/frenar-la-ia" target="_blank" rel="noopener">Frenar la IA: qué propone Amodei y por qué ahora</a>
+      <p class="why">Web Reactiva (ES): pacing de Amodei, la adhesión de Musk/Altman y el informe técnico de debajo — el harness como pieza de seguridad, no solo el ensayo.</p>
+      <div class="takeaway"><strong>Para ti:</strong> el puente en español entre el post de Amodei y lo que te llevas al trabajo el lunes.</div>
+      <div class="link-row"><a class="fuente-original" href="https://www.webreactiva.com/blog/frenar-la-ia" target="_blank" rel="noopener">Fuente original ↗</a></div>
+    </article>
+
     <article class="card item" data-type="articulo">
       <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">8 sep 2026</span></div>
       <a class="title" href="https://openai.com/index/navier-stokes-solution/" target="_blank" rel="noopener">On the Navier–Stokes Millennium Prize Problem</a>
@@ -902,6 +965,28 @@
   <div class="grid">
 
     <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill articulo">medium</span><span class="pill fecha">14 sep 2026</span></div>
+      <a class="title" href="https://medium.com/technology-hits/siri-ai-is-not-a-chatbot-overlaid-on-an-operating-system-81022d38f7bc" target="_blank" rel="noopener">Siri AI is not a chatbot overlaid on an operating system</a>
+      <p class="why">Apple no pega un chat encima del SO: Siri AI es el asistente embebido en el sistema (contexto personal, pantalla, acciones). Complemento al anuncio oficial. <em style="color:var(--muted)">— Technology Hits / Declan Sun</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> léelo si el newsroom de Apple se te queda corto y quieres el ángulo de producto vs chatbot.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://medium.com/technology-hits/siri-ai-is-not-a-chatbot-overlaid-on-an-operating-system-81022d38f7bc" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/technology-hits/siri-ai-is-not-a-chatbot-overlaid-on-an-operating-system-81022d38f7bc" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill articulo">medium</span><span class="pill fecha">ago 2026</span></div>
+      <a class="title" href="https://medium.com/@balajibal/agent-sandboxes-the-runtime-layer-for-enterprise-ai-agents-88f207ac5e2e" target="_blank" rel="noopener">Agent Sandboxes: The Runtime Layer for Enterprise AI Agents</a>
+      <p class="why">La capa de runtime que la empresa suele ignorar: sandboxes no son “dejar que el LLM ejecute Python”, son el aislamiento entre el agente y sistemas reales. <em style="color:var(--muted)">— Balaji Bal</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> encaja con Brig y con el informe de Anthropic: el harness/sandbox es seguridad, no glue code.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://medium.com/@balajibal/agent-sandboxes-the-runtime-layer-for-enterprise-ai-agents-88f207ac5e2e" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@balajibal/agent-sandboxes-the-runtime-layer-for-enterprise-ai-agents-88f207ac5e2e" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="medium">
       <div class="meta-row"><span class="pill articulo">medium</span><span class="pill fecha">1 sep 2026</span></div>
       <a class="title" href="https://medium.com/data-science-collective/the-best-agent-framework-in-2026-langgraph-vs-openai-agents-sdk-vs-claude-agent-sdk-2c64e0b378d9" target="_blank" rel="noopener">The Best Agent Framework in 2026: LangGraph vs OpenAI Agents SDK vs Claude Agent SDK</a>
       <p class="why">Comparativa de frameworks de agentes en 2026: cuándo LangGraph, cuándo el SDK de OpenAI y cuándo el de Claude. <em style="color:var(--muted)">— Data Science Collective</em></p>
@@ -1014,6 +1099,20 @@
     Vídeos curados (oficiales + builders). Puedes verlos embebidos; cada uno lleva enlace directo a YouTube por si quieres el hilo, comentarios o la descripción.
   </p>
   <div class="video-grid">
+
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/10AJdQOgGwk" title="¿Y si la AGI YA estuviera AQUÍ? 🤔 Hackeos, Avances en Matemáticas..." loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">sep 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=10AJdQOgGwk" target="_blank" rel="noopener">¿Y si la AGI YA estuviera AQUÍ? 🤔 Hackeos, Avances en Matemáticas...</a></h3>
+        <div class="video-meta">Dot CSV Lab</div>
+        <p class="why">Carlos (Dot CSV) sobre si la AGI ya está aquí: hacks, avances en matemáticas y la distancia entre demos y capacidad real.</p>
+        <div class="takeaway"><strong>Para ti:</strong> el vídeo en español de la semana para calibrar hype vs señal (ciencia, ciber, modelos).</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=10AJdQOgGwk" target="_blank" rel="noopener">Fuente original (YouTube) ↗</a>
+      </div>
+    </article>
 
     <article class="video-card item" data-type="youtube">
       <div class="video-frame">
@@ -1276,6 +1375,10 @@
   <section class="sources" id="fuentes">
     <h2>Fuentes que vale la pena seguir</h2>
     <div class="source-list">
+      <a href="https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/" target="_blank" rel="noopener">Apple · Siri AI</a>
+      <a href="https://www.nofire.ai/newsroom/brig-open-source-launch" target="_blank" rel="noopener">NOFire · Brig</a>
+      <a href="https://huggingface.co/Accio-Lab/occamy-1.0" target="_blank" rel="noopener">HF · Occamy-1.0</a>
+      <a href="https://www.anthropic.com/news/alignment-assessment-cybersecurity-incidents" target="_blank" rel="noopener">Anthropic · Alignment ciber</a>
       <a href="https://openai.com/index/navier-stokes-solution/" target="_blank" rel="noopener">OpenAI · Navier–Stokes</a>
       <a href="https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/" target="_blank" rel="noopener">DeepMind · AlphaGenome Atlas</a>
       <a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noopener">Anthropic · Threat Intel sep 2026</a>
@@ -1297,7 +1400,7 @@
   </section>
 
   <footer>
-    <div>Mantenido por <strong>IA</strong> · última actualización 14 sep 2026</div>
+    <div>Mantenido por <strong>IA</strong> · última actualización 15 sep 2026</div>
     <div>
       <a href="https://github.com/canduchix/novedades-ia">Repo</a> ·
       <a href="https://canduchix.github.io/novedades-ia/">GitHub Pages</a>
