@@ -447,17 +447,17 @@
   </nav>
 
   <header class="hero">
-    <div class="eyebrow"><span class="dot"></span> Actualizado · 17 sep 2026</div>
+    <div class="eyebrow"><span class="dot"></span> Actualizado · 18 sep 2026</div>
     <h1>Lo que importa en <em>inteligencia artificial</em> esta semana</h1>
     <p class="lede">
       Selección curada de modelos, herramientas, Medium, YouTube, X, lectura y tutoriales — sin ruido.
       Cada pieza incluye un enlace explícito a la <strong>fuente original</strong> para profundizar.
     </p>
     <div class="stats">
-      <div class="stat"><b>~72</b><span>piezas seleccionadas</span></div>
+      <div class="stat"><b>~80</b><span>piezas seleccionadas</span></div>
       <div class="stat"><b>8</b><span>modelos clave</span></div>
-      <div class="stat"><b>8</b><span>lanzamientos de plataforma</span></div>
-      <div class="stat"><b>4</b><span>tutoriales prácticos</span></div>
+      <div class="stat"><b>9</b><span>lanzamientos de plataforma</span></div>
+      <div class="stat"><b>5</b><span>tutoriales prácticos</span></div>
     </div>
   </header>
 
@@ -473,47 +473,51 @@
   </div>
 
   <section id="destacados" class="featured">
-    <article class="spotlight item" data-type="herramienta">
-      <div class="kicker">Historia principal · 16 sep · Anthropic</div>
-      <h2>One Claude: Cowork + chat + Docs &amp; Slides</h2>
+    <article class="spotlight item" data-type="articulo">
+      <div class="kicker">Historia principal · 17–18 sep · Anthropic Institute</div>
+      <h2>Anthropic R&amp;D Automation Index: Claude «lidera» el 26% del I+D</h2>
       <p>
-        Claude unifica chat y Cowork en una sola conversación: el modelo elige capacidades (research, archivos, código) sin cambiar de pestaña. Debut en beta de Claude Docs y Claude Slides (editar, compartir, exportar a Word/Google Docs, PowerPoint o PDF); Claude Design también entra en el chat. Rollout gradual a Pro y Max (web/desktop/móvil); Team y Free después.
+        Anthropic Institute publica mediciones internas (snapshot agosto 2026): Claude «leads» (AL4) el 26% del trabajo de AI R&amp;D; más del 90% está al menos en «AI collaborates» (AL3); <strong>ningún</strong> subconjunto medido es fully autonomous (AL5). También miden oversight de ~30.000 agentes internos y asignación de compute a safety (~6% del compute de AI R&amp;D). Pieza primaria de transparencia, pacing y RSI.
       </p>
-      <a class="cta" href="https://claude.com/blog/cowork-is-now-claude" target="_blank" rel="noopener">Leer el anuncio Anthropic ↗</a>
+      <a class="cta" href="https://www.anthropic.com/institute/measuring-pace-of-ai-development" target="_blank" rel="noopener">Leer el índice Anthropic ↗</a>
       <div class="link-row" style="margin-top:.85rem;">
-        <a class="fuente-original" href="https://claude.com/blog/cowork-is-now-claude" target="_blank" rel="noopener">Fuente original ↗</a>
-        <a class="muted-link" href="https://support.claude.com/en/articles/16761823-claude-cowork-and-chat-are-one-claude" target="_blank" rel="noopener">Help Center</a>
+        <a class="fuente-original" href="https://www.anthropic.com/institute/measuring-pace-of-ai-development" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://www.anthropic.com/institute/recursive-self-improvement" target="_blank" rel="noopener">When AI builds itself</a>
       </div>
     </article>
     <div class="side-stack">
-      <article class="side-card item" data-type="articulo">
-        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">16 sep</span></div>
-        <a href="https://openai.com/index/model-misalignment-reporting-framework/" target="_blank" rel="noopener">
-          <h3>OpenAI: framework de disclosure de misalignment</h3>
-          <p>Proceso sistemático para reportar, investigar y publicar casos; inaugura con 6 informes (jailbreak-like en summaries, API keys, uploads públicos, Artifactory…).</p>
+      <article class="side-card item" data-type="herramienta">
+        <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">17 sep</span></div>
+        <a href="https://claude.com/blog/projects-redesigned" target="_blank" rel="noopener">
+          <h3>Claude Code Projects rediseñados</h3>
+          <p>De «carpeta» a conversación: coordinator + threads = sesiones Claude Code en la nube en paralelo (cada una su branch/copia del repo); memoria y biblioteca compartidas; merge conflicts como PRs normales. Beta select Pro/Max; threads solo cloud por ahora.</p>
         </a>
         <div class="link-row">
-          <a class="fuente-original" href="https://openai.com/index/model-misalignment-reporting-framework/" target="_blank" rel="noopener">Fuente original ↗</a>
-          <a class="muted-link" href="https://alignment.openai.com/misalignment-reports/" target="_blank" rel="noopener">6 reports</a>
+          <a class="fuente-original" href="https://claude.com/blog/projects-redesigned" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects" target="_blank" rel="noopener">The Verge</a>
+        </div>
+      </article>
+      <article class="side-card item" data-type="articulo">
+        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">17 sep</span></div>
+        <a href="https://www.air.security/blog-posts/plugin4shell" target="_blank" rel="noopener">
+          <h3>Plugin4Shell: RCE 0-click en agentes de coding</h3>
+          <p>Air Security: bypass de SHA-pinning de plugins afecta Claude Code, Codex, Copilot y Gemini CLI. Auto-update = 0-click. Fix: Claude Code 2.1.179+, Codex 0.146.0+; Copilot sin parche anunciado; Gemini CLI deprecado (migrar a Antigravity).</p>
+        </a>
+        <div class="link-row">
+          <a class="fuente-original" href="https://www.air.security/blog-posts/plugin4shell" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://www.theregister.com/security/2026/09/17/ai-coding-agents-0-click-rce-flaw-could-hand-attackers-keys-to-the-kingdom/" target="_blank" rel="noopener">The Register</a>
         </div>
       </article>
       <article class="side-card item" data-type="herramienta">
         <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">16 sep</span></div>
-        <a href="https://openai.com/index/reimagining-advertising-with-ai/" target="_blank" rel="noopener">
-          <h3>ChatGPT Ads: Sponsored Agents</h3>
-          <p>Tras un anuncio, conversación etiquetada con un agente del anunciante; Ads Manager con creatividades IA; integraciones HubSpot y Shopify.</p>
+        <a href="https://claude.com/blog/cowork-is-now-claude" target="_blank" rel="noopener">
+          <h3>One Claude · Docs &amp; Slides (ayer en spotlight)</h3>
+          <p>Chat + Cowork en una sola conversación; debut en beta de Docs y Slides (export Word/Google Docs, PowerPoint o PDF). Pro/Max primero.</p>
         </a>
         <div class="link-row">
-          <a class="fuente-original" href="https://openai.com/index/reimagining-advertising-with-ai/" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="fuente-original" href="https://claude.com/blog/cowork-is-now-claude" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://support.claude.com/en/articles/16761823-claude-cowork-and-chat-are-one-claude" target="_blank" rel="noopener">Help Center</a>
         </div>
-      </article>
-      <article class="side-card item" data-type="modelo">
-        <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">15 sep</span></div>
-        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/" target="_blank" rel="noopener">
-          <h3>Gemini 3.8 Live (ayer en spotlight)</h3>
-          <p>Diálogo en vivo + Extended Thinking; #1 Artificial Analysis Speech-to-Speech. Sigue relevante para voice agents.</p>
-        </a>
-        <div class="link-row"><a class="fuente-original" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/" target="_blank" rel="noopener">Fuente original ↗</a></div>
       </article>
     </div>
   </section>
@@ -632,6 +636,17 @@
   </div>
   <div class="grid">
     <article class="card item" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">17 sep 2026</span></div>
+      <a class="title" href="https://claude.com/blog/projects-redesigned" target="_blank" rel="noopener">Claude Code Projects rediseñados</a>
+      <p class="why">De «carpeta» a conversación: un coordinator y threads que son sesiones Claude Code en la nube en paralelo (cada una con su branch y copia del repo); memoria y biblioteca compartidas; conflictos como PRs normales. Beta select Pro/Max (cloud sessions, sin projects previos); rollout esta semana; Team/Enterprise y Cowork/chat después. Threads solo cloud por ahora (local «muy pronto»). El usage se consume más rápido en paralelo.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si ya usas Claude Code en repos, esto es el salto a varios agentes en la nube sobre el mismo proyecto — no otra carpeta.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://claude.com/blog/projects-redesigned" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects" target="_blank" rel="noopener">The Verge</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="herramienta">
       <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">16 sep 2026</span></div>
       <a class="title" href="https://claude.com/blog/cowork-is-now-claude" target="_blank" rel="noopener">One Claude · Docs &amp; Slides (beta)</a>
       <p class="why">Chat + Cowork + Design en un solo front: Claude enruta la tarea. Docs y Slides editables en la conversación, shareable link, export Word/Google Docs / PowerPoint/PDF. Pro/Max primero.</p>
@@ -743,7 +758,49 @@
       </div>
     </article>
 
-    
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">17–18 sep 2026</span></div>
+      <a class="title" href="https://www.anthropic.com/institute/measuring-pace-of-ai-development" target="_blank" rel="noopener">Measuring the pace of AI development (Anthropic Institute)</a>
+      <p class="why">Snapshot agosto 2026: Claude «leads» (AL4) el 26% del AI R&amp;D interno; &gt;90% al menos en «AI collaborates» (AL3); ningún subconjunto medido es fully autonomous (AL5). Oversight de ~30.000 agentes internos y ~6% del compute de AI R&amp;D a safety.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si sigues pacing, alignment o RSI, esta es la fuente primaria — no te quedes en el titular de WaPo/BI.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.anthropic.com/institute/measuring-pace-of-ai-development" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://www.anthropic.com/institute/recursive-self-improvement" target="_blank" rel="noopener">When AI builds itself</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">17–18 sep 2026</span></div>
+      <a class="title" href="https://www.anthropic.com/institute/recursive-self-improvement" target="_blank" rel="noopener">When AI builds itself (Anthropic Institute)</a>
+      <p class="why">Compañero del Automation Index: más del 80% del código mergeado atribuido a Claude; 8× líneas/ingeniero/día vs 2024. Contexto de recursive self-improvement (RSI) junto a las mediciones de pacing.</p>
+      <div class="takeaway"><strong>Para ti:</strong> léelo junto al índice si te importa RSI — es la pieza de contexto, no un recorte de prensa.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.anthropic.com/institute/recursive-self-improvement" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">17 sep 2026</span></div>
+      <a class="title" href="https://www.air.security/blog-posts/plugin4shell" target="_blank" rel="noopener">Plugin4Shell: RCE 0-click en agentes de coding</a>
+      <p class="why">Air Security describe un bypass del SHA-pinning de plugins que afecta a Claude Code, Codex, Copilot y Gemini CLI. Con auto-update, la cadena es 0-click. Parches: Claude Code 2.1.179+ y Codex 0.146.0+; Copilot sin parche anunciado; Gemini CLI deprecado (migrar a Antigravity).</p>
+      <div class="takeaway"><strong>Para ti:</strong> si corres un coding agent con plugins y auto-update, actualiza ya — y no asumas que Copilot o Gemini CLI están cubiertos.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.air.security/blog-posts/plugin4shell" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://www.theregister.com/security/2026/09/17/ai-coding-agents-0-click-rce-flaw-could-hand-attackers-keys-to-the-kingdom/" target="_blank" rel="noopener">The Register</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">sep 2026</span></div>
+      <a class="title" href="https://www.hacktron.ai/blog/hacking-openai" target="_blank" rel="noopener">Hackers used Claude against OpenAI</a>
+      <p class="why">Writeup de los investigadores (Hacktron): usaron Claude en una cadena Discourse/libheif, SSO y bounty contra infraestructura de OpenAI. El recorte de WSJ está paywalled; esta es la fuente primaria no paywall.</p>
+      <div class="takeaway"><strong>Para ti:</strong> léelo si sigues threat intel o red-teaming con modelos — no te quedes en el titular paywalled.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.hacktron.ai/blog/hacking-openai" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://www.wsj.com/tech/ai/hackers-used-anthropics-claude-to-break-into-openai-b40ba883" target="_blank" rel="noopener">WSJ (paywall)</a>
+      </div>
+    </article>
+
     <article class="card item" data-type="articulo">
       <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">16 sep 2026</span></div>
       <a class="title" href="https://openai.com/index/model-misalignment-reporting-framework/" target="_blank" rel="noopener">Our framework for reporting model misalignment (OpenAI)</a>
@@ -935,6 +992,16 @@
   </div>
   <div class="grid">
     <article class="card item" data-type="tutorial">
+      <div class="meta-row"><span class="pill tutorial">tutorial</span><span class="pill fecha">sep 2026</span></div>
+      <a class="title" href="https://www.webreactiva.com/blog/tutorial-claude-agent-sdk" target="_blank" rel="noopener">Cómo crear un agente con Claude Agent SDK y TypeScript</a>
+      <p class="why">Web Reactiva (ES completo): <code>query()</code>, <code>createSdkMcpServer</code> y <code>tool()</code> con un demo SQLite de Netflix. El mismo motor que Claude Code, como librería.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si programas en TS y quieres el mismo motor que Claude Code como librería.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.webreactiva.com/blog/tutorial-claude-agent-sdk" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="tutorial">
       <div class="meta-row"><span class="pill tutorial">tutorial</span><span class="pill fecha">4 sep 2026</span></div>
       <a class="title" href="https://www.webreactiva.com/blog/function-hooks-claude-code" target="_blank" rel="noopener">Function hooks de Claude Code (ES)</a>
       <p class="why">Web Reactiva: middleware TypeScript al estilo Koa (<code>$</code>, <code>e</code>, <code>next</code>) frente a hooks de shell. Early access / experimental (issue #91870); ejemplo de plugin guardián y flag <code>CLAUDE_CODE_ENABLE_FUNCTION_HOOKS</code>.</p>
@@ -1037,6 +1104,28 @@
     <a href="https://freedium-mirror.cfd/" target="_blank" rel="noopener" style="color:var(--accent)">Freedium</a>.
   </p>
   <div class="grid">
+
+        <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill articulo">medium</span><span class="pill fecha">sep 2026</span></div>
+      <a class="title" href="https://medium.com/@samarthjoelram/claude-code-one-knob-at-a-time-skills-subagents-commands-hooks-mcp-lsp-plugins-and-the-728ffa2c4e4f" target="_blank" rel="noopener">Claude Code, One Knob at a Time: Skills, Subagents, Commands, Hooks, MCP, LSP, Plugins…</a>
+      <p class="why">Mapa de los knobs de Claude Code: skills, subagents, commands, hooks, MCP, LSP y plugins. <em style="color:var(--muted)">— Samarth joel ram</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> mapa práctico de knobs de Claude Code justo cuando Projects multi-agente llega a beta.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://medium.com/@samarthjoelram/claude-code-one-knob-at-a-time-skills-subagents-commands-hooks-mcp-lsp-plugins-and-the-728ffa2c4e4f" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@samarthjoelram/claude-code-one-knob-at-a-time-skills-subagents-commands-hooks-mcp-lsp-plugins-and-the-728ffa2c4e4f" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill articulo">medium</span><span class="pill fecha">sep 2026</span></div>
+      <a class="title" href="https://medium.com/google-cloud/do-agent-skills-help-i-ran-72-trials-to-find-out-b328ba4d66b2" target="_blank" rel="noopener">Do agent skills help? I ran 72 trials</a>
+      <p class="why">72 trials para medir si las agent skills ayudan de verdad. <em style="color:var(--muted)">— Karl Weinmeister / Google Cloud Community</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> evidencia empírica si estás decidiendo si invertir en skills de agente — no un hilo.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://medium.com/google-cloud/do-agent-skills-help-i-ran-72-trials-to-find-out-b328ba4d66b2" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/google-cloud/do-agent-skills-help-i-ran-72-trials-to-find-out-b328ba4d66b2" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
 
         <article class="card item" data-type="medium">
       <div class="meta-row"><span class="pill articulo">medium</span><span class="pill fecha">sep 2026</span></div>
@@ -1196,6 +1285,20 @@
     Vídeos curados (oficiales + builders). Puedes verlos embebidos; cada uno lleva enlace directo a YouTube por si quieres el hilo, comentarios o la descripción.
   </p>
   <div class="video-grid">
+
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/2g8A53SIv3w" title="Code with Claude 2026: What's New in Claude Code" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">sep 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=2g8A53SIv3w" target="_blank" rel="noopener">Code with Claude 2026: What's New in Claude Code</a></h3>
+        <div class="video-meta">Techusiness</div>
+        <p class="why">Novedades de Claude Code en 2026: companion visual al rediseño de Projects y al resto del stack.</p>
+        <div class="takeaway"><strong>Para ti:</strong> companion visual al rediseño de Projects / Claude Code.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=2g8A53SIv3w" target="_blank" rel="noopener">Fuente original (YouTube) ↗</a>
+      </div>
+    </article>
 
     <article class="video-card item" data-type="youtube">
       <div class="video-frame">
@@ -1511,6 +1614,11 @@
   <section class="sources" id="fuentes">
     <h2>Fuentes que vale la pena seguir</h2>
     <div class="source-list">
+      <a href="https://www.anthropic.com/institute/measuring-pace-of-ai-development" target="_blank" rel="noopener">Anthropic Institute · R&amp;D Index</a>
+      <a href="https://www.anthropic.com/institute/recursive-self-improvement" target="_blank" rel="noopener">Anthropic Institute · When AI builds itself</a>
+      <a href="https://claude.com/blog/projects-redesigned" target="_blank" rel="noopener">Claude · Projects rediseñados</a>
+      <a href="https://www.air.security/blog-posts/plugin4shell" target="_blank" rel="noopener">Air Security · Plugin4Shell</a>
+      <a href="https://claude.com/blog/cowork-is-now-claude" target="_blank" rel="noopener">Anthropic · One Claude</a>
       <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/" target="_blank" rel="noopener">Google · Gemini 3.8 Live</a>
       <a href="https://www.cnbc.com/2026/09/15/open-ai-google-anthropic-safety.html" target="_blank" rel="noopener">CNBC · Safety coordination</a>
       <a href="https://openai.com/index/ai-policy-window/" target="_blank" rel="noopener">OpenAI · AI Policy Window</a>
@@ -1539,7 +1647,7 @@
   </section>
 
   <footer>
-    <div>Mantenido por <strong>IA</strong> · última actualización 16 sep 2026</div>
+    <div>Mantenido por <strong>IA</strong> · última actualización 18 sep 2026</div>
     <div>
       <a href="https://github.com/canduchix/novedades-ia">Repo</a> ·
       <a href="https://canduchix.github.io/novedades-ia/">GitHub Pages</a>
