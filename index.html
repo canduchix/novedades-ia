@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Novedades IA · Selección curada</title>
-<meta name="description" content="Resumen actualizado de modelos, herramientas, artículos y tutoriales de inteligencia artificial." />
+<title>Novedades IA · 24 sep 2026</title>
+<meta name="description" content="Selección del 24 sep 2026: Claude y el sistema enzimático ART, Gemini 3.8 Flash TTS y memoria privada en Private AI Compute." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -447,16 +447,16 @@
   </nav>
 
   <header class="hero">
-    <div class="eyebrow"><span class="dot"></span> Actualizado · 23 sep 2026</div>
+    <div class="eyebrow"><span class="dot"></span> Actualizado · 24 sep 2026</div>
     <h1>Lo que importa en <em>inteligencia artificial</em> esta semana</h1>
     <p class="lede">
       Selección curada de modelos, herramientas, Medium, YouTube, X, lectura y tutoriales — sin ruido.
       Cada pieza incluye un enlace explícito a la <strong>fuente original</strong> para profundizar.
     </p>
     <div class="stats">
-      <div class="stat"><b>~105</b><span>piezas seleccionadas</span></div>
-      <div class="stat"><b>11</b><span>modelos clave</span></div>
-      <div class="stat"><b>12</b><span>lanzamientos de plataforma</span></div>
+      <div class="stat"><b>~112</b><span>piezas seleccionadas</span></div>
+      <div class="stat"><b>12</b><span>modelos clave</span></div>
+      <div class="stat"><b>13</b><span>lanzamientos de plataforma</span></div>
       <div class="stat"><b>10</b><span>tutoriales prácticos</span></div>
     </div>
   </header>
@@ -473,48 +473,47 @@
   </div>
 
   <section id="destacados" class="featured">
-    <article class="spotlight item" data-type="modelo">
-      <div class="kicker">Historia principal · 22 sep · Anthropic</div>
-      <h2>Claude Opus 5.5: nivel Fable a ~40% menos coste</h2>
+    <article class="spotlight item" data-type="articulo">
+      <div class="kicker">Historia principal · 23 sep · Anthropic</div>
+      <h2>Claude descubre un sistema enzimático tipo CRISPR (ART)</h2>
       <p>
-        Primer modelo de la familia Claude 5.5. Anthropic dice que rinde al nivel de Claude Fable 5.1 en la mayoría del trabajo y cuesta ~40% menos que Opus 5 (input $4 / output $20 por MTok; cache reads $0.20). Primero tras «pace the frontier»; evaluado por Frontier Design y METR; mejor score en su behavioral audit. Safeguards tipo Fable en bio/ciber (fallback a modelos anteriores). API id <code>claude-opus-5-5</code>. Sonnet 5.5 y Haiku 5.5 «en las próximas semanas».
+        Anthropic abre grupo + lab de life sciences. Claude (≈950 agentes, 21 h, ~210 M tokens) encontró ART (array-associated reverse transcriptases) en bacteriófagos: RT + gen compañero + array de repeats no codificantes; el array se expresa como RNAs cortos. Función aún desconocida; Feng Zhang lo califica de intrigante. Experimentos de lab hechos por humanos (BSL-1/2). Preprint publicado.
       </p>
-      <a class="cta" href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">Leer el anuncio de Anthropic ↗</a>
+      <a class="cta" href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system" target="_blank" rel="noopener">Leer el anuncio de Anthropic ↗</a>
       <div class="link-row" style="margin-top:.85rem;">
-        <a class="fuente-original" href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="fuente-original" href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/" target="_blank" rel="noopener">TechCrunch</a>
       </div>
     </article>
     <div class="side-stack">
       <article class="side-card item" data-type="modelo">
+        <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">23 sep</span></div>
+        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/" target="_blank" rel="noopener">
+          <h3>Gemini 3.8 Flash TTS: voces a medida (y Flash-Lite)</h3>
+          <p>Modelos TTS más expresivos de Google. Flash TTS: diseño de voz por prompt, clonación con 30 s + consentimiento, dirección línea a línea, dual-speaker, SynthID. Flash-Lite: alto volumen/coste. #1 Hume Voice Design. API + AI Studio; Flash-Lite también en Vids.</p>
+        </a>
+        <div class="link-row">
+          <a class="fuente-original" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/" target="_blank" rel="noopener">Fuente original ↗</a>
+        </div>
+      </article>
+      <article class="side-card item" data-type="herramienta">
+        <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">23 sep</span></div>
+        <a href="https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/" target="_blank" rel="noopener">
+          <h3>DeepMind: memoria server-side privada en Private AI Compute</h3>
+          <p>Memoria persistente cross-device con claves solo en el dispositivo; enclaves, canales E2E, vault cifrado. Antes era stateless. Whitepaper + registro público verificable del software + auditoría independiente.</p>
+        </a>
+        <div class="link-row">
+          <a class="fuente-original" href="https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/" target="_blank" rel="noopener">Fuente original ↗</a>
+        </div>
+      </article>
+      <article class="side-card item" data-type="modelo">
         <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">22 sep</span></div>
-        <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/" target="_blank" rel="noopener">
-          <h3>GPT-6 Sol y Luna: misma generación Astra, mitad de precio</h3>
-          <p>OpenAI amplía GPT-6: Sol ($2/$10 MTok) y Luna ($0.10/$0.50), −50% vs GPT-5.6 promo. API <code>gpt-6-sol</code> / <code>gpt-6-luna</code>. ChatGPT Work + Codex (Plus/Pro/Business/Enterprise/Edu); Free/Go: Luna en desktop. Sol ~mitad de errores factuales vs predecesor. Astra sigue siendo el flagship.</p>
+        <a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">
+          <h3>Claude Opus 5.5 (ayer en spotlight): Fable a ~40% menos coste</h3>
+          <p>Familia 5.5; ~nivel Fable 5.1; $4/$20 MTok; API <code>claude-opus-5-5</code>; safeguards bio/ciber.</p>
         </a>
         <div class="link-row">
-          <a class="fuente-original" href="https://openai.com/index/introducing-gpt-6-sol-and-luna/" target="_blank" rel="noopener">Fuente original ↗</a>
-          <a class="muted-link" href="https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/" target="_blank" rel="noopener">TechCrunch</a>
-        </div>
-      </article>
-      <article class="side-card item" data-type="articulo">
-        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">21 sep</span></div>
-        <a href="https://openai.com/index/advisory-group-on-mathematics-and-ai/" target="_blank" rel="noopener">
-          <h3>Advisory Group on Mathematics and AI (ayer en spotlight)</h3>
-          <p>Además de Navier–Stokes, el modelo interno ha resuelto más de 100 problemas abiertos. Grupo asesor independiente en el IAS — Gowers, Hairer, Witten, Matchett Wood y otros — al margen de OpenAI.</p>
-        </a>
-        <div class="link-row">
-          <a class="fuente-original" href="https://openai.com/index/advisory-group-on-mathematics-and-ai/" target="_blank" rel="noopener">Fuente original ↗</a>
-          <a class="muted-link" href="https://openai.com/index/navier-stokes-solution/" target="_blank" rel="noopener">Navier–Stokes</a>
-        </div>
-      </article>
-      <article class="side-card item" data-type="articulo">
-        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">22 sep</span></div>
-        <a href="https://openai.com/index/priorities-principles-third-party-assessments/" target="_blank" rel="noopener">
-          <h3>OpenAI: prioridades para evaluaciones de terceros</h3>
-          <p>Principios para evaluaciones independientes: safety cases, safeguards, evals de Preparedness e incidentes de misalignment. Acceso profundo, independencia, seguridad y confidencialidad. Autor: Lama Ahmad.</p>
-        </a>
-        <div class="link-row">
-          <a class="fuente-original" href="https://openai.com/index/priorities-principles-third-party-assessments/" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="fuente-original" href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">Fuente original ↗</a>
         </div>
       </article>
     </div>
@@ -525,6 +524,16 @@
     <span>Open, frontier y open-weight</span>
   </div>
   <div class="grid">
+
+    <article class="card item" data-type="modelo">
+      <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">23 sep 2026</span></div>
+      <a class="title" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/" target="_blank" rel="noopener">Gemini 3.8 Flash TTS: voces a medida (y Flash-Lite)</a>
+      <p class="why">Modelos TTS más expresivos de Google. Flash TTS: diseño de voz por prompt, clonación con 30 s + consentimiento, dirección línea a línea, dual-speaker, SynthID. Flash-Lite: alto volumen/coste. #1 Hume Voice Design. API + AI Studio; Flash-Lite también en Vids.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si construyes voz a medida, el diseño por prompt y la clonación con consentimiento ya están en la API de Gemini.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
+    </article>
 
     <article class="card item" data-type="modelo">
       <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">22 sep 2026</span></div>
@@ -666,6 +675,27 @@
     <span>APIs y plataformas para construir</span>
   </div>
   <div class="grid">
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">23 sep 2026</span></div>
+      <a class="title" href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system" target="_blank" rel="noopener">Claude descubre ART, un sistema enzimático tipo CRISPR</a>
+      <p class="why">Anthropic abre grupo y lab de life sciences. ~950 agentes de Claude, 21 h y ~210 M tokens hallaron array-associated reverse transcriptases en bacteriófagos: RT, gen compañero y un array de repeats no codificantes que se expresa como RNAs cortos. Función aún desconocida; Feng Zhang lo califica de intrigante. Experimentos de lab hechos por humanos (BSL-1/2). Preprint publicado.</p>
+      <div class="takeaway"><strong>Para ti:</strong> el caso concreto de lo que el nuevo lab de life sciences dice haber encontrado ya.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/" target="_blank" rel="noopener">TechCrunch</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">23 sep 2026</span></div>
+      <a class="title" href="https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/" target="_blank" rel="noopener">DeepMind: memoria server-side privada en Private AI Compute</a>
+      <p class="why">Memoria persistente cross-device con claves solo en el dispositivo; enclaves, canales E2E, vault cifrado. Antes era stateless. Whitepaper + registro público verificable del software + auditoría independiente.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si te importa memoria de asistente sin dejar el historial en claro en el servidor.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
+    </article>
 
     <article class="card item" data-type="tutorial">
       <div class="meta-row"><span class="pill tutorial">tutorial</span><span class="pill fecha">22 sep 2026</span></div>
@@ -1367,6 +1397,17 @@
   <div class="grid">
 
     <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill medium">medium</span><span class="pill fecha">10 sep 2026</span></div>
+      <a class="title" href="https://medium.com/javarevisited/how-would-you-design-an-ai-coding-agent-in-a-system-design-interview-df1c0ab70db3" target="_blank" rel="noopener">Diseñar un AI coding agent (system design interview)</a>
+      <p class="why">Soma (Javarevisited): el modelo es la parte pequeña; lo difícil es orquestador determinista, sandbox sin red, presupuesto, memoria de errores, retrieval por capas y «best attempt». <em style="color:var(--muted)">— Soma · Javarevisited</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> checklist de arquitectura antes de inventar otro harness encima de Claude Code/Codex.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://medium.com/javarevisited/how-would-you-design-an-ai-coding-agent-in-a-system-design-interview-df1c0ab70db3" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/javarevisited/how-would-you-design-an-ai-coding-agent-in-a-system-design-interview-df1c0ab70db3" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="medium">
       <div class="meta-row"><span class="pill medium">medium</span><span class="pill fecha">7 sep 2026</span></div>
       <a class="title" href="https://medium.com/@prithukathet/claude-code-explained-the-complete-guide-from-zero-to-ai-coding-agent-23cbde447830" target="_blank" rel="noopener">Claude Code Explained: de cero a agente de coding</a>
       <p class="why">Prithukathet recorre el bucle agéntico de Claude Code: instrucciones en <code>CLAUDE.md</code>, skills, hooks, MCP y subagentes. Mapa de las piezas, no un changelog. <em style="color:var(--muted)">— Prithukathet</em></p>
@@ -1581,6 +1622,59 @@
     Vídeos curados (oficiales + builders). Puedes verlos embebidos; cada uno lleva enlace directo a YouTube por si quieres el hilo, comentarios o la descripción.
   </p>
   <div class="video-grid">
+
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/wshiKvOAwP0" title="Gemini 3.8 TTS - Google's New AI Voice Is Scary Good!!" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">23 sep 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=wshiKvOAwP0" target="_blank" rel="noopener">Gemini 3.8 TTS - Google's New AI Voice Is Scary Good!!</a></h3>
+        <div class="video-meta">AI with Surya</div>
+        <p class="why">Demo del lanzamiento TTS; companion del blog oficial de Google.</p>
+        <div class="takeaway"><strong>Para ti:</strong> oír Flash TTS antes de leer la nota de diseño de voz, clonación y SynthID.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=wshiKvOAwP0" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <div class="link-row" style="margin-top:.5rem;">
+          <a class="fuente-original" href="https://www.youtube.com/watch?v=wshiKvOAwP0" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/" target="_blank" rel="noopener">Blog TTS oficial</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/sHImlfVM9r4" title="Introducing Claude for Life Sciences" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">sep 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=sHImlfVM9r4" target="_blank" rel="noopener">Introducing Claude for Life Sciences</a></h3>
+        <div class="video-meta">Anthropic</div>
+        <p class="why">Vídeo oficial del producto life sciences; contexto del lab y del anuncio ART.</p>
+        <div class="takeaway"><strong>Para ti:</strong> el producto que envuelve el lab detrás del hallazgo enzimático de hoy.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=sHImlfVM9r4" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <div class="link-row" style="margin-top:.5rem;">
+          <a class="fuente-original" href="https://www.youtube.com/watch?v=sHImlfVM9r4" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system" target="_blank" rel="noopener">Anuncio ART</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/n-saR_xl8pw" title="How To Build AI Voice Agents Using Claude Code (Full Tutorial)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">23 may 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=n-saR_xl8pw" target="_blank" rel="noopener">How To Build AI Voice Agents Using Claude Code (Full Tutorial)</a></h3>
+        <div class="video-meta">Brendan Jowett</div>
+        <p class="why">Tutorial práctico de agentes de voz con Claude Code; companion de construcción junto al lanzamiento TTS.</p>
+        <div class="takeaway"><strong>Para ti:</strong> un recorrido de implementación si vas a montar voz encima de Claude Code.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=n-saR_xl8pw" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <div class="link-row" style="margin-top:.5rem;">
+          <a class="fuente-original" href="https://www.youtube.com/watch?v=n-saR_xl8pw" target="_blank" rel="noopener">Fuente original ↗</a>
+        </div>
+      </div>
+    </article>
 
     <article class="video-card item" data-type="youtube">
       <div class="video-frame">
@@ -2013,6 +2107,10 @@
   <section class="sources" id="fuentes">
     <h2>Fuentes que vale la pena seguir</h2>
     <div class="source-list">
+      <a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system" target="_blank" rel="noopener">Anthropic · sistema enzimático ART</a>
+      <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/" target="_blank" rel="noopener">Google · Gemini 3.8 Flash TTS</a>
+      <a href="https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/" target="_blank" rel="noopener">DeepMind · Private AI Compute memory</a>
+      <a href="https://www.youtube.com/watch?v=sHImlfVM9r4" target="_blank" rel="noopener">Anthropic · Claude for Life Sciences</a>
       <a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">Anthropic · Claude Opus 5.5</a>
       <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/" target="_blank" rel="noopener">OpenAI · GPT-6 Sol y Luna</a>
       <a href="https://openai.com/index/priorities-principles-third-party-assessments/" target="_blank" rel="noopener">OpenAI · evaluaciones de terceros</a>
@@ -2068,7 +2166,7 @@
   </section>
 
   <footer>
-    <div>Mantenido por <strong>IA</strong> · última actualización 23 sep 2026</div>
+    <div>Mantenido por <strong>IA</strong> · última actualización 24 sep 2026</div>
     <div>
       <a href="https://github.com/canduchix/novedades-ia">Repo</a> ·
       <a href="https://canduchix.github.io/novedades-ia/">GitHub Pages</a>
