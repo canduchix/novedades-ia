@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Novedades IA · 1 oct 2026</title>
-<meta name="description" content="Selección del 1 oct 2026: Gemini 4 Argon (Fairwind, sin API pública), Dots en DevDay, GPT-6.1 Sol, Claude Sonnet 5.5 y el acuerdo de la Casa Blanca." />
+<title>Novedades IA · 2 oct 2026</title>
+<meta name="description" content="Selección del 2 oct 2026: OpenAI corta una campaña de destilación adversaria (núcleo ligado a Moonshot), Gemini 4 Argon sigue en Fairwind, BootLoops y Barclays escala Claude." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -447,14 +447,14 @@
   </nav>
 
   <header class="hero">
-    <div class="eyebrow"><span class="dot"></span> Actualizado · 1 oct 2026</div>
+    <div class="eyebrow"><span class="dot"></span> Actualizado · 2 oct 2026</div>
     <h1>Lo que importa en <em>inteligencia artificial</em> esta semana</h1>
     <p class="lede">
       Selección curada de modelos, herramientas, Medium, YouTube, X, lectura y tutoriales — sin ruido.
       Cada pieza incluye un enlace explícito a la <strong>fuente original</strong> para profundizar.
     </p>
     <div class="stats">
-      <div class="stat"><b>~145</b><span>piezas seleccionadas</span></div>
+      <div class="stat"><b>198</b><span>piezas seleccionadas</span></div>
       <div class="stat"><b>18</b><span>modelos clave</span></div>
       <div class="stat"><b>15</b><span>lanzamientos de plataforma</span></div>
       <div class="stat"><b>12</b><span>tutoriales prácticos</span></div>
@@ -473,23 +473,59 @@
   </div>
 
   <section id="destacados" class="featured">
-    <article class="spotlight item" data-type="modelo">
-      <div class="kicker">Historia principal · 30 sep · digest 1 oct</div>
-      <h2>Gemini 4 Argon: tabla de frontera, aún sin API</h2>
+    <article class="spotlight item" data-type="articulo">
+      <div class="kicker">Historia principal · 30 sep · digest 2 oct</div>
+      <h2>OpenAI corta una campaña de destilación del razonamiento</h2>
       <p>
-        Google DeepMind anunció el 30 sep <strong>Gemini 4 Argon</strong>, modelo de frontera para ingeniería de software de largo horizonte, trabajo de conocimiento empresarial (legal y finanzas) y defensa en ciberseguridad. El límite de salida pasa a <strong>1M tokens</strong> (antes 64K). En DeepSWE v1.1 Google marca <strong>77,9%</strong> y lo presenta como estado del arte. Precio de introducción: <strong>$2 / $10</strong> por millón de tokens, con la caché de entrada al 95% de descuento; después, <strong>$4 / $20</strong>.
+        El 30 sep OpenAI describe una campaña coordinada para extraer <strong>razonamiento protegido</strong> —el registro interno con el que el modelo trabaja una tarea—, coherente con <strong>destilación adversaria</strong>: usar sin permiso salidas o razonamiento para entrenar o mejorar otro modelo. Los operadores no rompieron el cifrado, no comprometieron una base de datos ni accedieron a conversaciones guardadas. Manipularon las interacciones para que ese razonamiento se reprodujera visible, a escala, en violación de los términos.
       </p>
       <p>
-        Sale primero para defensores de ciber de confianza del <strong>Fairwind Program</strong>, uso interno de Google y el pre-release voluntario del gobierno de EE.&nbsp;UU. El acceso amplio llega después, en la API de pago y en Google AI Ultra. <strong>Todavía no hay ID público de modelo.</strong> Dentro de Google ya mueve migraciones a Rust (en libgav1, de SIMD a Rust seguro, 2,7× frente al port anterior), optimizaciones de memoria (~300&nbsp;TiB) y ciber con Wiz Scan for Good.
+        Actividad desde alrededor del 1 de julio. Picos el 24 y 25 de julio: <strong>16.000 peticiones</strong> con un patrón de extracción, de <strong>más de 4.000 usuarios</strong>; actividad de prompts relacionada en <strong>más de 15.000 usuarios</strong>; cortada del todo el <strong>28 de julio</strong>. La nota al pie aclara que son intentos, no extracciones necesariamente logradas. Una técnica: copiar razonamiento cifrado de una conversación y pedir a un modelo, en otra, que lo descifre o transcriba. Investigadores de seguridad independientes revelaron vías relacionadas entre modelos y de compactación de conversación; OpenAI confirmó esas rutas. No está claro si todos los operadores son un solo actor; atribuye un <strong>núcleo</strong> a personas asociadas con <strong>Moonshot AI</strong> (Kimi). Mitigaciones: bans y restricciones de cuentas, controles de alta e infraestructura, cierre de la vía de replay del razonamiento cifrado, chequeos de la salida en streaming, coordinación con partners, y aviso por el Frontier Model Forum y canales gubernamentales. Sigue incompleto: los despliegues alojados por partners necesitan las mismas protecciones; los ataques por salida de herramientas aún se están endureciendo.
       </p>
-      <div class="takeaway"><strong>Para ti:</strong> el anuncio del día — Google vuelve al podio, pero hoy es tabla + Fairwind, no API. Mientras tanto Sol, Sonnet y Opus siguen siendo lo usable.</div>
-      <a class="cta" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener" style="margin-top:1rem;">Leer el anuncio ↗</a>
+      <div class="takeaway"><strong>Para ti:</strong> la destilación es un problema de seguridad compartido — razonamiento cifrado portable y modelos decodificadores débiles —, no un volcado de contraseñas. Si alojas OpenAI o Anthropic detrás de un partner cloud, asume que el arreglo de primera parte puede ir por detrás.</div>
+      <a class="cta" href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener" style="margin-top:1rem;">Leer el post de OpenAI ↗</a>
       <div class="link-row" style="margin-top:.85rem;">
-        <a class="fuente-original" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Fuente original ↗</a>
-        <a class="muted-link" href="https://www.webreactiva.com/blog/gemini-4-argon" target="_blank" rel="noopener">Web Reactiva (ES)</a>
+        <a class="fuente-original" href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://www.cnbc.com/2026/10/01/openai-chinas-moonshot-ai-kimi.html" target="_blank" rel="noopener">CNBC</a>
       </div>
     </article>
     <div class="side-stack">
+      <article class="side-card item" data-type="modelo">
+        <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">30 sep</span></div>
+        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">
+          <h3>Gemini 4 Argon — frontera, aún sin API</h3>
+          <p>Google DeepMind: modelo de frontera para SWE de largo horizonte, conocimiento empresarial (legal y finanzas) y defensa en ciber. Salida de <strong>1M tokens</strong> (antes 64K). DeepSWE v1.1: <strong>77,9%</strong>, estado del arte según Google. Precio de introducción <strong>$2 / $10</strong> por millón, caché de entrada al 95% de descuento; después <strong>$4 / $20</strong>. Primero Fairwind, Google interno y el pre-release voluntario del gobierno de EE.&nbsp;UU.; la API de pago y Google AI Ultra van después. <strong>Sin ID público de modelo.</strong></p>
+        </a>
+        <div class="takeaway"><strong>Para ti:</strong> sigue siendo tabla y Fairwind, no un modelo que puedas llamar. Sol, Sonnet y Opus siguen siendo lo usable.</div>
+        <div class="link-row">
+          <a class="fuente-original" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://www.webreactiva.com/blog/gemini-4-argon" target="_blank" rel="noopener">Web Reactiva (ES)</a>
+          <a class="muted-link" href="https://www.theguardian.com/technology/2026/oct/01/google-releases-gemini-model-restrictions" target="_blank" rel="noopener">The Guardian</a>
+        </div>
+      </article>
+      <article class="side-card item" data-type="articulo">
+        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">1 oct</span></div>
+        <a href="https://www.anthropic.com/research/claude-shaped-science" target="_blank" rel="noopener">
+          <h3>Ciencia «Claude-shaped» y BootLoops</h3>
+          <p>Guest post de Matthew Schwartz (1 oct): dejó de pelear con Claude y buscó problemas «Claude-shaped», los que encajan con esta generación de herramientas. De ahí sale <strong>BootLoops</strong>, harness open source para cálculos cuantitativos exactos, usable con el modelo que elijas. Claude conectó cálculos parecidos con ecología, genética de poblaciones, economía y lingüística; Schwartz los reorientó con expertos de cada campo. El sitio del proyecto es bootloops.ai. Divulgación del post: Schwartz es visiting researcher en Anthropic; BootLoops no es un producto de Anthropic.</p>
+        </a>
+        <div class="takeaway"><strong>Para ti:</strong> el harness es la pieza reusable, no el titular de «Claude hace ciencia». Si el cálculo se puede comprobar, BootLoops es el sitio donde mirar.</div>
+        <div class="link-row">
+          <a class="fuente-original" href="https://www.anthropic.com/research/claude-shaped-science" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://www.bootloops.ai" target="_blank" rel="noopener">bootloops.ai</a>
+        </div>
+      </article>
+      <article class="side-card item" data-type="articulo">
+        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">1 oct</span></div>
+        <a href="https://www.anthropic.com/news/barclays-scales-claude" target="_blank" rel="noopener">
+          <h3>Barclays escala Claude</h3>
+          <p>Barclays amplía la colaboración (1 oct). Espera que <strong>Claude Code</strong> llegue al 50% de sus developers a finales de 2026 y a la mayoría de ingenieros de software en 2027. El Colleague Knowledge Assistant, en marcha desde 2025, lo usan más de <strong>16.000</strong> colegas y ha hecho más de <strong>1 millón</strong> de búsquedas. En Global Markets, Claude clasifica y enruta unos <strong>120.000</strong> correos al día.</p>
+        </a>
+        <div class="takeaway"><strong>Para ti:</strong> un despliegue regulado de verdad: Code en el IDE, un asistente de conocimiento ya en producción y enrutado de correo, no un piloto de chatbot.</div>
+        <div class="link-row">
+          <a class="fuente-original" href="https://www.anthropic.com/news/barclays-scales-claude" target="_blank" rel="noopener">Fuente original ↗</a>
+        </div>
+      </article>
       <article class="side-card item" data-type="articulo">
         <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">29 sep</span></div>
         <a href="https://openai.com/index/introducing-dots" target="_blank" rel="noopener">
@@ -500,42 +536,6 @@
         <div class="link-row">
           <a class="fuente-original" href="https://openai.com/index/introducing-dots" target="_blank" rel="noopener">Fuente original ↗</a>
           <a class="muted-link" href="https://openai.com/index/devday-2026-recap" target="_blank" rel="noopener">DevDay recap</a>
-        </div>
-      </article>
-      <article class="side-card item" data-type="modelo">
-        <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">29 sep</span></div>
-        <a href="https://openai.com/index/introducing-gpt-6-1-sol" target="_blank" rel="noopener">
-          <h3>GPT-6.1 Sol — casi Astra a 1/5 del precio</h3>
-          <p>Upgrade de GPT-6 Sol: inteligencia cercana a Astra en coding agéntico, computer use y trabajo profesional, a una quinta parte del precio estándar de input/output de Astra. API: <strong>$2 / $10</strong> por millón de tokens; cache de input <strong>$0,10</strong>/MTok. ID: <code>gpt-6.1-sol</code>. Desde hoy en ChatGPT Work y Codex para Plus, Pro, Business, Enterprise y Edu; aún no en Chat. En DeepSWE v1.1 iguala a Astra a ~1/5 del coste. En OSWorld 2.0 (offline) se queda a 2,1 puntos de Astra con ~1/7 del coste por tarea, según el blog oficial.</p>
-        </a>
-        <div class="takeaway"><strong>Para ti:</strong> default barato para agentes y coding si Astra era el techo de factura; compara en tus tareas antes de bajar el flagship.</div>
-        <div class="link-row">
-          <a class="fuente-original" href="https://openai.com/index/introducing-gpt-6-1-sol" target="_blank" rel="noopener">Fuente original ↗</a>
-          <a class="muted-link" href="https://developers.openai.com/api/docs/models/gpt-6.1-sol" target="_blank" rel="noopener">Docs API</a>
-        </div>
-      </article>
-      <article class="side-card item" data-type="modelo">
-        <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">28 sep</span></div>
-        <a href="https://www.anthropic.com/claude-sonnet-5-5" target="_blank" rel="noopener">
-          <h3>Claude Sonnet 5.5</h3>
-          <p>Segundo modelo de la familia Claude 5.5 (28 sep): upgrade claro frente a Sonnet 5, más de un 30% más rápido y hasta ~30% menos coste por tarea. El list price no se mueve: $2 / $10 por MTok y $0,20 las lecturas de cache. Complemento de Opus 5.5 para tareas cotidianas bien acotadas, bugs, docs, slides y spreadsheets; Anthropic le atribuye ojo para el diseño. Terminal-Bench 4.0: 70,6% frente al 10,3% de Sonnet 5. En GDPval-AA queda dos puntos por debajo de Opus 5.5 (1844 vs 1846). Primer Sonnet con salvaguardas y fallbacks de ciber como los modelos más capaces. Haiku 5.5, «coming weeks». ID: <code>claude-sonnet-5-5</code>.</p>
-        </a>
-        <div class="takeaway"><strong>Para ti:</strong> candidato a default de volumen si Opus 5.5 te sobra para el día a día.</div>
-        <div class="link-row">
-          <a class="fuente-original" href="https://www.anthropic.com/claude-sonnet-5-5" target="_blank" rel="noopener">Fuente original ↗</a>
-          <a class="muted-link" href="https://claude.dev/blog/building-with-claude-sonnet-5-5/" target="_blank" rel="noopener">Building with Sonnet 5.5</a>
-        </div>
-      </article>
-      <article class="side-card item" data-type="articulo">
-        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">29 sep</span></div>
-        <a href="https://www.washingtonexaminer.com/news/white-house/4747747/full-trump-white-house-accord-ai-super-intelligence/" target="_blank" rel="noopener">
-          <h3>White House Accord on Super Intelligence</h3>
-          <p>Acuerdo voluntario: controles internos (ciber, bio y químico), un equipo con autoridad para remediar fallos, auditor externo y comité independiente del board. Firmantes que cita el Washington Examiner: Amodei, Brockman, Pichai, Zuckerberg, Musk y Huang. Euronews lo llama «morally binding»; no es ley.</p>
-        </a>
-        <div class="takeaway"><strong>Para ti:</strong> auditorías voluntarias a nivel White House, no un nuevo estándar técnico.</div>
-        <div class="link-row">
-          <a class="fuente-original" href="https://www.washingtonexaminer.com/news/white-house/4747747/full-trump-white-house-accord-ai-super-intelligence/" target="_blank" rel="noopener">Fuente original ↗</a>
-          <a class="muted-link" href="https://www.euronews.com/2026/09/30/top-ai-and-tech-firms-sign-morally-binding-accord-to-self-police-development-after-meeting" target="_blank" rel="noopener">Euronews</a>
         </div>
       </article>
     </div>
@@ -555,6 +555,7 @@
       <div class="link-row">
         <a class="fuente-original" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Fuente original ↗</a>
         <a class="muted-link" href="https://www.webreactiva.com/blog/gemini-4-argon" target="_blank" rel="noopener">Web Reactiva (ES)</a>
+        <a class="muted-link" href="https://www.theguardian.com/technology/2026/oct/01/google-releases-gemini-model-restrictions" target="_blank" rel="noopener">The Guardian</a>
       </div>
     </article>
 
@@ -752,6 +753,63 @@
     <span>APIs y plataformas para construir</span>
   </div>
   <div class="grid">
+
+    <article class="card item" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">1 oct 2026</span></div>
+      <a class="title" href="https://huggingface.co/blog/allenai/olmocore3" target="_blank" rel="noopener">Olmo-core 3 — stack abierto de entrenamiento MoE</a>
+      <p class="why">Ai2 publica el stack de entrenamiento MoE detrás de la siguiente generación de Olmo. Pasa de FSDP a un sistema basado en DDP que deja los expertos residentes en GPU y enruta los datos hacia ellos. En su prueba preliminar, un MoE de 47.000 millones de parámetros pasó de 19.400 a 52.000 tok/s/GPU en 8× B300, unas 2,7× frente a la implementación FSDP anterior. MXFP8 dio alrededor de un 21% más de throughput que BF16 en su test de 4 GPUs. Han hecho bench de sistema (routing aleatorio, no calidad del modelo) hasta 1,2 billones de parámetros, y una prueba corta de capacidad —no un training run completo— hasta 2,38 billones con DeepEP v2.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si entrenas MoE open, el cuello ya no es solo el paper: es dónde viven los expertos y cuánto pesa mover pesos en cada microbatch.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://huggingface.co/blog/allenai/olmocore3" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://github.com/allenai/olmo-core" target="_blank" rel="noopener">GitHub</a>
+        <a class="muted-link" href="https://allenai.org/papers/olmocore3" target="_blank" rel="noopener">Informe</a>
+        <a class="muted-link" href="https://narrative.allen.ai/scaling-up-training" target="_blank" rel="noopener">Demo</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">oct 2026</span></div>
+      <a class="title" href="https://claude.com/blog/bringing-claude-code-and-claude-cowork-to-government" target="_blank" rel="noopener">Claude Code y Cowork en Claude for Government</a>
+      <p class="why">Beta pública en Claude for Government Desktop, el mismo cliente comercial, en un entorno FedRAMP High. El historial de conversación se guarda en local en el dispositivo que administra la agencia. La facturación admite asientos o tramos con límites y compra en incrementos fijos con un tope not-to-exceed. Cada acción administrativa queda en un audit log encadenado por hash. Las operaciones sensibles del lado de Anthropic piden aprobación de dos personas.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si vendes o despliegas Claude en sector público, el control está en el desktop, el tope de gasto y el log, no en un tenant cloud aparte.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://claude.com/blog/bringing-claude-code-and-claude-cowork-to-government" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://claude.com/solutions/government" target="_blank" rel="noopener">Pedir acceso</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">30 sep 2026</span></div>
+      <a class="title" href="https://arxiv.org/abs/2609.40111" target="_blank" rel="noopener">Agent Error Dataset: 50.228 pares error–diagnóstico</a>
+      <p class="why">Zhu, Ye, Li, Qian, Li y Ji (Apodex). AED junta 50.228 pares error–diagnóstico a partir de 9.961 tareas, en 33 entornos, 19 familias de harness y 23 modelos de política. Conservan trazas y metadatos de ejecución para re-diagnosticar sin repetir el rollout. El pipeline AET propone correcciones y, donde hay replay, las compara con reintentar la acción original desde el mismo checkpoint.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si post-entrenas agentes, el fallo con diagnóstico y traza vale más que un reward binario. La fuente es el paper; no hay dataset de HF claro que enlazar.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://arxiv.org/abs/2609.40111" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://arxiv.org/html/2609.40111" target="_blank" rel="noopener">HTML</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">30 sep 2026</span></div>
+      <a class="title" href="https://arxiv.org/abs/2609.40316" target="_blank" rel="noopener">Meta: leyes de escalado para MoE con bucle</a>
+      <p class="why">Yanbei Chen, Anirudh Goyal y Raghuraman Krishnamoorthi (Meta AI, 30 sep). Loop Scaling Laws modelan a la vez recurrencia y sparsity, y recuperan las leyes densas y MoE como casos particulares. A cómputo de entrenamiento igualado, un MoE con bucle y recurrencia derivada de la ley iguala en los benches de razonamiento a un MoE no looped unas 2× más grande, según el paper.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si diseñas MoE, el bucle es un eje de capacidad con rendimientos decrecientes, no un truco infinito de profundidad.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://arxiv.org/abs/2609.40316" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://arxiv.org/html/2609.40316" target="_blank" rel="noopener">HTML</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">29 sep</span></div>
+      <a class="title" href="https://www.washingtonexaminer.com/news/white-house/4747747/full-trump-white-house-accord-ai-super-intelligence/" target="_blank" rel="noopener">White House Accord on Super Intelligence</a>
+      <p class="why">Acuerdo voluntario: controles internos (ciber, bio y químico), un equipo con autoridad para remediar fallos, auditor externo y comité independiente del board. Firmantes que cita el Washington Examiner: Amodei, Brockman, Pichai, Zuckerberg, Musk y Huang. Euronews lo llama «morally binding»; no es ley.</p>
+      <div class="takeaway"><strong>Para ti:</strong> auditorías voluntarias a nivel White House, no un nuevo estándar técnico.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.washingtonexaminer.com/news/white-house/4747747/full-trump-white-house-accord-ai-super-intelligence/" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://www.euronews.com/2026/09/30/top-ai-and-tech-firms-sign-morally-binding-accord-to-self-police-development-after-meeting" target="_blank" rel="noopener">Euronews</a>
+      </div>
+    </article>
 
     <article class="card item" data-type="articulo">
       <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">1 oct 2026</span></div>
@@ -1720,6 +1778,28 @@
   <div class="grid">
 
     <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill medium">medium</span><span class="pill fecha">18 ago 2026</span></div>
+      <a class="title" href="https://medium.com/@marc.bara.iniesta/ai-providers-encrypted-their-models-reasoning-it-leaked-anyway-1d602f7e41f2" target="_blank" rel="noopener">AI Providers Encrypted Their Models’ Reasoning. It Leaked Anyway</a>
+      <p class="why">Marc Bara (18 ago) sobre razonamiento cifrado portable y el ataque de oráculo de descifrado: un modelo más débil de la misma familia puede transcribir razonamiento que el modelo fuerte se niega a mostrar. Es contexto de agosto, no el parte de OpenAI del 30 sep; el post de la campaña encaja en ese fallo de diseño. <em style="color:var(--muted)">— Marc Bara · 18 ago 2026</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> léelo antes del parte de OpenAI. El cifrado del chain-of-thought no basta si otro modelo de la familia actúa de descifrador.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://medium.com/@marc.bara.iniesta/ai-providers-encrypted-their-models-reasoning-it-leaked-anyway-1d602f7e41f2" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@marc.bara.iniesta/ai-providers-encrypted-their-models-reasoning-it-leaked-anyway-1d602f7e41f2" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill medium">medium</span><span class="pill fecha">9 mar 2026</span></div>
+      <a class="title" href="https://medium.com/@adnanmasood/llm-distillation-attacks-the-new-ai-extraction-economy-20672360b586" target="_blank" rel="noopener">LLM Distillation Attacks — The New AI Extraction Economy</a>
+      <p class="why">Adnan Masood (9 mar): panorama de ataques de destilación en frontera — extracción de capacidad por API, revendedores y redes de cuentas coordinadas. Es fondo, no la noticia de esta semana ni el recuento de julio que OpenAI publicó el 30 sep. <em style="color:var(--muted)">— Adnan Masood · 9 mar 2026</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> mapa del problema si llegas al parte de OpenAI sin el vocabulario de destilación. Los números de la campaña están en el blog, no aquí.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://medium.com/@adnanmasood/llm-distillation-attacks-the-new-ai-extraction-economy-20672360b586" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@adnanmasood/llm-distillation-attacks-the-new-ai-extraction-economy-20672360b586" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="medium">
       <div class="meta-row"><span class="pill medium">medium</span><span class="pill fecha">30 sep 2026</span></div>
       <a class="title" href="https://medium.com/@denysbutakov/openais-dots-are-the-moment-ai-stops-waiting-for-you-3a7f532ddada" target="_blank" rel="noopener">OpenAI’s Dots Are the Moment AI Stops Waiting for You</a>
       <p class="why">Denys Butakov: el salto no es otro chatbot, sino un agente que nota (research proactivo en solo lectura) y la arquitectura de permisos justo después de que OpenAI aparcara GPT-6.1 Astra. Los Dots que salen van sobre el Astra ya enviado. <em style="color:var(--muted)">— Denys Butakov · 30 sep 2026</em></p>
@@ -2033,6 +2113,42 @@
     Vídeos curados (oficiales + builders). Puedes verlos embebidos; cada uno lleva enlace directo a YouTube por si quieres el hilo, comentarios o la descripción.
   </p>
   <div class="video-grid">
+
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/loCzOF_ful8" title="OpenAI Accuses Moonshot of Extracting Data From AI Models" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">30 sep 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=loCzOF_ful8" target="_blank" rel="noopener">OpenAI Accuses Moonshot of Extracting Data From AI Models</a></h3>
+        <div class="video-meta">Bloomberg Television · The China Show</div>
+        <p class="why">Segmento del China Show del 30 sep. El capítulo de la acusación a Moonshot empieza hacia el minuto 14:18; el resto del programa es otra actualidad. Los hechos de la campaña están en el post de OpenAI.</p>
+        <div class="takeaway"><strong>Para ti:</strong> el clip de televisión si quieres oír el titular. El recuento y las mitigaciones, en el blog.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=loCzOF_ful8" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <div class="link-row" style="margin-top:.5rem;">
+          <a class="fuente-original" href="https://www.youtube.com/watch?v=loCzOF_ful8" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener">Blog OpenAI</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/5XTJRU9na3Y" title="Gemini 4 Argon" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">1 oct 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=5XTJRU9na3Y" target="_blank" rel="noopener">Gemini 4 Argon</a></h3>
+        <div class="video-meta">Sam Witteveen</div>
+        <p class="why">Repaso del 1 oct al Argon preanunciado. En la descripción dice que no puede mostrar salidas porque el modelo aún no está publicado al público.</p>
+        <div class="takeaway"><strong>Para ti:</strong> comentario técnico junto al blog de Google. No es una demo de API.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=5XTJRU9na3Y" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <div class="link-row" style="margin-top:.5rem;">
+          <a class="fuente-original" href="https://www.youtube.com/watch?v=5XTJRU9na3Y" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Blog Google</a>
+        </div>
+      </div>
+    </article>
 
     <article class="video-card item" data-type="youtube">
       <div class="video-frame">
@@ -2603,7 +2719,7 @@
     <span>Señal alta · sin hype</span>
   </div>
   <p class="lede" style="margin:0 0 1rem;font-size:.95rem;max-width:70ch;">
-    Esta semana no entra ningún post nuevo de X de alta señal. El criterio y el material ya contrastado se quedan.
+    Al 2 oct no entra ningún post nuevo de X de alta señal. La campaña de destilación se contrasta en el post de OpenAI, no en un hilo. El criterio y el material ya contrastado se quedan.
   </p>
 
   <article class="card item" data-type="x" style="margin-bottom:1rem; grid-column: 1 / -1;">
@@ -2716,6 +2832,19 @@
   <section class="sources" id="fuentes">
     <h2>Fuentes que vale la pena seguir</h2>
     <div class="source-list">
+      <a href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener">OpenAI · destilación</a>
+      <a href="https://www.cnbc.com/2026/10/01/openai-chinas-moonshot-ai-kimi.html" target="_blank" rel="noopener">CNBC · Moonshot</a>
+      <a href="https://www.anthropic.com/research/claude-shaped-science" target="_blank" rel="noopener">Anthropic · BootLoops</a>
+      <a href="https://www.bootloops.ai" target="_blank" rel="noopener">bootloops.ai</a>
+      <a href="https://www.anthropic.com/news/barclays-scales-claude" target="_blank" rel="noopener">Anthropic · Barclays</a>
+      <a href="https://huggingface.co/blog/allenai/olmocore3" target="_blank" rel="noopener">HF · Olmo-core 3</a>
+      <a href="https://github.com/allenai/olmo-core" target="_blank" rel="noopener">GitHub · olmo-core</a>
+      <a href="https://arxiv.org/abs/2609.40111" target="_blank" rel="noopener">arXiv · Agent Error Dataset</a>
+      <a href="https://arxiv.org/abs/2609.40316" target="_blank" rel="noopener">arXiv · Looped MoE</a>
+      <a href="https://claude.com/blog/bringing-claude-code-and-claude-cowork-to-government" target="_blank" rel="noopener">Claude · Government Desktop</a>
+      <a href="https://medium.com/@marc.bara.iniesta/ai-providers-encrypted-their-models-reasoning-it-leaked-anyway-1d602f7e41f2" target="_blank" rel="noopener">Medium · Marc Bara</a>
+      <a href="https://www.youtube.com/watch?v=loCzOF_ful8" target="_blank" rel="noopener">YouTube · Bloomberg · Moonshot</a>
+      <a href="https://www.youtube.com/watch?v=5XTJRU9na3Y" target="_blank" rel="noopener">YouTube · Sam Witteveen · Argon</a>
       <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Google · Gemini 4 Argon</a>
       <a href="https://www.webreactiva.com/blog/gemini-4-argon" target="_blank" rel="noopener">Web Reactiva · Gemini 4 Argon</a>
       <a href="https://www.datacamp.com/blog/gemini-4-argon" target="_blank" rel="noopener">DataCamp · Gemini 4 Argon</a>
@@ -2842,7 +2971,7 @@
   </section>
 
   <footer>
-    <div>Mantenido por <strong>IA</strong> · última actualización 1 oct 2026</div>
+    <div>Mantenido por <strong>IA</strong> · última actualización 2 oct 2026</div>
     <div>
       <a href="https://github.com/canduchix/novedades-ia">Repo</a> ·
       <a href="https://canduchix.github.io/novedades-ia/">GitHub Pages</a>
