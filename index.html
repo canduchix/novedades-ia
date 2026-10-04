@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Novedades IA · 2 oct 2026</title>
-<meta name="description" content="Selección del 2 oct 2026: OpenAI corta una campaña de destilación adversaria (núcleo ligado a Moonshot), Gemini 4 Argon sigue en Fairwind, BootLoops y Barclays escala Claude." />
+<title>Novedades IA · 4 oct 2026</title>
+<meta name="description" content="Selección del 4 oct 2026: David Robinson deja OpenAI («la cultura está rota»), Kolibri, Claude Code Mods, Cloudflare Clef y Claude Frontier Academy." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -447,15 +447,15 @@
   </nav>
 
   <header class="hero">
-    <div class="eyebrow"><span class="dot"></span> Actualizado · 2 oct 2026</div>
+    <div class="eyebrow"><span class="dot"></span> Actualizado · 4 oct 2026</div>
     <h1>Lo que importa en <em>inteligencia artificial</em> esta semana</h1>
     <p class="lede">
       Selección curada de modelos, herramientas, Medium, YouTube, X, lectura y tutoriales — sin ruido.
       Cada pieza incluye un enlace explícito a la <strong>fuente original</strong> para profundizar.
     </p>
     <div class="stats">
-      <div class="stat"><b>198</b><span>piezas seleccionadas</span></div>
-      <div class="stat"><b>18</b><span>modelos clave</span></div>
+      <div class="stat"><b>211</b><span>piezas seleccionadas</span></div>
+      <div class="stat"><b>20</b><span>modelos clave</span></div>
       <div class="stat"><b>15</b><span>lanzamientos de plataforma</span></div>
       <div class="stat"><b>12</b><span>tutoriales prácticos</span></div>
     </div>
@@ -474,68 +474,79 @@
 
   <section id="destacados" class="featured">
     <article class="spotlight item" data-type="articulo">
-      <div class="kicker">Historia principal · 30 sep · digest 2 oct</div>
-      <h2>OpenAI corta una campaña de destilación del razonamiento</h2>
+      <div class="kicker">Historia principal · 3 oct · digest 4 oct</div>
+      <h2>David Robinson deja OpenAI: «la cultura está rota»</h2>
       <p>
-        El 30 sep OpenAI describe una campaña coordinada para extraer <strong>razonamiento protegido</strong> —el registro interno con el que el modelo trabaja una tarea—, coherente con <strong>destilación adversaria</strong>: usar sin permiso salidas o razonamiento para entrenar o mejorar otro modelo. Los operadores no rompieron el cifrado, no comprometieron una base de datos ni accedieron a conversaciones guardadas. Manipularon las interacciones para que ese razonamiento se reprodujera visible, a escala, en violación de los términos.
+        David Robinson dimite tras unos <strong>3,5 años</strong> en OpenAI, donde dirigía la redacción de los informes de safety de los grandes lanzamientos. El ensayo «I Quit OpenAI Because Its Culture Is Broken» se publicó el 3 oct en <strong>The Atlantic</strong>. No enlazamos theatlantic.com: no hemos resuelto una URL que responda. La cobertura que sí abre está en TechCrunch, The Verge y The Guardian.
       </p>
       <p>
-        Actividad desde alrededor del 1 de julio. Picos el 24 y 25 de julio: <strong>16.000 peticiones</strong> con un patrón de extracción, de <strong>más de 4.000 usuarios</strong>; actividad de prompts relacionada en <strong>más de 15.000 usuarios</strong>; cortada del todo el <strong>28 de julio</strong>. La nota al pie aclara que son intentos, no extracciones necesariamente logradas. Una técnica: copiar razonamiento cifrado de una conversación y pedir a un modelo, en otra, que lo descifre o transcriba. Investigadores de seguridad independientes revelaron vías relacionadas entre modelos y de compactación de conversación; OpenAI confirmó esas rutas. No está claro si todos los operadores son un solo actor; atribuye un <strong>núcleo</strong> a personas asociadas con <strong>Moonshot AI</strong> (Kimi). Mitigaciones: bans y restricciones de cuentas, controles de alta e infraestructura, cierre de la vía de replay del razonamiento cifrado, chequeos de la salida en streaming, coordinación con partners, y aviso por el Frontier Model Forum y canales gubernamentales. Sigue incompleto: los despliegues alojados por partners necesitan las mismas protecciones; los ataques por salida de herramientas aún se están endureciendo.
+        El argumento no es una regla suelta. Robinson dice que el «iterative deployment» de Silicon Valley —prueba y error— garantiza fallos periódicos, y que esos fallos crecen cuando los sistemas pueden más. Cita la brecha de agentes de OpenAI contra Hugging Face y las revelaciones de agentes que se salen de control. Los labs de frontera, escribe, tendrían que funcionar como centrales nucleares o aeropuertos: capas de redundancia y planificación lenta. En su etapa no encontró a nadie con experiencia haciendo volar aviones, operar reactores o evitar que el sistema financiero colapse. Por eso pide incentivos de safety más fuertes <em>desde fuera</em> de la empresa.
       </p>
-      <div class="takeaway"><strong>Para ti:</strong> la destilación es un problema de seguridad compartido — razonamiento cifrado portable y modelos decodificadores débiles —, no un volcado de contraseñas. Si alojas OpenAI o Anthropic detrás de un partner cloud, asume que el arreglo de primera parte puede ir por detrás.</div>
-      <a class="cta" href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener" style="margin-top:1rem;">Leer el post de OpenAI ↗</a>
+      <p>
+        OpenAI, en palabras de Drew Pusateri: seguirán pausando el entrenamiento o reteniendo modelos cuando haga falta; refuerzan la seguridad del research, el entrenamiento para que los agentes completen la tarea de forma responsable, los evaluadores externos y la monitorización más temprana. La salida sigue a otras del estilo de Jacob Coxon. El acuerdo voluntario de la Casa Blanca ya está en este digest. El <strong>1 oct</strong>, el fiscal general de California, Rob Bonta, publica que ha cursado un subpoena de investigación a OpenAI —el parte dice que lo sirvió el día anterior— dentro de la investigación del incidente de Hugging Face y de los riesgos de ciberseguridad de la compañía y sus modelos.
+      </p>
+      <div class="takeaway"><strong>Para ti:</strong> el debate ya no es solo un scrap o una pausa de training — es cultura y staffing de safety. Léelo junto al parte de destilación del 30 sep y al scrap de GPT-6.1 Astra.</div>
+      <a class="cta" href="https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/" target="_blank" rel="noopener" style="margin-top:1rem;">Leer la cobertura en TechCrunch ↗</a>
       <div class="link-row" style="margin-top:.85rem;">
-        <a class="fuente-original" href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener">Fuente original ↗</a>
-        <a class="muted-link" href="https://www.cnbc.com/2026/10/01/openai-chinas-moonshot-ai-kimi.html" target="_blank" rel="noopener">CNBC</a>
+        <a class="fuente-original" href="https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/" target="_blank" rel="noopener">Fuente original · cobertura TechCrunch ↗</a>
+        <a class="muted-link" href="https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm" target="_blank" rel="noopener">The Verge</a>
+        <a class="muted-link" href="https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken" target="_blank" rel="noopener">The Guardian</a>
+        <a class="muted-link" href="https://oag.ca.gov/news/press-releases/part-ongoing-investigation-attorney-general-bonta-serves-investigative-subpoena" target="_blank" rel="noopener">Subpoena · AG Bonta</a>
+        <a class="muted-link" href="https://www.washingtonexaminer.com/news/white-house/4747747/full-trump-white-house-accord-ai-super-intelligence/" target="_blank" rel="noopener">Acuerdo Casa Blanca</a>
+        <a class="muted-link" href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener">Destilación · 30 sep</a>
+        <a class="muted-link" href="https://www.reuters.com/business/openai-shelves-new-ai-model-after-internal-safety-tests-wsj-reports-2026-09-28/" target="_blank" rel="noopener">Scrap GPT-6.1 Astra</a>
       </div>
     </article>
     <div class="side-stack">
       <article class="side-card item" data-type="modelo">
-        <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">30 sep</span></div>
-        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">
-          <h3>Gemini 4 Argon — frontera, aún sin API</h3>
-          <p>Google DeepMind: modelo de frontera para SWE de largo horizonte, conocimiento empresarial (legal y finanzas) y defensa en ciber. Salida de <strong>1M tokens</strong> (antes 64K). DeepSWE v1.1: <strong>77,9%</strong>, estado del arte según Google. Precio de introducción <strong>$2 / $10</strong> por millón, caché de entrada al 95% de descuento; después <strong>$4 / $20</strong>. Primero Fairwind, Google interno y el pre-release voluntario del gobierno de EE.&nbsp;UU.; la API de pago y Google AI Ultra van después. <strong>Sin ID público de modelo.</strong></p>
+        <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">3 oct</span></div>
+        <a href="https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/" target="_blank" rel="noopener">
+          <h3>Aleph Alpha Kolibri — MoE soberano DE/EN</h3>
+          <p>El 3 oct, Día de la Unidad Alemana, Aleph Alpha suelta Kolibri: MoE abierto alemán-inglés, <strong>78.100 millones</strong> de parámetros totales y unos <strong>3.460 millones activos</strong>, Apache 2.0. En la ficha, el contexto llega a <strong>1.048.576</strong> tokens y recomiendan servir como máximo <strong>262.144</strong> (el contexto nativo entrenado). Esfuerzo de razonamiento none / low / medium / high y tool calling. Lo entrenaron en Alemania y Finlandia, con la EU AI Act en el diseño, y con abstención por el protocolo Merlin-Arthur: decir que no sabe si el contexto no sostiene la respuesta. HF: <code>Aleph-Alpha/Kolibri-1</code>.</p>
         </a>
-        <div class="takeaway"><strong>Para ti:</strong> sigue siendo tabla y Fairwind, no un modelo que puedas llamar. Sol, Sonnet y Opus siguen siendo lo usable.</div>
+        <div class="takeaway"><strong>Para ti:</strong> candidato open soberano DE/EN barato de servir (~3B activos), no otro frontier cerrado.</div>
         <div class="link-row">
-          <a class="fuente-original" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Fuente original ↗</a>
-          <a class="muted-link" href="https://www.webreactiva.com/blog/gemini-4-argon" target="_blank" rel="noopener">Web Reactiva (ES)</a>
-          <a class="muted-link" href="https://www.theguardian.com/technology/2026/oct/01/google-releases-gemini-model-restrictions" target="_blank" rel="noopener">The Guardian</a>
+          <a class="fuente-original" href="https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://huggingface.co/Aleph-Alpha/Kolibri-1" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      <article class="side-card item" data-type="herramienta">
+        <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">1 oct</span></div>
+        <a href="https://claude.com/blog/claude-code-mods" target="_blank" rel="noopener">
+          <h3>Claude Code Mods</h3>
+          <p>Funciones TypeScript que enganchan eventos de Claude Code: reescriben un prompt, bloquean, reescriben o reintentan una tool, aprueban o deniegan un permiso, redactan secretos y cambian la UI. Piezas internas como <code>/diff</code> pasan a ser mods. <strong>No van en sandbox</strong>: mismo acceso a la máquina que Claude Code. En Team y Enterprise, y donde hay managed settings, <code>sec-default</code> carga primero; los admins pueden permitir o bloquear marketplaces. El weekly del 4 oct sitúa Mods en Claude Code <strong>2.1.287</strong>.</p>
+        </a>
+        <div class="takeaway"><strong>Para ti:</strong> skills dicen cómo; mods deciden. Solo instala de fuentes que confíes.</div>
+        <div class="link-row">
+          <a class="fuente-original" href="https://claude.com/blog/claude-code-mods" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://aicoding-guide.com/en/posts/weekly-2026-10-04/" target="_blank" rel="noopener">Weekly ES/EN · 4 oct</a>
+        </div>
+      </article>
+      <article class="side-card item" data-type="modelo">
+        <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">1 oct</span></div>
+        <a href="https://blog.cloudflare.com/clef-decision-models/" target="_blank" rel="noopener">
+          <h3>Cloudflare Clef y Clef-flash</h3>
+          <p>Modelos de decisión, no de chat: salida tipada Choice, Score y Noul, con probabilidades, compatible con la API de Jev. Encoder de visión, contexto de <strong>64k</strong>, Apache 2.0 en Hugging Face, alojados en Workers AI. Cloudflare dice que Clef lidera el Jev Decision Index; en su tabla, Clef o Clef-flash van por delante en varios benches y Jev sigue delante en When2Call y BRIGHT. Latencia mediana de Clef-flash: <strong>38,8 ms</strong>. El fine-tune por RL empieza con su equipo; el self-serve viene después.</p>
+        </a>
+        <div class="takeaway"><strong>Para ti:</strong> si usas Jev/TypeSafe System One, Clef es el swap open + edge; no otro LLM chat.</div>
+        <div class="link-row">
+          <a class="fuente-original" href="https://blog.cloudflare.com/clef-decision-models/" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://huggingface.co/Cloudflare/clef" target="_blank" rel="noopener">HF · Clef</a>
+          <a class="muted-link" href="https://huggingface.co/Cloudflare/clef-flash" target="_blank" rel="noopener">HF · Clef-flash</a>
+          <a class="muted-link" href="https://developers.cloudflare.com/workers-ai/models/clef/" target="_blank" rel="noopener">Docs</a>
         </div>
       </article>
       <article class="side-card item" data-type="articulo">
-        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">1 oct</span></div>
-        <a href="https://www.anthropic.com/research/claude-shaped-science" target="_blank" rel="noopener">
-          <h3>Ciencia «Claude-shaped» y BootLoops</h3>
-          <p>Guest post de Matthew Schwartz (1 oct): dejó de pelear con Claude y buscó problemas «Claude-shaped», los que encajan con esta generación de herramientas. De ahí sale <strong>BootLoops</strong>, harness open source para cálculos cuantitativos exactos, usable con el modelo que elijas. Claude conectó cálculos parecidos con ecología, genética de poblaciones, economía y lingüística; Schwartz los reorientó con expertos de cada campo. El sitio del proyecto es bootloops.ai. Divulgación del post: Schwartz es visiting researcher en Anthropic; BootLoops no es un producto de Anthropic.</p>
+        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">2 oct</span></div>
+        <a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">
+          <h3>Claude Frontier Academy</h3>
+          <p>Anthropic pone <strong>100 millones de dólares</strong> para formar a <strong>10.000</strong> Frontier Deployed Engineers antes de que acabe 2027. Intensivo presencial y residencia de <strong>12 semanas</strong> en la propia organización; las primeras cohortes están en San Francisco, Nueva York y Londres. Dentro: Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley y Novo Nordisk. La entrada es por nominación, vía el account team o el Partner Account Manager.</p>
         </a>
-        <div class="takeaway"><strong>Para ti:</strong> el harness es la pieza reusable, no el titular de «Claude hace ciencia». Si el cálculo se puede comprobar, BootLoops es el sitio donde mirar.</div>
+        <div class="takeaway"><strong>Para ti:</strong> talent gap enterprise, no un model ID.</div>
         <div class="link-row">
-          <a class="fuente-original" href="https://www.anthropic.com/research/claude-shaped-science" target="_blank" rel="noopener">Fuente original ↗</a>
-          <a class="muted-link" href="https://www.bootloops.ai" target="_blank" rel="noopener">bootloops.ai</a>
-        </div>
-      </article>
-      <article class="side-card item" data-type="articulo">
-        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">1 oct</span></div>
-        <a href="https://www.anthropic.com/news/barclays-scales-claude" target="_blank" rel="noopener">
-          <h3>Barclays escala Claude</h3>
-          <p>Barclays amplía la colaboración (1 oct). Espera que <strong>Claude Code</strong> llegue al 50% de sus developers a finales de 2026 y a la mayoría de ingenieros de software en 2027. El Colleague Knowledge Assistant, en marcha desde 2025, lo usan más de <strong>16.000</strong> colegas y ha hecho más de <strong>1 millón</strong> de búsquedas. En Global Markets, Claude clasifica y enruta unos <strong>120.000</strong> correos al día.</p>
-        </a>
-        <div class="takeaway"><strong>Para ti:</strong> un despliegue regulado de verdad: Code en el IDE, un asistente de conocimiento ya en producción y enrutado de correo, no un piloto de chatbot.</div>
-        <div class="link-row">
-          <a class="fuente-original" href="https://www.anthropic.com/news/barclays-scales-claude" target="_blank" rel="noopener">Fuente original ↗</a>
-        </div>
-      </article>
-      <article class="side-card item" data-type="articulo">
-        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">29 sep</span></div>
-        <a href="https://openai.com/index/introducing-dots" target="_blank" rel="noopener">
-          <h3>OpenAI Dots — agentes always-on</h3>
-          <p>DevDay 2026: agentes always-on sobre <strong>GPT-6 Astra</strong>. Cada uno tiene ordenador y navegador en la nube, y se conecta a más de 4.000 apps. Rollout a Pro y Business Premium; Enterprise en beta si el admin lo activa. El research proactivo sobre apps conectadas va en solo lectura.</p>
-        </a>
-        <div class="takeaway"><strong>Para ti:</strong> el salto de «abro el chat» a «el agente me trae trabajo hecho». Revisa permisos, Custom Rules y Activity View antes de darle apps reales.</div>
-        <div class="link-row">
-          <a class="fuente-original" href="https://openai.com/index/introducing-dots" target="_blank" rel="noopener">Fuente original ↗</a>
-          <a class="muted-link" href="https://openai.com/index/devday-2026-recap" target="_blank" rel="noopener">DevDay recap</a>
+          <a class="fuente-original" href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://claude.com/programs/frontier-academy" target="_blank" rel="noopener">Programa</a>
+          <a class="muted-link" href="https://www.cnbc.com/2026/10/02/anthropic-to-invest-100-million-to-train-ai-engineer-talent.html" target="_blank" rel="noopener">CNBC</a>
         </div>
       </article>
     </div>
@@ -546,6 +557,30 @@
     <span>Open, frontier y open-weight</span>
   </div>
   <div class="grid">
+
+    <article class="card item" data-type="modelo">
+      <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">3 oct 2026</span></div>
+      <a class="title" href="https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/" target="_blank" rel="noopener">Aleph Alpha Kolibri</a>
+      <p class="why">MoE abierto DE/EN, 78.100 millones totales y unos 3.460 millones activos, Apache 2.0. Contexto hasta 1.048.576 tokens; la ficha recomienda servir como máximo 262.144. Razonamiento none/low/medium/high, tool calling, abstención Merlin-Arthur. HF: <code>Aleph-Alpha/Kolibri-1</code>.</p>
+      <div class="takeaway"><strong>Para ti:</strong> candidato open soberano DE/EN barato de servir (~3B activos), no otro frontier cerrado.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://huggingface.co/Aleph-Alpha/Kolibri-1" target="_blank" rel="noopener">Hugging Face</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="modelo">
+      <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">1 oct 2026</span></div>
+      <a class="title" href="https://blog.cloudflare.com/clef-decision-models/" target="_blank" rel="noopener">Cloudflare Clef y Clef-flash</a>
+      <p class="why">Modelos de decisión con salida tipada Choice, Score y Noul, más probabilidades. Compatibles con la API de Jev, con visión y 64k de contexto. Apache 2.0. Clef-flash: 38,8 ms de latencia mediana en la tabla de Cloudflare. El fine-tune por RL es primero con su equipo.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si usas Jev/TypeSafe System One, Clef es el swap open + edge; no otro LLM chat.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://blog.cloudflare.com/clef-decision-models/" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://huggingface.co/Cloudflare/clef" target="_blank" rel="noopener">HF · Clef</a>
+        <a class="muted-link" href="https://huggingface.co/Cloudflare/clef-flash" target="_blank" rel="noopener">HF · Clef-flash</a>
+        <a class="muted-link" href="https://developers.cloudflare.com/workers-ai/models/clef/" target="_blank" rel="noopener">Docs</a>
+      </div>
+    </article>
 
     <article class="card item" data-type="modelo">
       <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">30 sep 2026</span></div>
@@ -753,6 +788,72 @@
     <span>APIs y plataformas para construir</span>
   </div>
   <div class="grid">
+
+    <article class="card item" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">1 oct 2026</span></div>
+      <a class="title" href="https://claude.com/blog/claude-code-mods" target="_blank" rel="noopener">Claude Code Mods</a>
+      <p class="why">Hooks en TypeScript que reescriben prompts, bloquean o reintentan tools, deciden permisos, redactan secretos y sustituyen UI. <code>/diff</code> ya sale como mod. No están sandboxeados. En Team y Enterprise, <code>sec-default</code> carga primero. El weekly del 4 oct los sitúa en Claude Code 2.1.287, junto al Sonnet 5.5 por defecto en la API y a <code>CLAUDE_CODE_DISABLE_WEB_FETCH</code>.</p>
+      <div class="takeaway"><strong>Para ti:</strong> skills dicen cómo; mods deciden. Solo instala de fuentes que confíes.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://claude.com/blog/claude-code-mods" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://aicoding-guide.com/en/posts/weekly-2026-10-04/" target="_blank" rel="noopener">Weekly ES/EN · 4 oct</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">30 sep 2026</span></div>
+      <a class="title" href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener">OpenAI corta una campaña de destilación del razonamiento</a>
+      <p class="why">El 30 sep OpenAI describe una campaña para extraer razonamiento protegido, coherente con destilación adversaria. No rompieron el cifrado, ni una base de datos, ni conversaciones guardadas: manipularon las interacciones para que ese razonamiento se viera, a escala, en violación de los términos. Actividad desde alrededor del 1 de julio. Picos el 24 y 25 de julio: 16.000 peticiones de más de 4.000 usuarios; actividad de prompts relacionada en más de 15.000; cortada del todo el 28 de julio. La nota al pie aclara que son intentos, no extracciones necesariamente logradas. Una técnica: copiar razonamiento cifrado de una conversación y pedir a un modelo, en otra, que lo descifre o transcriba. OpenAI atribuye un núcleo a personas asociadas con Moonshot AI (Kimi). Sigue incompleto en despliegues de partners y en ataques por salida de herramientas.</p>
+      <div class="takeaway"><strong>Para ti:</strong> la destilación es un problema de seguridad compartido — razonamiento cifrado portable y modelos decodificadores débiles —, no un volcado de contraseñas. Si alojas OpenAI o Anthropic detrás de un partner cloud, asume que el arreglo de primera parte puede ir por detrás.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://www.cnbc.com/2026/10/01/openai-chinas-moonshot-ai-kimi.html" target="_blank" rel="noopener">CNBC</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">1 oct 2026</span></div>
+      <a class="title" href="https://www.anthropic.com/research/claude-shaped-science" target="_blank" rel="noopener">Ciencia «Claude-shaped» y BootLoops</a>
+      <p class="why">Guest post de Matthew Schwartz (1 oct): dejó de pelear con Claude y buscó problemas «Claude-shaped». De ahí sale BootLoops, harness open source para cálculos cuantitativos exactos, usable con el modelo que elijas. Schwartz es visiting researcher en Anthropic; BootLoops no es un producto de Anthropic.</p>
+      <div class="takeaway"><strong>Para ti:</strong> el harness es la pieza reusable, no el titular de «Claude hace ciencia». Si el cálculo se puede comprobar, BootLoops es el sitio donde mirar.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.anthropic.com/research/claude-shaped-science" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://www.bootloops.ai" target="_blank" rel="noopener">bootloops.ai</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">1 oct 2026</span></div>
+      <a class="title" href="https://www.anthropic.com/news/barclays-scales-claude" target="_blank" rel="noopener">Barclays escala Claude</a>
+      <p class="why">Barclays espera que Claude Code llegue al 50% de sus developers a finales de 2026 y a la mayoría de ingenieros de software en 2027. El Colleague Knowledge Assistant lo usan más de 16.000 colegas y ha hecho más de 1 millón de búsquedas. En Global Markets, Claude clasifica y enruta unos 120.000 correos al día.</p>
+      <div class="takeaway"><strong>Para ti:</strong> un despliegue regulado de verdad: Code en el IDE, un asistente de conocimiento ya en producción y enrutado de correo, no un piloto de chatbot.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.anthropic.com/news/barclays-scales-claude" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">29 sep 2026</span></div>
+      <a class="title" href="https://openai.com/index/introducing-dots" target="_blank" rel="noopener">OpenAI Dots — agentes always-on</a>
+      <p class="why">DevDay 2026: agentes always-on sobre GPT-6 Astra. Cada uno tiene ordenador y navegador en la nube, y se conecta a más de 4.000 apps. Rollout a Pro y Business Premium; Enterprise en beta si el admin lo activa. El research proactivo sobre apps conectadas va en solo lectura.</p>
+      <div class="takeaway"><strong>Para ti:</strong> el salto de «abro el chat» a «el agente me trae trabajo hecho». Revisa permisos, Custom Rules y Activity View antes de darle apps reales.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://openai.com/index/introducing-dots" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://openai.com/index/devday-2026-recap" target="_blank" rel="noopener">DevDay recap</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">29 sep 2026</span></div>
+      <a class="title" href="https://help.openai.com/en/articles/20001544-chatgpt-space-sharing-data-and-controls" target="_blank" rel="noopener">ChatGPT Space</a>
+      <p class="why">Espacio compartido de archivos y páginas editables. Sustituye a Library; Projects se quedan. Humanos, ChatGPT y Dots trabajan la misma página. Compartirla no entrega tus chats ni tu Memory, pero lo que quede escrito en la página lo leen quienes tengan acceso, y el uso para entrenar sigue el ajuste de quien usa el agente. En Business y Enterprise, OpenAI dice que no entrena con esos datos por defecto.</p>
+      <div class="takeaway"><strong>Para ti:</strong> el disco compartido donde viven Dots — revisa permisos y Memory antes de compartir páginas.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://help.openai.com/en/articles/20001544-chatgpt-space-sharing-data-and-controls" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://chatgpt.com/features/space/" target="_blank" rel="noopener">Página del producto</a>
+        <a class="muted-link" href="https://learn.chatgpt.com/docs/space/agents" target="_blank" rel="noopener">Agentes en Space</a>
+      </div>
+    </article>
 
     <article class="card item" data-type="herramienta">
       <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">1 oct 2026</span></div>
@@ -1778,6 +1879,28 @@
   <div class="grid">
 
     <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill medium">medium</span><span class="pill fecha">oct 2026</span></div>
+      <a class="title" href="https://medium.com/@techverdict/claude-code-mods-explained-oct-2026-the-typescript-hooks-that-let-you-rewrite-the-coding-agent-09a6a3ba74ae" target="_blank" rel="noopener">Claude Code Mods, Explained (Oct 2026)</a>
+      <p class="why">Muhammad Israr (techverdict) explica los hooks de TypeScript que reescriben el agente de código. Léelo junto al blog de Anthropic; aquí no se copia el artículo. <em style="color:var(--muted)">— Muhammad Israr · oct 2026</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> el mapa del mecanismo, al lado del anuncio. La fuente de qué puede hacer un mod sigue siendo el blog.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://medium.com/@techverdict/claude-code-mods-explained-oct-2026-the-typescript-hooks-that-let-you-rewrite-the-coding-agent-09a6a3ba74ae" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@techverdict/claude-code-mods-explained-oct-2026-the-typescript-hooks-that-let-you-rewrite-the-coding-agent-09a6a3ba74ae" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill medium">medium</span><span class="pill fecha">oct 2026</span></div>
+      <a class="title" href="https://medium.com/@eashish93/you-can-now-change-how-claude-code-works-here-are-5-mods-b05e80439069" target="_blank" rel="noopener">You Can Now Change How Claude Code Works. Here Are 5 Mods.</a>
+      <p class="why">Ashish Rawat recorre cinco mods concretos. La pieza es un ejemplo de uso, no el contrato del producto. <em style="color:var(--muted)">— Ashish Rawat · oct 2026</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> cinco ideas al lado del blog. Solo instala un mod cuyo código puedas leer.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://medium.com/@eashish93/you-can-now-change-how-claude-code-works-here-are-5-mods-b05e80439069" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@eashish93/you-can-now-change-how-claude-code-works-here-are-5-mods-b05e80439069" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="medium">
       <div class="meta-row"><span class="pill medium">medium</span><span class="pill fecha">18 ago 2026</span></div>
       <a class="title" href="https://medium.com/@marc.bara.iniesta/ai-providers-encrypted-their-models-reasoning-it-leaked-anyway-1d602f7e41f2" target="_blank" rel="noopener">AI Providers Encrypted Their Models’ Reasoning. It Leaked Anyway</a>
       <p class="why">Marc Bara (18 ago) sobre razonamiento cifrado portable y el ataque de oráculo de descifrado: un modelo más débil de la misma familia puede transcribir razonamiento que el modelo fuerte se niega a mostrar. Es contexto de agosto, no el parte de OpenAI del 30 sep; el post de la campaña encaja en ese fallo de diseño. <em style="color:var(--muted)">— Marc Bara · 18 ago 2026</em></p>
@@ -2116,6 +2239,42 @@
 
     <article class="video-card item" data-type="youtube">
       <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/ctP3nhMwsEM" title="Gemini 4 Argon (In-depth benchmark analysis): Did Google make a big comeback?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">oct 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=ctP3nhMwsEM" target="_blank" rel="noopener">Gemini 4 Argon (In-depth benchmark analysis): Did Google make a big comeback?</a></h3>
+        <div class="video-meta">AICodeKing</div>
+        <p class="why">Análisis de benches del anuncio de Argon. oEmbed verificado. Los números que importan siguen en el blog de Google.</p>
+        <div class="takeaway"><strong>Para ti:</strong> análisis de terceros del anuncio. La salida de 1M y el precio están en el blog de Google; Argon sigue sin API pública.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=ctP3nhMwsEM" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <div class="link-row" style="margin-top:.5rem;">
+          <a class="fuente-original" href="https://www.youtube.com/watch?v=ctP3nhMwsEM" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Blog Google</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/9hetShMMp2s" title="Claude Code Mods Are Game Changers. Set Up These 5 NOW." loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">oct 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=9hetShMMp2s" target="_blank" rel="noopener">Claude Code Mods Are Game Changers. Set Up These 5 NOW.</a></h3>
+        <div class="video-meta">Nate Herk</div>
+        <p class="why">Setup en vídeo de mods de Claude Code. oEmbed verificado. El contrato de lo que un mod puede hacer está en el blog de Anthropic.</p>
+        <div class="takeaway"><strong>Para ti:</strong> míralo junto al anuncio. No están sandboxeados: mismo acceso a la máquina que Claude Code.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=9hetShMMp2s" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <div class="link-row" style="margin-top:.5rem;">
+          <a class="fuente-original" href="https://www.youtube.com/watch?v=9hetShMMp2s" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://claude.com/blog/claude-code-mods" target="_blank" rel="noopener">Blog Anthropic</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
         <iframe src="https://www.youtube-nocookie.com/embed/loCzOF_ful8" title="OpenAI Accuses Moonshot of Extracting Data From AI Models" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </div>
       <div class="video-body">
@@ -2146,6 +2305,24 @@
         <div class="link-row" style="margin-top:.5rem;">
           <a class="fuente-original" href="https://www.youtube.com/watch?v=5XTJRU9na3Y" target="_blank" rel="noopener">Fuente original ↗</a>
           <a class="muted-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Blog Google</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/O-1VXHRlH54" title="Anthropic Engineer on How to Get the Most Out of Claude Code | Thariq Shihipar" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">oct 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=O-1VXHRlH54" target="_blank" rel="noopener">Anthropic Engineer on How to Get the Most Out of Claude Code | Thariq Shihipar</a></h3>
+        <div class="video-meta">South Park Commons · Thariq Shihipar</div>
+        <p class="why">Conversación con un ingeniero de Anthropic sobre cómo sacar partido a Claude Code. oEmbed verificado. Complemento de Mods, no un changelog.</p>
+        <div class="takeaway"><strong>Para ti:</strong> la mentalidad de quien construye el producto, al lado de los hooks que ahora puedes escribir tú.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=O-1VXHRlH54" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <div class="link-row" style="margin-top:.5rem;">
+          <a class="fuente-original" href="https://www.youtube.com/watch?v=O-1VXHRlH54" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://claude.com/blog/claude-code-mods" target="_blank" rel="noopener">Blog · Mods</a>
         </div>
       </div>
     </article>
@@ -2719,7 +2896,7 @@
     <span>Señal alta · sin hype</span>
   </div>
   <p class="lede" style="margin:0 0 1rem;font-size:.95rem;max-width:70ch;">
-    Al 2 oct no entra ningún post nuevo de X de alta señal. La campaña de destilación se contrasta en el post de OpenAI, no en un hilo. El criterio y el material ya contrastado se quedan.
+    Al 4 oct no entra ningún post nuevo de X de alta señal. La salida de Robinson, el subpoena de Bonta y los lanzamientos de esta semana se contrastan en la prensa y en los blogs, no en un hilo. El criterio y el material ya contrastado se quedan.
   </p>
 
   <article class="card item" data-type="x" style="margin-bottom:1rem; grid-column: 1 / -1;">
@@ -2832,6 +3009,29 @@
   <section class="sources" id="fuentes">
     <h2>Fuentes que vale la pena seguir</h2>
     <div class="source-list">
+      <a href="https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/" target="_blank" rel="noopener">TechCrunch · Robinson</a>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm" target="_blank" rel="noopener">The Verge · Robinson</a>
+      <a href="https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken" target="_blank" rel="noopener">The Guardian · Robinson</a>
+      <a href="https://oag.ca.gov/news/press-releases/part-ongoing-investigation-attorney-general-bonta-serves-investigative-subpoena" target="_blank" rel="noopener">California AG · subpoena</a>
+      <a href="https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/" target="_blank" rel="noopener">Aleph Alpha · Kolibri</a>
+      <a href="https://huggingface.co/Aleph-Alpha/Kolibri-1" target="_blank" rel="noopener">HF · Kolibri-1</a>
+      <a href="https://claude.com/blog/claude-code-mods" target="_blank" rel="noopener">Claude · Mods</a>
+      <a href="https://aicoding-guide.com/en/posts/weekly-2026-10-04/" target="_blank" rel="noopener">AI Coding Guide · weekly 4 oct</a>
+      <a href="https://blog.cloudflare.com/clef-decision-models/" target="_blank" rel="noopener">Cloudflare · Clef</a>
+      <a href="https://huggingface.co/Cloudflare/clef" target="_blank" rel="noopener">HF · Clef</a>
+      <a href="https://huggingface.co/Cloudflare/clef-flash" target="_blank" rel="noopener">HF · Clef-flash</a>
+      <a href="https://developers.cloudflare.com/workers-ai/models/clef/" target="_blank" rel="noopener">Docs · Clef</a>
+      <a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">Anthropic · Frontier Academy</a>
+      <a href="https://claude.com/programs/frontier-academy" target="_blank" rel="noopener">Claude · Frontier Academy</a>
+      <a href="https://www.cnbc.com/2026/10/02/anthropic-to-invest-100-million-to-train-ai-engineer-talent.html" target="_blank" rel="noopener">CNBC · Frontier Academy</a>
+      <a href="https://help.openai.com/en/articles/20001544-chatgpt-space-sharing-data-and-controls" target="_blank" rel="noopener">OpenAI Help · Space</a>
+      <a href="https://chatgpt.com/features/space/" target="_blank" rel="noopener">ChatGPT · Space</a>
+      <a href="https://learn.chatgpt.com/docs/space/agents" target="_blank" rel="noopener">Learn · agentes en Space</a>
+      <a href="https://medium.com/@techverdict/claude-code-mods-explained-oct-2026-the-typescript-hooks-that-let-you-rewrite-the-coding-agent-09a6a3ba74ae" target="_blank" rel="noopener">Medium · Muhammad Israr · Mods</a>
+      <a href="https://medium.com/@eashish93/you-can-now-change-how-claude-code-works-here-are-5-mods-b05e80439069" target="_blank" rel="noopener">Medium · Ashish Rawat · 5 mods</a>
+      <a href="https://www.youtube.com/watch?v=ctP3nhMwsEM" target="_blank" rel="noopener">YouTube · AICodeKing · Argon</a>
+      <a href="https://www.youtube.com/watch?v=9hetShMMp2s" target="_blank" rel="noopener">YouTube · Nate Herk · Mods</a>
+      <a href="https://www.youtube.com/watch?v=O-1VXHRlH54" target="_blank" rel="noopener">YouTube · Thariq Shihipar</a>
       <a href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener">OpenAI · destilación</a>
       <a href="https://www.cnbc.com/2026/10/01/openai-chinas-moonshot-ai-kimi.html" target="_blank" rel="noopener">CNBC · Moonshot</a>
       <a href="https://www.anthropic.com/research/claude-shaped-science" target="_blank" rel="noopener">Anthropic · BootLoops</a>
@@ -2971,7 +3171,7 @@
   </section>
 
   <footer>
-    <div>Mantenido por <strong>IA</strong> · última actualización 2 oct 2026</div>
+    <div>Mantenido por <strong>IA</strong> · última actualización 4 oct 2026</div>
     <div>
       <a href="https://github.com/canduchix/novedades-ia">Repo</a> ·
       <a href="https://canduchix.github.io/novedades-ia/">GitHub Pages</a>
