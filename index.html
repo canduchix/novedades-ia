@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Novedades IA · 4 oct 2026</title>
-<meta name="description" content="Selección del 4 oct 2026: David Robinson deja OpenAI («la cultura está rota»), Kolibri, Claude Code Mods, Cloudflare Clef y Claude Frontier Academy." />
+<title>Novedades IA · 5 oct 2026</title>
+<meta name="description" content="Selección del 5 oct 2026: Super Intelligence Force (Jay Clayton), Gemini 4 Argon en pruebas independientes, ThinkingBox, modelos de decisión en llama.cpp y SynthID Bio." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -131,13 +131,14 @@
   /* FEATURED */
   .featured {
     display: grid; grid-template-columns: 1.35fr .9fr; gap: 1rem; margin-bottom: 1.4rem;
+    align-items: start;
   }
   .spotlight, .side-card {
     position: relative; overflow: hidden;
     border: 1px solid var(--line); border-radius: calc(var(--radius) + 4px);
     background: var(--card); backdrop-filter: blur(10px); box-shadow: var(--shadow);
   }
-  .spotlight { padding: 1.6rem 1.6rem 1.4rem; min-height: 320px; display: flex; flex-direction: column; justify-content: flex-end; }
+  .spotlight { padding: 1.6rem 1.6rem 1.4rem; min-height: 320px; display: flex; flex-direction: column; justify-content: flex-start; }
   .spotlight::before {
     content: ""; position: absolute; inset: -20% -10% auto auto; width: 280px; height: 280px;
     background: radial-gradient(circle, rgba(122,162,255,.35), transparent 70%);
@@ -447,14 +448,14 @@
   </nav>
 
   <header class="hero">
-    <div class="eyebrow"><span class="dot"></span> Actualizado · 4 oct 2026</div>
+    <div class="eyebrow"><span class="dot"></span> Actualizado · 5 oct 2026</div>
     <h1>Lo que importa en <em>inteligencia artificial</em> esta semana</h1>
     <p class="lede">
       Selección curada de modelos, herramientas, Medium, YouTube, X, lectura y tutoriales — sin ruido.
       Cada pieza incluye un enlace explícito a la <strong>fuente original</strong> para profundizar.
     </p>
     <div class="stats">
-      <div class="stat"><b>211</b><span>piezas seleccionadas</span></div>
+      <div class="stat"><b>223</b><span>piezas seleccionadas</span></div>
       <div class="stat"><b>20</b><span>modelos clave</span></div>
       <div class="stat"><b>15</b><span>lanzamientos de plataforma</span></div>
       <div class="stat"><b>12</b><span>tutoriales prácticos</span></div>
@@ -474,30 +475,52 @@
 
   <section id="destacados" class="featured">
     <article class="spotlight item" data-type="articulo">
-      <div class="kicker">Historia principal · 3 oct · digest 4 oct</div>
-      <h2>David Robinson deja OpenAI: «la cultura está rota»</h2>
+      <div class="kicker">Historia principal · 4 oct · digest 5 oct</div>
+      <h2>Trump crea la «Super Intelligence Force» con Jay Clayton al frente</h2>
       <p>
-        David Robinson dimite tras unos <strong>3,5 años</strong> en OpenAI, donde dirigía la redacción de los informes de safety de los grandes lanzamientos. El ensayo «I Quit OpenAI Because Its Culture Is Broken» se publicó el 3 oct en <strong>The Atlantic</strong>. No enlazamos theatlantic.com: no hemos resuelto una URL que responda. La cobertura que sí abre está en TechCrunch, The Verge y The Guardian.
+        El domingo 4 de octubre de 2026, Trump anunció en Truth Social un grupo de trabajo de la Casa Blanca al que llama «Super Intelligence Force». «Super intelligence» es el término que prefiere para la IA. Lo dirige el director de Inteligencia Nacional, Jay Clayton, que pasa a ser el nuevo zar de la IA y mantiene el cargo de DNI.
       </p>
       <p>
-        El argumento no es una regla suelta. Robinson dice que el «iterative deployment» de Silicon Valley —prueba y error— garantiza fallos periódicos, y que esos fallos crecen cuando los sistemas pueden más. Cita la brecha de agentes de OpenAI contra Hugging Face y las revelaciones de agentes que se salen de control. Los labs de frontera, escribe, tendrían que funcionar como centrales nucleares o aeropuertos: capas de redundancia y planificación lenta. En su etapa no encontró a nadie con experiencia haciendo volar aviones, operar reactores o evitar que el sistema financiero colapse. Por eso pide incentivos de safety más fuertes <em>desde fuera</em> de la empresa.
+        Según NPR, coordinará el trato del Gobierno federal con consumidores, grupos de interés público, organizaciones religiosas, proveedores de infraestructura crítica y empresas de «super intelligence». También están el presidente de la FTC, Andrew Ferguson; el CTO del Pentágono, Emil Michael (subsecretario de Research and Engineering); y el director de la OPM, Scott Kupor. El grupo reporta a Trump y a la jefa de gabinete, Susie Wiles (AP, vía PBS y Fortune).
       </p>
       <p>
-        OpenAI, en palabras de Drew Pusateri: seguirán pausando el entrenamiento o reteniendo modelos cuando haga falta; refuerzan la seguridad del research, el entrenamiento para que los agentes completen la tarea de forma responsable, los evaluadores externos y la monitorización más temprana. La salida sigue a otras del estilo de Jacob Coxon. El acuerdo voluntario de la Casa Blanca ya está en este digest. El <strong>1 oct</strong>, el fiscal general de California, Rob Bonta, publica que ha cursado un subpoena de investigación a OpenAI —el parte dice que lo sirvió el día anterior— dentro de la investigación del incidente de Hugging Face y de los riesgos de ciberseguridad de la compañía y sus modelos.
+        El WSJ, en el resumen de Implicator e Infobae, da <strong>120 días</strong> para informar de riesgos y oportunidades de la IA y recomendar las responsabilidades del gobierno federal. La carta pide planes de respuesta a amenazas habilitadas por SI, y a la vez evitar la sobrerregulación y la captura regulatoria que frenen la innovación y la competencia; revisar los mecanismos de reporte que ya existen para brechas, hacks e incidentes; y mejorar la capacidad de respuesta con las autoridades vigentes. También están JD Vance, Pete Hegseth y Scott Bessent; como asesores externos, David Sacks y Condoleezza Rice. Clayton al WSJ: «The risk of not being first is high.» El lenguaje de la carta publicado hasta ahora no menciona revisar modelos nuevos ni fijar estándares de seguridad.
       </p>
-      <div class="takeaway"><strong>Para ti:</strong> el debate ya no es solo un scrap o una pausa de training — es cultura y staffing de safety. Léelo junto al parte de destilación del 30 sep y al scrap de GPT-6.1 Astra.</div>
-      <a class="cta" href="https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/" target="_blank" rel="noopener" style="margin-top:1rem;">Leer la cobertura en TechCrunch ↗</a>
+      <p>
+        Clayton rechazó una pausa en una entrevista de CNBC el mes pasado: «I don't think any American should think that that's a good strategy» (NPR). Llega días después del <a href="#acuerdo-casa-blanca" style="color:var(--accent)">acuerdo voluntario de la Casa Blanca del 29 sep</a>, ya en este digest, y de que la FTC abriera una investigación sobre OpenAI, Anthropic y otras empresas de IA por los posibles peligros de sus productos (CNBC, 30 sep; el NY Post lo publicó primero; la FTC no nombró al resto). Ferguson, presidente de la FTC, está en la nueva fuerza.
+      </p>
+      <div class="takeaway"><strong>Para ti:</strong> es coordinación con mandato de 120 días, no un regulador nuevo ni un estándar técnico; lo que lo empuja son los incidentes de agentes (Hugging Face, sandbox) y la FTC ya está investigando.</div>
+      <a class="cta" href="https://www.npr.org/2026/10/04/nx-s1-5990781/jay-clayton-ai-czar-trump" target="_blank" rel="noopener" style="margin-top:1rem;">Leer en NPR ↗</a>
       <div class="link-row" style="margin-top:.85rem;">
-        <a class="fuente-original" href="https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/" target="_blank" rel="noopener">Fuente original · cobertura TechCrunch ↗</a>
-        <a class="muted-link" href="https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm" target="_blank" rel="noopener">The Verge</a>
-        <a class="muted-link" href="https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken" target="_blank" rel="noopener">The Guardian</a>
-        <a class="muted-link" href="https://oag.ca.gov/news/press-releases/part-ongoing-investigation-attorney-general-bonta-serves-investigative-subpoena" target="_blank" rel="noopener">Subpoena · AG Bonta</a>
-        <a class="muted-link" href="https://www.washingtonexaminer.com/news/white-house/4747747/full-trump-white-house-accord-ai-super-intelligence/" target="_blank" rel="noopener">Acuerdo Casa Blanca</a>
-        <a class="muted-link" href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener">Destilación · 30 sep</a>
-        <a class="muted-link" href="https://www.reuters.com/business/openai-shelves-new-ai-model-after-internal-safety-tests-wsj-reports-2026-09-28/" target="_blank" rel="noopener">Scrap GPT-6.1 Astra</a>
+        <a class="fuente-original" href="https://www.npr.org/2026/10/04/nx-s1-5990781/jay-clayton-ai-czar-trump" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://www.pbs.org/newshour/politics/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force" target="_blank" rel="noopener">AP · PBS</a>
+        <a class="muted-link" href="https://fortune.com/2026/10/04/trump-national-intelligence-director-jay-clayton-super-intelligence-force-ai-agency/" target="_blank" rel="noopener">Fortune/AP</a>
+        <a class="muted-link" href="https://www.implicator.ai/trump-names-intelligence-chief-jay-clayton-to-lead-120-day-ai-task-force/" target="_blank" rel="noopener">Carta y 120 días · Implicator</a>
+        <a class="muted-link" href="https://www.infobae.com/estados-unidos/2026/10/04/donald-trump-confirmo-al-jefe-de-inteligencia-nacional-como-el-nuevo-zar-de-la-ia-en-eeuu/" target="_blank" rel="noopener">Infobae</a>
+        <a class="muted-link" href="https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html" target="_blank" rel="noopener">Investigación FTC · CNBC</a>
+        <a class="muted-link" href="https://www.youtube.com/watch?v=PlEukk6bBdc" target="_blank" rel="noopener">Clip · News24</a>
       </div>
     </article>
     <div class="side-stack">
+      <article class="side-card item" data-type="articulo">
+        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">3 oct</span></div>
+        <a href="https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/" target="_blank" rel="noopener">
+          <h3>David Robinson deja OpenAI: «la cultura está rota»</h3>
+        </a>
+        <p style="margin:0 0 .7rem">David Robinson dimite tras unos <strong>3,5 años</strong> en OpenAI, donde dirigía la redacción de los informes de safety de los grandes lanzamientos. El ensayo «I Quit OpenAI Because Its Culture Is Broken» se publicó el 3 oct en <strong>The Atlantic</strong>. No enlazamos theatlantic.com: no hemos resuelto una URL que responda. La cobertura que sí abre está en TechCrunch, The Verge y The Guardian.</p>
+        <p style="margin:0 0 .7rem">El argumento no es una regla suelta. Robinson dice que el «iterative deployment» de Silicon Valley —prueba y error— garantiza fallos periódicos, y que esos fallos crecen cuando los sistemas pueden más. Cita la brecha de agentes de OpenAI contra Hugging Face y las revelaciones de agentes que se salen de control. Los labs de frontera, escribe, tendrían que funcionar como centrales nucleares o aeropuertos: capas de redundancia y planificación lenta. En su etapa no encontró a nadie con experiencia haciendo volar aviones, operar reactores o evitar que el sistema financiero colapse. Por eso pide incentivos de safety más fuertes <em>desde fuera</em> de la empresa.</p>
+        <p style="margin:0 0 .7rem">OpenAI, en palabras de Drew Pusateri: seguirán pausando el entrenamiento o reteniendo modelos cuando haga falta; refuerzan la seguridad del research, el entrenamiento para que los agentes completen la tarea de forma responsable, los evaluadores externos y la monitorización más temprana. La salida sigue a otras del estilo de Jacob Coxon. El acuerdo voluntario de la Casa Blanca ya está en este digest. El <strong>1 oct</strong>, el fiscal general de California, Rob Bonta, publica que ha cursado un subpoena de investigación a OpenAI —el parte dice que lo sirvió el día anterior— dentro de la investigación del incidente de Hugging Face y de los riesgos de ciberseguridad de la compañía y sus modelos.</p>
+        <div class="takeaway"><strong>Para ti:</strong> el debate ya no es solo un scrap o una pausa de training — es cultura y staffing de safety. Léelo junto al parte de destilación del 30 sep y al scrap de GPT-6.1 Astra.</div>
+        <div class="link-row">
+          <a class="fuente-original" href="https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/" target="_blank" rel="noopener">Fuente original · cobertura TechCrunch ↗</a>
+          <a class="muted-link" href="https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm" target="_blank" rel="noopener">The Verge</a>
+          <a class="muted-link" href="https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken" target="_blank" rel="noopener">The Guardian</a>
+          <a class="muted-link" href="https://oag.ca.gov/news/press-releases/part-ongoing-investigation-attorney-general-bonta-serves-investigative-subpoena" target="_blank" rel="noopener">Subpoena · AG Bonta</a>
+          <a class="muted-link" href="https://www.washingtonexaminer.com/news/white-house/4747747/full-trump-white-house-accord-ai-super-intelligence/" target="_blank" rel="noopener">Acuerdo Casa Blanca</a>
+          <a class="muted-link" href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener">Destilación · 30 sep</a>
+          <a class="muted-link" href="https://www.reuters.com/business/openai-shelves-new-ai-model-after-internal-safety-tests-wsj-reports-2026-09-28/" target="_blank" rel="noopener">Scrap GPT-6.1 Astra</a>
+        </div>
+      </article>
       <article class="side-card item" data-type="modelo">
         <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">3 oct</span></div>
         <a href="https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/" target="_blank" rel="noopener">
@@ -534,6 +557,7 @@
           <a class="muted-link" href="https://huggingface.co/Cloudflare/clef" target="_blank" rel="noopener">HF · Clef</a>
           <a class="muted-link" href="https://huggingface.co/Cloudflare/clef-flash" target="_blank" rel="noopener">HF · Clef-flash</a>
           <a class="muted-link" href="https://developers.cloudflare.com/workers-ai/models/clef/" target="_blank" rel="noopener">Docs</a>
+          <a class="muted-link" href="#llamacpp-decision">En local · llama.cpp</a>
         </div>
       </article>
       <article class="side-card item" data-type="articulo">
@@ -558,6 +582,21 @@
   </div>
   <div class="grid">
 
+    <article class="card item" id="gemini-4-argon" data-type="modelo">
+      <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">1 oct 2026</span></div>
+      <a class="title" href="https://the-decoder.com/google-gemini-4-argon-closes-the-gap-with-openai-and-anthropic-but-doesnt-take-a-clear-lead/" target="_blank" rel="noopener">Gemini 4 Argon, en pruebas independientes: empata con Astra, alucina menos, gasta más tokens</a>
+      <p class="why">Artificial Analysis, vía The Decoder: Argon (High) saca 53 en el AA Intelligence Index, empatado con GPT-6 Astra (max) y Claude Fable 5.1, un punto por encima de GPT-6.1 Sol (max). Claude Opus 5.5 lidera con 58; Sonnet 5.5, 56. Una tarea del índice cuesta 1,99&nbsp;$ a precio promo, frente a 3,26&nbsp;$ de Astra (2,7× GPT-6.1 Sol); 3,98&nbsp;$ cuando acaba la promo. Argon usa unos 62.000 tokens de salida por tarea, frente a unos 27.000 de Astra. Alucinación en AA-Omniscience: 15%, frente a 51% de Astra (max) y 54% de Sol (max). Terminal Bench 4: 57%, por detrás de Sonnet 5.5 (64%), Opus 5.5 (60%) y Astra (59%). AutomationBench-AA: primero, con 77,5%. Text Arena número 1, con 1.525. Bloomberg (30 sep): algunos empleados de Google dicen que «le cuesta manejar ciertas tareas de código» pese a los benches; Google dice que «sería inexacto decir que Gemini 4 rinde por debajo en áreas como el código» (9to5Google). Sigue sin API pública. El anuncio del 30 sep —salida de 1M, Fairwind, sin ID público— sigue en el blog de Google.</p>
+      <div class="takeaway"><strong>Para ti:</strong> alucina mucho menos pero es caro en tokens y flojo en terminal; hasta que haya API, Sonnet/Opus 5.5 y Sol siguen siendo lo usable.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://the-decoder.com/google-gemini-4-argon-closes-the-gap-with-openai-and-anthropic-but-doesnt-take-a-clear-lead/" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://9to5google.com/2026/10/01/gemini-4-struggle-report/" target="_blank" rel="noopener">9to5Google</a>
+        <a class="muted-link" href="https://www.bloomberg.com/news/articles/2026-09-30/google-grapples-with-employee-skepticism-about-new-gemini-model" target="_blank" rel="noopener">Bloomberg</a>
+        <a class="muted-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Blog Google</a>
+        <a class="muted-link" href="https://www.webreactiva.com/blog/gemini-4-argon" target="_blank" rel="noopener">Web Reactiva (ES)</a>
+        <a class="muted-link" href="https://www.theguardian.com/technology/2026/oct/01/google-releases-gemini-model-restrictions" target="_blank" rel="noopener">The Guardian</a>
+      </div>
+    </article>
+
     <article class="card item" data-type="modelo">
       <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">3 oct 2026</span></div>
       <a class="title" href="https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/" target="_blank" rel="noopener">Aleph Alpha Kolibri</a>
@@ -569,7 +608,7 @@
       </div>
     </article>
 
-    <article class="card item" data-type="modelo">
+    <article class="card item" id="clef" data-type="modelo">
       <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">1 oct 2026</span></div>
       <a class="title" href="https://blog.cloudflare.com/clef-decision-models/" target="_blank" rel="noopener">Cloudflare Clef y Clef-flash</a>
       <p class="why">Modelos de decisión con salida tipada Choice, Score y Noul, más probabilidades. Compatibles con la API de Jev, con visión y 64k de contexto. Apache 2.0. Clef-flash: 38,8 ms de latencia mediana en la tabla de Cloudflare. El fine-tune por RL es primero con su equipo.</p>
@@ -579,21 +618,11 @@
         <a class="muted-link" href="https://huggingface.co/Cloudflare/clef" target="_blank" rel="noopener">HF · Clef</a>
         <a class="muted-link" href="https://huggingface.co/Cloudflare/clef-flash" target="_blank" rel="noopener">HF · Clef-flash</a>
         <a class="muted-link" href="https://developers.cloudflare.com/workers-ai/models/clef/" target="_blank" rel="noopener">Docs</a>
+        <a class="muted-link" href="#llamacpp-decision">En local · llama.cpp</a>
       </div>
     </article>
 
-    <article class="card item" data-type="modelo">
-      <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">30 sep 2026</span></div>
-      <a class="title" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Gemini 4 Argon</a>
-      <p class="why">Frontier de Google DeepMind para SWE de largo horizonte, conocimiento empresarial (legal y finanzas) y defensa en ciberseguridad. Salida de 1M tokens (antes 64K). DeepSWE v1.1: 77,9% (SOTA según Google). Precio de introducción $2 / $10 por MTok, caché al 95% de descuento; luego $4 / $20. Primero Fairwind, Google interno y pre-release voluntario del gobierno de EE.&nbsp;UU.; después API de pago y Google AI Ultra. Sin ID público todavía.</p>
-      <div class="takeaway"><strong>Para ti:</strong> hoy es tabla y Fairwind, no un modelo que puedas llamar. Sol, Sonnet y Opus siguen siendo lo usable.</div>
-      <div class="link-row">
-        <a class="fuente-original" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Fuente original ↗</a>
-        <a class="muted-link" href="https://www.webreactiva.com/blog/gemini-4-argon" target="_blank" rel="noopener">Web Reactiva (ES)</a>
-        <a class="muted-link" href="https://www.theguardian.com/technology/2026/oct/01/google-releases-gemini-model-restrictions" target="_blank" rel="noopener">The Guardian</a>
-      </div>
-    </article>
-
+    
     <article class="card item" data-type="modelo">
       <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">29 sep 2026</span></div>
       <a class="title" href="https://openai.com/index/introducing-gpt-6-1-sol" target="_blank" rel="noopener">GPT-6.1 Sol</a>
@@ -649,7 +678,7 @@
       </div>
     </article>
 
-    <article class="card item" data-type="modelo">
+    <article class="card item" id="jev" data-type="modelo">
       <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">15 sep 2026</span></div>
       <a class="title" href="https://typesafe.ai/blog/introducing-system-one-models-and-jev" target="_blank" rel="noopener">TypeSafe Jev · System One</a>
       <p class="why">No es un LLM generativo: entra estado no estructurado y salen decisiones tipadas con probabilidades calibradas (~100&nbsp;ms, $0.042/MTok input, output gratis). TypeSafe lo llama «System One» — un function call de inteligencia, no un chatbot.</p>
@@ -657,6 +686,7 @@
       <div class="link-row">
         <a class="fuente-original" href="https://typesafe.ai/blog/introducing-system-one-models-and-jev" target="_blank" rel="noopener">Fuente original ↗</a>
         <a class="muted-link" href="https://flaviocopes.com/jev/" target="_blank" rel="noopener">Flavio Copes · guía práctica</a>
+        <a class="muted-link" href="#llamacpp-decision">En local · llama.cpp</a>
       </div>
     </article>
 
@@ -789,6 +819,94 @@
   </div>
   <div class="grid">
 
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">3 oct 2026</span></div>
+      <a class="title" href="https://huggingface.co/blog/microsoft/thinkingbox" target="_blank" rel="noopener">ThinkingBox (Microsoft + Hugging Face): el agente dijo que había terminado; la base de datos no</a>
+      <p class="why">Benchmark de 507 flujos de negocio con estado (retail, seguro de auto, viajes, neobanco, consultoría). Cada uno se corre 20 veces desde un backend limpio y se puntúa el estado final de la base de datos y los efectos laterales, con sesiones MCP aisladas. pass@1: Claude Opus 5.5 67,16% (líder), Opus 5 66,50%, GPT-5.4 65,36%, GPT-6 Astra 58,31%; el mejor open-weight, Kimi-K3, 57,37%. Tareas pasadas 20/20: Opus 5.5 241, Opus 5 241, Astra 231. Kimi-K3 resuelve 476 de 507 al menos una vez, pero solo 68 todas las veces. Alrededor del 79,9% de los fallos son de uso de herramientas; el 67,24% de los intentos fallidos terminó limpio, sin error de herramienta. Corre con OpenEnv; código MIT, datos CDLA-Permissive-2.0.</p>
+      <div class="takeaway"><strong>Para ti:</strong> mide tu agente por el estado final y por repetición (20/20), no por una ejecución buena ni por su resumen.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://huggingface.co/blog/microsoft/thinkingbox" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://github.com/microsoft/thinkingbox" target="_blank" rel="noopener">GitHub</a>
+        <a class="muted-link" href="https://arxiv.org/html/2608.19741v2" target="_blank" rel="noopener">Paper</a>
+      </div>
+    </article>
+
+    <article class="card item" id="llamacpp-decision" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">2 oct 2026</span></div>
+      <a class="title" href="https://huggingface.co/blog/ggml-org/decision-models-in-llamacpp" target="_blank" rel="noopener">llama.cpp: modelos de decisión en local con /v1/systemone</a>
+      <p class="why">El servidor de llama.cpp ya sirve modelos de decisión en <code>/v1/systemone</code>, con el formato System One de TypeSafe Jev. Los clientes que ya existen solo cambian la base URL. Tipos de pregunta: <code>choice</code>, <code>score</code>, <code>noul</code>. Un forward pass y probabilidades por opción. Modelos: Julia-1 (144M, más de 50 idiomas, ~3&nbsp;ms), Laya (421M), Kev-4B, lev (4B), OpenJev (27B, imágenes, CC BY-NC 4.0) y Clef (27B). Las velocidades se midieron en una RTX PRO 6000. Arranque: <code>llama serve -hf ggml-org/Kev-4B-GGUF</code>. Consejo del post: describe las opciones (Julia-1 mandó «charged twice» a envíos con etiquetas peladas; con descripciones, billing quedó en 0,99). Elige el corte de confianza según el modelo. Va al lado de <a href="#jev" style="color:var(--accent)">Jev</a> y de <a href="#clef" style="color:var(--accent)">Clef</a>, ya en este digest.</p>
+      <div class="takeaway"><strong>Para ti:</strong> el router/checker tipado de Jev/Clef ya corre en tu máquina, sin API.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://huggingface.co/blog/ggml-org/decision-models-in-llamacpp" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="#jev">Jev · en este digest</a>
+        <a class="muted-link" href="#clef">Clef · en este digest</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">30 sep 2026</span></div>
+      <a class="title" href="https://deepmind.google/blog/introducing-synthid-bio/" target="_blank" rel="noopener">SynthID Bio: marcas de agua en proteínas diseñadas por IA</a>
+      <p class="why">Google DeepMind incrusta una marca de agua imperceptible en secuencias de proteínas diseñadas por IA y en las estructuras 3D predichas, verificable en la proteína física ya sintetizada. En laboratorio, tres dianas (VEGF-A, el RBD de la espícula de SARS-CoV-2 y PD-L1): los binders con marca igualaron la tasa de acierto, la afinidad de unión y la diversidad de secuencia de los que no la llevaban. Para el plegado, afina una parte pequeña de la red de difusión de AlphaFold 3. Con el laboratorio de Hie (Stanford/Arc Institute) marcaron un genoma de bacteriófago diseñado con Evo 2; las pruebas tempranas muestran que es funcional. Publican paper de métodos, código open source, datos in vitro y pesos. DeepMind dice que la robustez frente a una manipulación deliberada sigue siendo un reto clave.</p>
+      <div class="takeaway"><strong>Para ti:</strong> es una capa de procedencia para el screening de síntesis de ADN, no una barrera de bioseguridad por sí sola.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://deepmind.google/blog/introducing-synthid-bio/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
+    </article>
+
+    <article class="card item" id="muse-spark-papers" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">2 oct 2026</span></div>
+      <a class="title" href="https://research.meta.ai/blog/solving-open-research-problems-together" target="_blank" rel="noopener">Meta: Muse Spark y matemáticos firman seis papers; cinco resuelven preguntas abiertas</a>
+      <p class="why">Matemáticos usaron Muse Spark 1.1 y 1.2 en Thinking Mode, por el chat normal de meta.ai, sin un andamiaje de investigación a medida. Un segundo grupo revisó. Cada paper marca qué pasajes redactó la IA y cuáles el investigador, y reconoce trabajo independiente concurrente (por ejemplo, un contraejemplo de 384 elementos que refuta una conjetura de 2024 de M. Kida; el umbral de ajuste de elipsoides gaussianos). Queda al lado del <a href="#nine-loops" style="color:var(--accent)">nine-loops de Claude</a> y de <a href="#bootloops" style="color:var(--accent)">BootLoops</a>, ya en esta página.</p>
+      <div class="takeaway"><strong>Para ti:</strong> AI-for-science con método publicable (revisión separada y autoría marcada), al lado del nine-loops de Claude y de BootLoops.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://research.meta.ai/blog/solving-open-research-problems-together" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="#nine-loops">Nine-loops</a>
+        <a class="muted-link" href="#bootloops">BootLoops</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">2 oct 2026</span></div>
+      <a class="title" href="https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/" target="_blank" rel="noopener">Muse Gadgets: Meta abre firmware y SDK para construir hardware con Muse</a>
+      <p class="why">Firmware open source y un SDK de Linux para construir dispositivos conectados al agente Muse (ideas: Raspberry Pi, ESP32, e-ink, stick HDMI). Meta fabricó Muse Home Link (USB-C): conecta Muse a la red de casa y a los dispositivos inteligentes. 5.000 unidades gratis para suscriptores de Muse hasta agotar existencias (Nat Friedman). La misma semana: Muse for Small Business, gratis con límites, con Shopify, Dropbox y Slack.</p>
+      <div class="takeaway"><strong>Para ti:</strong> Muse sale del chat al hardware hackeable; útil si prototipas interfaces físicas para agentes.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
+    </article>
+
+    <article class="card item" id="suncatcher" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">1 oct 2026</span></div>
+      <a class="title" href="https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/" target="_blank" rel="noopener">Project Suncatcher: el prototipo ya está en órbita</a>
+      <p class="why">El satélite prototipo, construido con Planet, despegó en el Transporter-18 de SpaceX. Google confirmó contacto y que «opera como se esperaba». En las próximas semanas recogerá datos en órbita de cómo las TPU aguantan el estrés del vuelo espacial, la radiación y los extremos térmicos. El paper revisado por pares está ahora en Joule.</p>
+      <div class="takeaway"><strong>Para ti:</strong> el prototipo ya orbita; lo que viene son datos de TPU bajo radiación y calor, no un clúster en producción.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/" target="_blank" rel="noopener">Ficha del proyecto</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">5 oct 2026</span></div>
+      <a class="title" href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference/" target="_blank" rel="noopener">Claude con inferencia dentro de India vía Amazon Bedrock</a>
+      <p class="why">Anthropic lo anuncia el 5 oct; el post de AWS es del 29 sep. Claude Opus 5, Sonnet 5 y Haiku 4.5 por inferencia cross-Region geográfica de India: las peticiones solo se enrutan entre ap-south-1 (Mumbai) y ap-south-2 (Hyderabad). IDs de perfil como <code>in.anthropic.claude-sonnet-5</code>. Irina Ghose (directora general en India): India es el segundo mercado de Anthropic para Claude.ai (Times of India).</p>
+      <div class="takeaway"><strong>Para ti:</strong> residencia de datos por perfil geográfico de Bedrock; si sirves a banca o sector público indio, el ID de perfil es lo que cambia.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference/" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://timesofindia.indiatimes.com/business/india-business/anthropic-launches-in-country-claude-ai-inference-in-india-via-aws/articleshow/134677000.cms" target="_blank" rel="noopener">Times of India</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">5 oct 2026</span></div>
+      <a class="title" href="https://www.ghacks.net/2026/10/05/anthropic-asks-claude-users-to-share-voice-recordings-for-ai-training-with-a-new-opt-in-setting/" target="_blank" rel="noopener">Claude pide tus grabaciones de voz para entrenar (opt-in)</a>
+      <p class="why">Nuevo aviso y un interruptor aparte en Settings &gt; Privacy: «Allow us to use your voice data» («For approved sessions, allow the use of your audio recordings and voice chat data to improve Anthropic AI models»). Apagado por defecto en la interfaz vista. Independiente del toggle de entrenamiento de chats y de Claude Code. Se puede apagar y borrar los datos. El plazo de retención no se indica.</p>
+      <div class="takeaway"><strong>Para ti:</strong> revisa los dos toggles por separado; el de voz no hereda el de chats.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.ghacks.net/2026/10/05/anthropic-asks-claude-users-to-share-voice-recordings-for-ai-training-with-a-new-opt-in-setting/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
+    </article>
+
     <article class="card item" data-type="herramienta">
       <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">1 oct 2026</span></div>
       <a class="title" href="https://claude.com/blog/claude-code-mods" target="_blank" rel="noopener">Claude Code Mods</a>
@@ -811,7 +929,7 @@
       </div>
     </article>
 
-    <article class="card item" data-type="articulo">
+    <article class="card item" id="bootloops" data-type="articulo">
       <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">1 oct 2026</span></div>
       <a class="title" href="https://www.anthropic.com/research/claude-shaped-science" target="_blank" rel="noopener">Ciencia «Claude-shaped» y BootLoops</a>
       <p class="why">Guest post de Matthew Schwartz (1 oct): dejó de pelear con Claude y buscó problemas «Claude-shaped». De ahí sale BootLoops, harness open source para cálculos cuantitativos exactos, usable con el modelo que elijas. Schwartz es visiting researcher en Anthropic; BootLoops no es un producto de Anthropic.</p>
@@ -819,6 +937,7 @@
       <div class="link-row">
         <a class="fuente-original" href="https://www.anthropic.com/research/claude-shaped-science" target="_blank" rel="noopener">Fuente original ↗</a>
         <a class="muted-link" href="https://www.bootloops.ai" target="_blank" rel="noopener">bootloops.ai</a>
+        <a class="muted-link" href="#muse-spark-papers">Muse Spark · papers</a>
       </div>
     </article>
 
@@ -901,14 +1020,15 @@
       </div>
     </article>
 
-    <article class="card item" data-type="articulo">
+    <article class="card item" id="acuerdo-casa-blanca" data-type="articulo">
       <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">29 sep</span></div>
       <a class="title" href="https://www.washingtonexaminer.com/news/white-house/4747747/full-trump-white-house-accord-ai-super-intelligence/" target="_blank" rel="noopener">White House Accord on Super Intelligence</a>
-      <p class="why">Acuerdo voluntario: controles internos (ciber, bio y químico), un equipo con autoridad para remediar fallos, auditor externo y comité independiente del board. Firmantes que cita el Washington Examiner: Amodei, Brockman, Pichai, Zuckerberg, Musk y Huang. Euronews lo llama «morally binding»; no es ley.</p>
+      <p class="why">Acuerdo voluntario: controles internos (ciber, bio y químico), un equipo con autoridad para remediar fallos, auditor externo y comité independiente del board. Firmantes que cita el Washington Examiner: Amodei, Brockman, Pichai, Zuckerberg, Musk y Huang. Euronews lo llama «morally binding»; no es ley. El 4 oct la Casa Blanca anuncia la Super Intelligence Force, con Jay Clayton al frente; el destacado de este digest lo resume.</p>
       <div class="takeaway"><strong>Para ti:</strong> auditorías voluntarias a nivel White House, no un nuevo estándar técnico.</div>
       <div class="link-row">
         <a class="fuente-original" href="https://www.washingtonexaminer.com/news/white-house/4747747/full-trump-white-house-accord-ai-super-intelligence/" target="_blank" rel="noopener">Fuente original ↗</a>
         <a class="muted-link" href="https://www.euronews.com/2026/09/30/top-ai-and-tech-firms-sign-morally-binding-accord-to-self-police-development-after-meeting" target="_blank" rel="noopener">Euronews</a>
+        <a class="muted-link" href="#destacados">Super Intelligence Force · destacado</a>
       </div>
     </article>
 
@@ -1050,7 +1170,7 @@
       </div>
     </article>
 
-    <article class="card item" data-type="articulo">
+    <article class="card item" id="nine-loops" data-type="articulo">
       <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">25 sep 2026</span></div>
       <a class="title" href="https://www.anthropic.com/research/yes-claude-can-do-nine-loops" target="_blank" rel="noopener">Sí, Claude puede hacer nueve bucles (amplitudes N=4 SYM)</a>
       <p class="why">Guest post de Matt von Hippel: Claude Fable 5.1 en Claude Science computó la amplitud MHV de seis gluones en N=4 super Yang-Mills planar a nueve bucles — un orden más allá del récord de 2023 de Lance Dixon. Bootstrap + form-factor; ~1–2k USD de cómputo Claude; ~96 CPUs/semana de SymPy. Dixon validó el resultado; el grupo de Song He llegó en paralelo (con ayuda de GPT-6). El harness «sigue trabajando» sin supervisión científica fina.</p>
@@ -1058,6 +1178,7 @@
       <div class="link-row">
         <a class="fuente-original" href="https://www.anthropic.com/research/yes-claude-can-do-nine-loops" target="_blank" rel="noopener">Fuente original ↗</a>
         <a class="muted-link" href="https://smsharma.io/cosmic-nine-loops/" target="_blank" rel="noopener">Resultado nine-loop</a>
+        <a class="muted-link" href="#muse-spark-papers">Muse Spark · papers</a>
       </div>
     </article>
 
@@ -1071,16 +1192,7 @@
       </div>
     </article>
 
-    <article class="card item" data-type="herramienta">
-      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">24 sep 2026</span></div>
-      <a class="title" href="https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/" target="_blank" rel="noopener">Project Suncatcher</a>
-      <p class="why">Google Research: moonshot de compute IA en órbita. Primer satélite de prueba (Transporter-18 / SpaceX, con Planet) para ver si las TPU Trillium aguantan vibración, radiación y refrigeración en vacío; clusters con láseres en 2027.</p>
-      <div class="takeaway"><strong>Para ti:</strong> no es un modelo nuevo — es la apuesta de infra a largo plazo (solar ~8× en LEO).</div>
-      <div class="link-row">
-        <a class="fuente-original" href="https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/" target="_blank" rel="noopener">Fuente original ↗</a>
-      </div>
-    </article>
-
+    
     <article class="card item" data-type="articulo">
       <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">24 sep 2026</span></div>
       <a class="title" href="https://www.anthropic.com/research/project-swap" target="_blank" rel="noopener">Project Swap: un mercado miniatura con agentes Claude</a>
@@ -1879,6 +1991,28 @@
   <div class="grid">
 
     <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill medium">medium</span><span class="pill fecha">3 oct 2026</span></div>
+      <a class="title" href="https://medium.com/ai-tomorrow/google-just-released-its-most-serious-ai-model-yet-and-almost-nobody-can-use-it-eec64693b818" target="_blank" rel="noopener">Google Just Released Its Most Serious AI Model Yet, And Almost Nobody Can Use It</a>
+      <p class="why">Milan Danushka presenta Argon como un modelo que trabaja durante horas (salida de 64K a 1M), las migraciones internas de Google de C/C++ a Rust (más de 800.000 líneas en el kernel Zircon de Fuchsia) y el decoder libgav1, 2,7× más rápido que el port a Rust anterior. El acceso, de momento, se limita a Fairwind. <em style="color:var(--muted)">— Milan Danushka · 3 oct 2026</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> los dos ejemplos con números (Zircon, libgav1) mientras no haya API.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://medium.com/ai-tomorrow/google-just-released-its-most-serious-ai-model-yet-and-almost-nobody-can-use-it-eec64693b818" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/ai-tomorrow/google-just-released-its-most-serious-ai-model-yet-and-almost-nobody-can-use-it-eec64693b818" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill medium">medium</span><span class="pill fecha">2 oct 2026</span></div>
+      <a class="title" href="https://medium.com/ai-mindset/gemini-4-argon-is-built-for-the-long-game-3bc47f8b37e2" target="_blank" rel="noopener">Gemini 4 Argon Is Built for the Long Game</a>
+      <p class="why">Dr. Fadi Shaar entra en el diseño de horizonte largo, el despliegue por fases de Fairwind, un estimador de coste del input cacheado al 95% de descuento y las salvaguardas: monitorización de activaciones, prompt-injection y monitorización del chain-of-thought. <em style="color:var(--muted)">— Dr. Fadi Shaar · 2 oct 2026</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> el recorrido técnico largo si quieres presupuestar trayectorias de salida largas.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://medium.com/ai-mindset/gemini-4-argon-is-built-for-the-long-game-3bc47f8b37e2" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/ai-mindset/gemini-4-argon-is-built-for-the-long-game-3bc47f8b37e2" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="medium">
       <div class="meta-row"><span class="pill medium">medium</span><span class="pill fecha">oct 2026</span></div>
       <a class="title" href="https://medium.com/@techverdict/claude-code-mods-explained-oct-2026-the-typescript-hooks-that-let-you-rewrite-the-coding-agent-09a6a3ba74ae" target="_blank" rel="noopener">Claude Code Mods, Explained (Oct 2026)</a>
       <p class="why">Muhammad Israr (techverdict) explica los hooks de TypeScript que reescriben el agente de código. Léelo junto al blog de Anthropic; aquí no se copia el artículo. <em style="color:var(--muted)">— Muhammad Israr · oct 2026</em></p>
@@ -2236,6 +2370,40 @@
     Vídeos curados (oficiales + builders). Puedes verlos embebidos; cada uno lleva enlace directo a YouTube por si quieres el hilo, comentarios o la descripción.
   </p>
   <div class="video-grid">
+
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/PlEukk6bBdc" title="Trump announces leadership of 'Super Intelligence Force'" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">4 oct 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=PlEukk6bBdc" target="_blank" rel="noopener">Trump announces leadership of 'Super Intelligence Force'</a></h3>
+        <div class="video-meta">News24</div>
+        <p class="why">Clip de noticias del anuncio. oEmbed verificado. Compañero del destacado; el hecho se ancla en NPR.</p>
+        <div class="takeaway"><strong>Para ti:</strong> el anuncio en un minuto. El mandato, los nombres y los 120 días están en NPR, no en el clip.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=PlEukk6bBdc" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <div class="link-row" style="margin-top:.5rem;">
+          <a class="fuente-original" href="https://www.npr.org/2026/10/04/nx-s1-5990781/jay-clayton-ai-czar-trump" target="_blank" rel="noopener">Fuente original ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/MS5VMqyuwjU" title="Weekly AI Recap: Gemini 4 Crushes, ChatGPT Dots Explained, and More!" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">oct 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=MS5VMqyuwjU" target="_blank" rel="noopener">Weekly AI Recap: Gemini 4 Crushes, ChatGPT Dots Explained, and More!</a></h3>
+        <div class="video-meta">Paul J Lipsky</div>
+        <p class="why">Repaso semanal de terceros (Argon, Dots y más). oEmbed verificado. Es comentario, no un anuncio oficial.</p>
+        <div class="takeaway"><strong>Para ti:</strong> contexto de la semana si ya leíste las fichas; los números de Argon siguen en The Decoder.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=MS5VMqyuwjU" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <div class="link-row" style="margin-top:.5rem;">
+          <a class="fuente-original" href="https://www.youtube.com/watch?v=MS5VMqyuwjU" target="_blank" rel="noopener">Fuente original ↗</a>
+        </div>
+      </div>
+    </article>
 
     <article class="video-card item" data-type="youtube">
       <div class="video-frame">
@@ -2896,7 +3064,7 @@
     <span>Señal alta · sin hype</span>
   </div>
   <p class="lede" style="margin:0 0 1rem;font-size:.95rem;max-width:70ch;">
-    Al 4 oct no entra ningún post nuevo de X de alta señal. La salida de Robinson, el subpoena de Bonta y los lanzamientos de esta semana se contrastan en la prensa y en los blogs, no en un hilo. El criterio y el material ya contrastado se quedan.
+    Al 5 oct no entra ningún post nuevo de X que cumpla el filtro. La Super Intelligence Force se anunció en Truth Social, no en X, y queda anclada en la cobertura de NPR, AP y el WSJ. El criterio y el material ya contrastado se quedan.
   </p>
 
   <article class="card item" data-type="x" style="margin-bottom:1rem; grid-column: 1 / -1;">
@@ -3009,6 +3177,30 @@
   <section class="sources" id="fuentes">
     <h2>Fuentes que vale la pena seguir</h2>
     <div class="source-list">
+      <a href="https://www.npr.org/2026/10/04/nx-s1-5990781/jay-clayton-ai-czar-trump" target="_blank" rel="noopener">NPR · Super Intelligence Force</a>
+      <a href="https://www.pbs.org/newshour/politics/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force" target="_blank" rel="noopener">PBS · AP · task force</a>
+      <a href="https://fortune.com/2026/10/04/trump-national-intelligence-director-jay-clayton-super-intelligence-force-ai-agency/" target="_blank" rel="noopener">Fortune/AP · Super Intelligence Force</a>
+      <a href="https://www.implicator.ai/trump-names-intelligence-chief-jay-clayton-to-lead-120-day-ai-task-force/" target="_blank" rel="noopener">Implicator · 120 días</a>
+      <a href="https://www.infobae.com/estados-unidos/2026/10/04/donald-trump-confirmo-al-jefe-de-inteligencia-nacional-como-el-nuevo-zar-de-la-ia-en-eeuu/" target="_blank" rel="noopener">Infobae · zar de la IA</a>
+      <a href="https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html" target="_blank" rel="noopener">CNBC · investigación FTC</a>
+      <a href="https://the-decoder.com/google-gemini-4-argon-closes-the-gap-with-openai-and-anthropic-but-doesnt-take-a-clear-lead/" target="_blank" rel="noopener">The Decoder · Argon en AA</a>
+      <a href="https://9to5google.com/2026/10/01/gemini-4-struggle-report/" target="_blank" rel="noopener">9to5Google · Argon</a>
+      <a href="https://www.bloomberg.com/news/articles/2026-09-30/google-grapples-with-employee-skepticism-about-new-gemini-model" target="_blank" rel="noopener">Bloomberg · escepticismo Gemini 4</a>
+      <a href="https://huggingface.co/blog/microsoft/thinkingbox" target="_blank" rel="noopener">HF · ThinkingBox</a>
+      <a href="https://github.com/microsoft/thinkingbox" target="_blank" rel="noopener">GitHub · ThinkingBox</a>
+      <a href="https://arxiv.org/html/2608.19741v2" target="_blank" rel="noopener">Paper · ThinkingBox</a>
+      <a href="https://huggingface.co/blog/ggml-org/decision-models-in-llamacpp" target="_blank" rel="noopener">HF · llama.cpp decision models</a>
+      <a href="https://deepmind.google/blog/introducing-synthid-bio/" target="_blank" rel="noopener">DeepMind · SynthID Bio</a>
+      <a href="https://research.meta.ai/blog/solving-open-research-problems-together" target="_blank" rel="noopener">Meta · Muse Spark papers</a>
+      <a href="https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/" target="_blank" rel="noopener">TechCrunch · Muse Gadgets</a>
+      <a href="https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/" target="_blank" rel="noopener">Google · Suncatcher prototipo</a>
+      <a href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference/" target="_blank" rel="noopener">AWS · Claude en India</a>
+      <a href="https://timesofindia.indiatimes.com/business/india-business/anthropic-launches-in-country-claude-ai-inference-in-india-via-aws/articleshow/134677000.cms" target="_blank" rel="noopener">Times of India · Claude India</a>
+      <a href="https://www.ghacks.net/2026/10/05/anthropic-asks-claude-users-to-share-voice-recordings-for-ai-training-with-a-new-opt-in-setting/" target="_blank" rel="noopener">ghacks · voz de Claude</a>
+      <a href="https://medium.com/ai-tomorrow/google-just-released-its-most-serious-ai-model-yet-and-almost-nobody-can-use-it-eec64693b818" target="_blank" rel="noopener">Medium · Milan Danushka · Argon</a>
+      <a href="https://medium.com/ai-mindset/gemini-4-argon-is-built-for-the-long-game-3bc47f8b37e2" target="_blank" rel="noopener">Medium · Fadi Shaar · Argon</a>
+      <a href="https://www.youtube.com/watch?v=PlEukk6bBdc" target="_blank" rel="noopener">YouTube · News24 · Super Intelligence Force</a>
+      <a href="https://www.youtube.com/watch?v=MS5VMqyuwjU" target="_blank" rel="noopener">YouTube · Paul J Lipsky · recap</a>
       <a href="https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/" target="_blank" rel="noopener">TechCrunch · Robinson</a>
       <a href="https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm" target="_blank" rel="noopener">The Verge · Robinson</a>
       <a href="https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken" target="_blank" rel="noopener">The Guardian · Robinson</a>
@@ -3171,7 +3363,7 @@
   </section>
 
   <footer>
-    <div>Mantenido por <strong>IA</strong> · última actualización 4 oct 2026</div>
+    <div>Mantenido por <strong>IA</strong> · última actualización 5 oct 2026</div>
     <div>
       <a href="https://github.com/canduchix/novedades-ia">Repo</a> ·
       <a href="https://canduchix.github.io/novedades-ia/">GitHub Pages</a>
