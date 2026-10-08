@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Novedades IA · 7 oct 2026</title>
-<meta name="description" content="Selección del 7 oct 2026: 722 manuscritos de matemáticas de un modelo interno de OpenAI, el Cyber Verification Program de Anthropic en tres niveles y EmbeddingGemma 2." />
+<title>Novedades IA · 8 oct 2026</title>
+<meta name="description" content="Selección del 8 oct 2026: Claude Haiku 5.5, GPT-6 con Intelligent UI en Free y Go, y SynthID Detector abierto al mundo." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -449,18 +449,19 @@
   </nav>
 
   <header class="hero">
-    <div class="eyebrow"><span class="dot"></span> Actualizado · 7 oct 2026</div>
+    <div class="eyebrow"><span class="dot"></span> Actualizado · 8 oct 2026</div>
     <h1>Lo que importa en <em>inteligencia artificial</em> esta semana</h1>
     <p class="lede">
-      Edición del miércoles 7 de octubre (Europe/Madrid). La semana va del 30 sep al 7 oct.
-      Lo nuevo desde el digest del 6 oct abre el documento: matemáticas de un modelo interno de OpenAI,
-      ciberdefensa con Claude y embeddings multimodales en el dispositivo. Cada pieza lleva
+      Edición del jueves 8 de octubre (Europe/Madrid). La semana va del 1 al 8 oct.
+      Hoy abre el documento Claude Haiku 5.5, y GPT-6 con Intelligent UI llega a Free y Go.
+      SynthID Detector ya puede usarlo cualquiera. El catálogo de matemáticas del 6 oct
+      se queda, con el recuento corregido contra el README. Cada pieza lleva
       <strong>fuente original</strong>.
     </p>
     <div class="stats">
-      <div class="stat"><b>29</b><span>piezas de esta edición</span></div>
-      <div class="stat"><b>7</b><span>modelos de la semana</span></div>
-      <div class="stat"><b>4</b><span>lanzamientos de plataforma</span></div>
+      <div class="stat"><b>42</b><span>piezas de esta edición</span></div>
+      <div class="stat"><b>8</b><span>fichas de modelo</span></div>
+      <div class="stat"><b>4</b><span>señales nuevas en X</span></div>
       <div class="stat"><b>2</b><span>tutoriales prácticos</span></div>
     </div>
   </header>
@@ -477,62 +478,72 @@
   </div>
 
   <section id="destacados" class="featured">
-    <article class="spotlight item" id="openai-math" data-type="articulo">
-      <div class="kicker">Historia principal · 6 oct · digest 7 oct</div>
-      <h2>OpenAI publica 722 manuscritos de un modelo interno que aún no puedes usar</h2>
+    <article class="spotlight item" id="haiku-5-5" data-type="modelo">
+      <div class="kicker">Historia principal · 7 oct · digest 8 oct</div>
+      <h2>Claude Haiku 5.5: el modelo pequeño de Anthropic, al precio de lista de GPT-6 Luna</h2>
       <p>
-        El 6 de octubre OpenAI publicó <em>Sharing AI progress in mathematics</em>: resultados nuevos de un modelo interno de frontera. El repositorio <strong>openai/math</strong> (Apache 2.0) contiene <strong>722 manuscritos en 372 familias</strong>. Una familia agrupa un resultado principal, argumentos compañeros, consecuencias o pruebas alternativas.
+        El 7 de octubre Anthropic publicó Claude Haiku 5.5 y lo describe como el modelo pequeño más barato, rápido y capaz que ha sacado. El ID de API es <code>claude-haiku-5-5</code>. Está en Claude Platform, AWS, Google Cloud y Microsoft Azure. La ficha en español fija el contexto en <strong>1M tokens</strong> y la salida máxima en <strong>128K</strong>. Es el primer Haiku con control de esfuerzo: el valor por defecto es <code>medium</code>.
       </p>
       <p>
-        El README dice que la gran mayoría salió del mismo procedimiento, con un modelo interno no publicado. De media, cada resultado usó el cómputo de unas <strong>tres horas de pensamiento de ChatGPT Pro</strong>. En la evaluación le plantearon unos <strong>4.000 problemas</strong>. Muchos papers tienen prueba en Lean; no todos. La frase que importa: «Some of the unformalized results could have issues.» Hay dos excepciones al procedimiento fijo: el trabajo sobre una región libre de ceros de la función zeta y la prueba de la conjetura de Hodge para variedades abelianas CM. La redacción de la región Re(s)&nbsp;&gt;&nbsp;11/12 fue editada por humanos para hacerla legible.
+        Precio por millón de tokens: <strong>0,10&nbsp;$ de entrada y 0,50&nbsp;$ de salida</strong> hasta 100K tokens de prompt, y <strong>0,50&nbsp;$ / 2,50&nbsp;$</strong> por encima. Anthropic dice que, de media, sale en torno a un <strong>75% más barato</strong> que Haiku 4.5. La nota a pie del anuncio parte el titular: en lista, el recorte es del 90% hasta 100K y del 50% por encima, y cerca del 90% de las peticiones a Haiku 4.5 caían en el tramo corto. La misma ficha avisa de que el tokenizador nuevo cuenta el mismo texto como <strong>un 30% más de tokens</strong> que en Haiku 4.5.
       </p>
       <p>
-        Publican 10 resúmenes abreviados del razonamiento. Entre los temas: el exponente de irracionalidad de π, las conjeturas de Mahler (simétrica y general) y el isomorfismo de los factores del grupo libre. En el blog, OpenAI dice que consultó al Advisory Group on Mathematics and Artificial Intelligence del Institute for Advanced Study, que financiará talleres sobre resultados producidos por IA y que está trabajando para publicar el modelo de forma responsable. El modelo no va en esta entrega.
+        El mismo día bajan a la mitad las lecturas de caché de Claude Sonnet 5.5: <strong>0,10&nbsp;$ por millón</strong>, antes 0,20&nbsp;$. Anthropic cifra en torno a un 20% menos el coste en la mayoría del trabajo agéntico. Esta semana llega un crédito mensual de API para suscriptores Max y Team: Max 5x, 100&nbsp;$/mes; Max 20x, 200&nbsp;$/mes; Team, hasta 500&nbsp;$ compartidos. Los SDK de Python y TypeScript añaden computer use y browser use en beta.
       </p>
-      <div class="takeaway"><strong>Para ti:</strong> no cites una familia como teorema cerrado. Abre el PDF, mira si hay Lean y trata el resto como preprint sin revisión por pares. El contraste de método está en la ficha de Meta del 2 oct: seis papers con matemáticos que guían y revisan, no un catálogo de 722.</div>
-      <a class="cta" href="https://openai.com/index/sharing-ai-progress-in-mathematics/" target="_blank" rel="noopener" style="margin-top:1rem;">Leer en OpenAI ↗</a>
+      <p>
+        Los benches son del fabricante. En la tabla del anuncio: OSWorld 2.1 (subconjunto offline) 72,4%; Humanity's Last Exam sin herramientas 45,9%; Terminal-Bench 4.0 39,2%. DonWeb, citando a VentureBeat, precisa que ese 39,2% es a esfuerzo máximo y que en esfuerzo medio —el de serie— ronda el 20%. Anthropic deja Sonnet 5.5 y Opus 5.5 como la opción para programación agéntica compleja.
+      </p>
+      <div class="takeaway"><strong>Para ti:</strong> en lista corta empata con GPT-6 Luna (0,10&nbsp;$ / 0,50&nbsp;$). Por encima de 100K el ahorro frente a Haiku 4.5 se queda en torno al 50%, y el tokenizador nuevo infla el conteo. Prueba con tus propios logs, en esfuerzo medio y alto, antes de migrar. No muevas el código difícil: Anthropic sigue recomendando Sonnet u Opus 5.5.</div>
+      <a class="cta" href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener" style="margin-top:1rem;">Leer en Anthropic ↗</a>
       <div class="link-row" style="margin-top:.85rem;">
-        <a class="fuente-original" href="https://openai.com/index/sharing-ai-progress-in-mathematics/" target="_blank" rel="noopener">Fuente original ↗</a>
-        <a class="muted-link" href="https://github.com/openai/math" target="_blank" rel="noopener">Repo · openai/math</a>
-        <a class="muted-link" href="https://github.com/openai/math/blob/main/README.md" target="_blank" rel="noopener">README</a>
-        <a class="muted-link" href="https://github.com/openai/math/blob/main/overview.pdf" target="_blank" rel="noopener">Overview · PDF</a>
+        <a class="fuente-original" href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://platform.claude.com/docs/es/models/haiku-5-5/overview" target="_blank" rel="noopener">Docs en español</a>
+        <a class="muted-link" href="https://platform.claude.com/docs/es/models/haiku-5-5/migration-guide" target="_blank" rel="noopener">Guía de migración</a>
+        <a class="muted-link" href="https://blog.donweb.com/claude-haiku-5-5-precio-gpt-6-intelligent-ui/" target="_blank" rel="noopener">DonWeb (ES)</a>
+        <a class="muted-link" href="https://x.com/claudeai/status/2107894039626277339" target="_blank" rel="noopener">@claudeai</a>
       </div>
     </article>
     <div class="side-stack">
-      <article class="side-card item" data-type="herramienta">
-        <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">6 oct</span></div>
-        <a href="https://www.anthropic.com/news/cyber-verification-program" target="_blank" rel="noopener">
-          <h3>Anthropic abre el Cyber Verification Program en tres niveles</h3>
+      <article class="side-card item" id="gpt-6-ui" data-type="herramienta">
+        <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">7–8 oct</span></div>
+        <a href="https://openai.com/index/gpt-6-for-everyone/" target="_blank" rel="noopener">
+          <h3>GPT-6 e Intelligent UI: hoy entra en Free y Go</h3>
         </a>
-        <p>El 6 oct Anthropic funde Project Glasswing y el CVP anterior. Tres niveles, con Claude Opus 5.5, Sonnet 5.5 y Mythos 5.1, y los modelos que vengan después. Defense: SOC, respuesta a incidentes, ingeniería inversa de malware y validación de vulnerabilidades. Red Team suma pentest autorizado; no admite investigadores individuales y sigue bloqueando ransomware, daño físico o sistemas de seguridad de alto riesgo. Specialized, el de menos bloqueos, se revisa en profundidad con el gobierno de EE.&nbsp;UU. y cubre sistemas cuya caída afecta vidas o mercados.</p>
-        <p style="margin:.7rem 0 0">En CyScenarioBench (10 retos, 5 intentos, Opus 5.5): sin CVP, todas las tareas se bloquean en el primer prompt; en Defense, 46 de 50 ensayos se bloquean en algún punto y 4 salen; en Red Team no hay bloqueos y completa 34 de 50, la misma tasa del 67,6% sin salvaguardas. Glasswing: los partners encontraron al menos 129.000 vulnerabilidades verificadas entre abril y julio de 2026; el escaneo propio de open source sumó otras 5.500 entre abril y octubre. Más de 33.000 se han calificado críticas o altas. Anthropic dice que es un recuento a la baja y espera un impacto real de al menos cinco veces. Hace falta retención de datos hasta que llegue Enterprise Frontier Safeguards, más adelante este otoño. Está en Claude Platform, Vertex AI y Microsoft Foundry. En Bedrock, solo para quien pueda usar EFS.</p>
-        <div class="takeaway"><strong>Para ti:</strong> si defiendes sistemas que administras, el nivel Defense es el que Anthropic espera responder en unos días. No es un jailbreak: el trabajo ofensivo sigue atado a autorización.</div>
+        <p>OpenAI, 7 oct. GPT-6 en ChatGPT compone la respuesta con texto, gráficos, botones, formularios, charts y mini herramientas interactivas. Si basta un párrafo, puede quedarse en texto. Plus, Pro, Business y Enterprise salieron el 7 oct en la pestaña Chat. <strong>Free y Go entran el 8 oct</strong>, hoy. En Enterprise manda el admin. Los planes de pago usan GPT-6 Sol; Free y Go usan GPT-6 Luna. OpenAI cita más de 1.200 millones de usuarios semanales. Work y Codex no cambian con este lanzamiento.</p>
+        <div class="takeaway"><strong>Para ti:</strong> si estás en Free o Go, míralo hoy en la pestaña Chat, no en Codex. El vídeo oficial está abajo. El modelo de la API no es esta interfaz.</div>
         <div class="link-row">
-          <a class="fuente-original" href="https://www.anthropic.com/news/cyber-verification-program" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="fuente-original" href="https://openai.com/index/gpt-6-for-everyone/" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://www.youtube.com/watch?v=IsL4dVezs18" target="_blank" rel="noopener">Vídeo · OpenAI</a>
+          <a class="muted-link" href="https://x.com/OpenAI/status/2107894997538525580" target="_blank" rel="noopener">@OpenAI</a>
         </div>
       </article>
-      <article class="side-card item" data-type="modelo">
-        <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">6 oct</span></div>
-        <a href="https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/" target="_blank" rel="noopener">
-          <h3>EmbeddingGemma 2: 740M, texto, imagen, audio y vídeo</h3>
+      <article class="side-card item" id="synthid" data-type="herramienta">
+        <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">7 oct</span></div>
+        <a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/" target="_blank" rel="noopener">
+          <h3>SynthID Detector, abierto y en inglés</h3>
         </a>
-        <p>Google DeepMind, 6 oct. Embeddings multimodales nativos, Apache 2.0, sobre Gemma 4. 740 millones de parámetros; el texto puede quedarse en 270M y sumar visión (170M) y audio (300M). Matryoshka: de 768 dimensiones a 512, 256 o 128, hasta 6× menos almacenamiento. En un Pixel 11 Pro, con cuantización, unos 191&nbsp;MB de RAM activa solo texto y unos 567&nbsp;MB el modelo completo. Contexto 8K, cuatro veces el de EmbeddingGemma 1: hasta 5,5 minutos de audio, 29 imágenes o 58 frames. En MTEB Code sube 9,92 puntos, de 68,76 a 78,68. El anterior pasó de 20 millones de descargas. ID: <code>google/embeddinggemma-2</code>.</p>
-        <div class="takeaway"><strong>Para ti:</strong> índice local de código y búsqueda de clips sin sacar el archivo del dispositivo. La ficha larga está en Modelos.</div>
+        <p>Pushmeet Kohli, Google DeepMind, 7 oct. Cualquiera puede comprobar si una imagen, un vídeo o un audio se hizo con IA de Google o de socios: OpenAI, NVIDIA, Kakao y, pronto, Apple. Google dice haber marcado más de 180.000 millones de imágenes y vídeos y 240.000 años de audio. La verificación ya integrada en Search, Gemini y Chrome atiende más de 1 millón de peticiones al día. El acceso nuevo es global y en inglés.</p>
+        <div class="takeaway"><strong>Para ti:</strong> sirve para marcas de esas casas, no para «cualquier IA». Un negativo no prueba que el archivo sea una foto.</div>
         <div class="link-row">
-          <a class="fuente-original" href="https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/" target="_blank" rel="noopener">Fuente original ↗</a>
-          <a class="muted-link" href="#embeddinggemma-2">Ficha</a>
+          <a class="fuente-original" href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://x.com/GoogleDeepMind/status/2107834249680499136" target="_blank" rel="noopener">@GoogleDeepMind</a>
         </div>
       </article>
-      <article class="side-card item" id="textgrain" data-type="articulo">
-        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">5 oct</span></div>
-        <a href="https://openai.com/index/eu-text-provenance" target="_blank" rel="noopener">
-          <h3>textGrain, ahora en contexto</h3>
+      <article class="side-card item" id="openai-math" data-type="articulo">
+        <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">6 oct · README 8 oct</span></div>
+        <a href="https://openai.com/index/sharing-ai-progress-in-mathematics/" target="_blank" rel="noopener">
+          <h3>Matemáticas OpenAI: el README ya dice 719, no 722</h3>
         </a>
-        <p>Sigue vigente, ya no es el titular. El 5 oct OpenAI explicó textGrain, la marca estadística invisible en la elección de palabras para el AI Act. En la API, en todo el mundo y en modelos seleccionados, se enciende a mano y queda apagada por defecto. En las próximas semanas marcará el texto elegible de ChatGPT y Codex en la UE, en todos los planes. Con un falso positivo objetivo del 1%, el detector acierta en torno al 80% de pasajes de 200 tokens y al 95% de los de 400 en contenidos como psicología. Sustituir el 10% de las palabras por sinónimos baja la detección, en pasajes de 400 tokens, de ~92% a 66%; el 25%, a 17%. No identifica al usuario ni prueba autoría.</p>
-        <div class="takeaway"><strong>Para ti:</strong> si sirves ChatGPT o Codex en la UE, el texto saldrá marcado. No uses el detector como prueba de quién escribió.</div>
+        <p>Ayer el digest repetía 722 manuscritos. El README, leído el 8 oct, dice <strong>719 manuscritos en 372 familias</strong>. El <code>history.md</code> del 7 oct retira tres papers: un error de signo en «Algebraicity of Weil classes on split abelian eightfolds» tumba ese manuscrito y dos que dependen de él. Por eso New Scientist y Stanford Tech Review, leídos el 7 oct, dicen 722, y el árbol de hoy dice 719. El 372 son familias —resultado principal, compañeros, consecuencias o pruebas alternativas—, no papers sueltos.</p>
+        <p style="margin:.7rem 0 0">El procedimiento no cambia: modelo interno no publicado, unos 4.000 problemas, media de unas tres horas de cómputo equivalente a ChatGPT Pro por resultado. Lean son dos cifras distintas. Stanford Tech Review contó, sobre los 722 del 7 oct, <strong>162 manuscritos con el resultado principal formalizado</strong>. El history del mismo día habla de resultados de primera línea: <strong>300/719, cerca del 42%</strong>. No son el mismo recuento.</p>
+        <div class="takeaway"><strong>Para ti:</strong> cita el archivo y la fecha. Scientific American recuerda que el grupo asesor del IAS pedía el modelo, el prompt y el cómputo de cada resultado; OpenAI publica la media y no los prompts, y el portavoz dijo que las guías no les obligan. El modelo sigue sin nombre.</div>
         <div class="link-row">
-          <a class="fuente-original" href="https://openai.com/index/eu-text-provenance" target="_blank" rel="noopener">Fuente original ↗</a>
-          <a class="muted-link" href="https://cdn.openai.com/pdf/e9508624-d767-41b6-a26d-e34ca798ada6/textgrain-entropy-calibrated-watermarking-for-language-model-text.pdf" target="_blank" rel="noopener">Informe técnico · PDF</a>
+          <a class="fuente-original" href="https://openai.com/index/sharing-ai-progress-in-mathematics/" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://github.com/openai/math/blob/main/README.md" target="_blank" rel="noopener">README</a>
+          <a class="muted-link" href="https://github.com/openai/math/blob/main/history.md" target="_blank" rel="noopener">history.md</a>
+          <a class="muted-link" href="https://www.newscientist.com/article/2592421-openai-announces-722-mathematical-discoveries-in-one-go/" target="_blank" rel="noopener">New Scientist</a>
+          <a class="muted-link" href="https://www.scientificamerican.com/article/openai-unleashes-hundreds-more-math-results-upon-a-field-already-in-shock/" target="_blank" rel="noopener">Scientific American</a>
+          <a class="muted-link" href="https://stanfordtechreview.com/articles/openai-math-proofs-lean-verification-gap" target="_blank" rel="noopener">Stanford Tech Review</a>
         </div>
       </article>
     </div>
@@ -540,7 +551,7 @@
 
   <div class="section-title" id="modelos">
     <h2>Modelos</h2>
-    <span>Lo usable y lo que acaba de salir · 30 sep–7 oct</span>
+    <span>Lo usable · 1–8 oct. Haiku 5.5 abre el documento</span>
   </div>
   <div class="grid">
 
@@ -626,9 +637,62 @@
 
   <div class="section-title" id="herramientas">
     <h2>Herramientas</h2>
-    <span>Programas, anuncios y plataformas</span>
+    <span>API, producto y lo que sigue vigente</span>
   </div>
   <div class="grid">
+
+    <article class="card item" id="decisions-api" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">6 oct 2026</span></div>
+      <a class="title" href="https://developers.openai.com/api/docs/guides/decisions" target="_blank" rel="noopener">Decisions API, en beta pública sobre gpt-6-luna</a>
+      <p class="why">OpenAI, 6 oct. <code>POST /v1/decisions</code> devuelve respuestas tipadas cuando el conjunto de salidas es finito: clasificar, enrutar o elegir la siguiente acción de un agente. Acepta texto e imagen. La guía dice que va unas <strong>10 veces más rápido</strong> que la Responses API. El único modelo es <code>gpt-6-luna</code>. Tres tipos de pregunta: <code>predicate</code> (probabilidad de 0 a 1), <code>choice</code> (una de tus opciones) y <code>score</code> (niveles ordenados). Está en beta pública; la guía espera el GA en las próximas semanas. El changelog del mismo día lo lista aparte de la simplificación de tiers.</p>
+      <div class="takeaway"><strong>Para ti:</strong> úsalo cuando la respuesta ya es un enum, no cuando necesitas un JSON libre. Para un objeto con tu esquema, la guía remite a Structured Outputs en la Responses API.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://x.com/OpenAIDevs/status/2107573382229188645" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://developers.openai.com/api/docs/guides/decisions" target="_blank" rel="noopener">Guía oficial</a>
+        <a class="muted-link" href="https://developers.openai.com/api/docs/changelog" target="_blank" rel="noopener">Changelog</a>
+        <a class="muted-link" href="https://www.unite.ai/openai-releases-decisions-api-in-public-beta-powered-by-gpt-6-luna/" target="_blank" rel="noopener">Unite.AI</a>
+      </div>
+    </article>
+
+    <article class="card item" id="playground" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">7 oct 2026</span></div>
+      <a class="title" href="https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/" target="_blank" rel="noopener">Google Playground: juegos por prompt, solo en EE.&nbsp;UU.</a>
+      <p class="why">Maryam Karimzadehgan, 7 oct. Plataforma experimental para crear, jugar y compartir juegos describiéndolos, sin programar. El navegador basta. Se puede dejar en privado, pasar un enlace o publicarlo en la galería. Hay multijugador y clasificaciones en algunos géneros. La integración con Unity Spark está anunciada y aún no: Unity Spark sigue en pruebas, con beta cerrada «próximamente». Lanzamiento en <code>playground.google</code> para usuarios de EE.&nbsp;UU. mayores de 18. Crear va por niveles, según la suscripción de Google AI.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si no estás en EE.&nbsp;UU. o no tienes la suscripción del nivel que toque, hoy es un anuncio, no una herramienta.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
+    </article>
+
+    <article class="card item" id="claude-docs" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">6 oct 2026</span></div>
+      <a class="title" href="https://x.com/claudeai/status/2107522596845822135" target="_blank" rel="noopener">Claude en Google Docs, Sheets y Slides</a>
+      <p class="why">@claudeai, 6 oct. Una barra lateral lee el archivo que tienes abierto y edita en el sitio. Cada edición se aprueba. No había ficha de esto en el digest de ayer.</p>
+      <div class="takeaway"><strong>Para ti:</strong> el control está en la aprobación de cada cambio, no en un volcado del documento.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://x.com/claudeai/status/2107522596845822135" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
+    </article>
+
+    <article class="card item" id="atlassian-openai" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">6 oct 2026</span></div>
+      <a class="title" href="https://www.atlassian.com/blog/company-news/atlassian-openai-strategic-partnership" target="_blank" rel="noopener">Atlassian suma modelos de frontera de OpenAI a Rovo</a>
+      <p class="why">Inside Atlassian, 6 oct. Los modelos de frontera de OpenAI entran en la mezcla de Rovo y de la plataforma, encima del Teamwork Graph. ChatGPT y Codex se conectan al contexto de Atlassian por MCP. En el horizonte, el post describe integraciones para que agentes autónomos recojan work items de Jira, corran tests y sincronicen la sesión con el tablero, con revisión humana. No hay fechas ni precios. El post no nombra un SKU de GPT-6. Dice que más de 3.000 desarrolladores de Atlassian ya usan Codex.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si esperabas un interruptor de «GPT-6 en Jira» con precio, el anuncio no lo trae. Lo usable hoy es el MCP y Rovo sobre los modelos que Atlassian ya enruta.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.atlassian.com/blog/company-news/atlassian-openai-strategic-partnership" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
+    </article>
+
+    <article class="card item" id="cvp" data-type="herramienta">
+      <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">6 oct 2026</span></div>
+      <a class="title" href="https://www.anthropic.com/news/cyber-verification-program" target="_blank" rel="noopener">Cyber Verification Program, ya no abre el digest</a>
+      <p class="why">Sigue vigente desde el 6 oct. Anthropic funde Project Glasswing y el CVP anterior en tres niveles, con Opus 5.5, Sonnet 5.5 y Mythos 5.1. Defense cubre SOC, respuesta a incidentes, ingeniería inversa de malware y validación de vulnerabilidades. Red Team suma pentest autorizado y no admite investigadores individuales. Specialized, el de menos bloqueos, se revisa con el gobierno de EE.&nbsp;UU. En CyScenarioBench (10 retos, 5 intentos, Opus 5.5) Defense deja salir 4 de 50 ensayos; Red Team completa 34 de 50. Está en Claude Platform, Vertex AI y Microsoft Foundry. En Bedrock, solo para quien pueda usar EFS.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si defiendes sistemas que administras, Defense es el nivel que Anthropic espera responder en unos días. El trabajo ofensivo sigue atado a autorización.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.anthropic.com/news/cyber-verification-program" target="_blank" rel="noopener">Fuente original ↗</a>
+      </div>
+    </article>
 
     <article class="card item" data-type="herramienta">
       <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">6 oct 2026</span></div>
@@ -666,15 +730,37 @@
 
   <div class="section-title" id="lectura">
     <h2>Lectura de la semana</h2>
-    <span>Sigue vigente, ya no abre el digest</span>
+    <span>En español primero · el resto sigue vigente</span>
   </div>
   <div class="grid">
+
+    <article class="card item" id="donweb" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">7 oct 2026</span></div>
+      <a class="title" href="https://blog.donweb.com/claude-haiku-5-5-precio-gpt-6-intelligent-ui/" target="_blank" rel="noopener">DonWeb: cuándo el ahorro de Haiku 5.5 es 90% y cuándo es 50%</a>
+      <p class="why">Blog en español, 7 oct. Separa el precio de lista del ahorro de una carga real. Hasta 100K tokens el recorte frente a Haiku 4.5 es del 90%; por encima, del 50%. El 75% que cita Anthropic es la media, y además el tokenizador nuevo gasta más tokens por tarea. Cita a VentureBeat para el matiz de Terminal-Bench: 39,2% a esfuerzo máximo y cerca del 20% en el esfuerzo medio, que es el de serie. También fija el calendario de Intelligent UI: planes de pago el 7 oct, Free y Go el 8.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si tus prompts son cortos y repetitivos, el tramo de 0,10&nbsp;$ merece una prueba. Si mandas documentos enteros o historiales de agente, cuenta con el tramo de 0,50&nbsp;$ y no con el titular del 90%.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://blog.donweb.com/claude-haiku-5-5-precio-gpt-6-intelligent-ui/" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="#haiku-5-5">Spotlight</a>
+      </div>
+    </article>
+
+    <article class="card item" id="textgrain" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">5 oct 2026</span></div>
+      <a class="title" href="https://openai.com/index/eu-text-provenance" target="_blank" rel="noopener">textGrain, ahora en contexto</a>
+      <p class="why">Sigue vigente, ya no es el titular. El 5 oct OpenAI explicó textGrain, la marca estadística invisible en la elección de palabras para el AI Act. En la API, en todo el mundo y en modelos seleccionados, se enciende a mano y queda apagada por defecto. En las próximas semanas marcará el texto elegible de ChatGPT y Codex en la UE, en todos los planes. Con un falso positivo objetivo del 1%, el detector acierta en torno al 80% de pasajes de 200 tokens y al 95% de los de 400 en contenidos como psicología. Sustituir el 10% de las palabras por sinónimos baja la detección, en pasajes de 400 tokens, de ~92% a 66%; el 25%, a 17%. No identifica al usuario ni prueba autoría.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si sirves ChatGPT o Codex en la UE, el texto saldrá marcado. No uses el detector como prueba de quién escribió.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://openai.com/index/eu-text-provenance" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://cdn.openai.com/pdf/e9508624-d767-41b6-a26d-e34ca798ada6/textgrain-entropy-calibrated-watermarking-for-language-model-text.pdf" target="_blank" rel="noopener">Informe técnico · PDF</a>
+      </div>
+    </article>
 
     <article class="card item" data-type="articulo">
       <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">2 oct 2026</span></div>
       <a class="title" href="https://research.meta.ai/blog/solving-open-research-problems-together" target="_blank" rel="noopener">Meta: seis papers con matemáticos, no un volcado</a>
       <p class="why">2 oct. Muse Spark 1.1 y 1.2 en Thinking Mode, por el chat normal de meta.ai, sin scaffold de investigación. Seis papers. Cinco responden preguntas que estaban abiertas. El método que ellos escriben: un equipo guía y desarrolla los argumentos con el modelo; un segundo grupo revisa; cada paper marca qué párrafos redactaron personas y cuáles la IA. Ejemplo que ellos detallan: un grupo de orden 384 que no es monomial, encontrado con un programa en GAP que generó Muse Spark, contra una conjetura de Kida de 2024. Reconocen trabajos independientes de otros equipos sobre algunos de los mismos problemas.</p>
-      <div class="takeaway"><strong>Para ti:</strong> léelo al lado del dump de OpenAI. Aquí el resultado útil es el que un matemático firma y otro revisa. Allí, el filtro es Lean y la advertencia de que lo no formalizado puede fallar.</div>
+      <div class="takeaway"><strong>Para ti:</strong> léelo al lado del catálogo de OpenAI. Aquí el resultado útil es el que un matemático firma y otro revisa. Allí, el filtro es Lean y la advertencia de que lo no formalizado puede fallar.</div>
       <div class="link-row">
         <a class="fuente-original" href="https://research.meta.ai/blog/solving-open-research-problems-together" target="_blank" rel="noopener">Fuente original ↗</a>
       </div>
@@ -758,13 +844,24 @@
 
   <div class="section-title" id="medium">
     <h2>Medium</h2>
-    <span>Tres piezas de la semana · fuente + lectura</span>
+    <span>Cuatro piezas de la semana · fuente + lectura</span>
   </div>
   <p class="lede" style="margin:0 0 1rem;font-size:.95rem;max-width:70ch;">
     Resumen breve, no el artículo. El enlace principal es la URL original de Medium.
     El secundario abre la misma pieza en Freedium.
   </p>
   <div class="grid">
+
+    <article class="card item" data-type="medium">
+      <div class="meta-row"><span class="pill medium">medium</span><span class="pill fecha">7 oct 2026</span></div>
+      <a class="title" href="https://medium.com/@joe.njenga/claude-haiku-5-5-is-here-and-sonnet-5-5-just-got-20-cheaper-1fd878acc682" target="_blank" rel="noopener">Claude Haiku 5.5 Is Here (And Sonnet 5.5 Just Got 20% Cheaper)</a>
+      <p class="why">Joe Njenga lo probó en Claude Code. Lo deja para resúmenes, compactaciones, consultas a base de datos y clasificación. En código, el flujo que le funciona es usarlo como subagente de Opus 5.5 o Sonnet 5.5, no como el modelo que escribe el cambio. El recorte de las lecturas de caché de Sonnet 5.5 es el otro dato del título: Anthropic lo cifra en torno a un 20% menos en la mayoría del trabajo agéntico. <em style="color:var(--muted)">— Joe Njenga · 7 oct 2026</em></p>
+      <div class="takeaway"><strong>Para ti:</strong> si ya orquestas con Opus o Sonnet, Haiku entra en las tareas cortas del bucle. No lo pongas de lead en el repositorio.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://medium.com/@joe.njenga/claude-haiku-5-5-is-here-and-sonnet-5-5-just-got-20-cheaper-1fd878acc682" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://freedium-mirror.cfd/https://medium.com/@joe.njenga/claude-haiku-5-5-is-here-and-sonnet-5-5-just-got-20-cheaper-1fd878acc682" target="_blank" rel="noopener">Leer sin paywall (Freedium)</a>
+      </div>
+    </article>
 
     <article class="card item" data-type="medium">
       <div class="meta-row"><span class="pill medium">medium</span><span class="pill fecha">6 oct 2026</span></div>
@@ -805,9 +902,27 @@
     <span>Título comprobado con oEmbed</span>
   </div>
   <p class="lede" style="margin:0 0 1rem;font-size:.95rem;max-width:70ch;">
-    Tres vídeos de esta edición. El iframe usa youtube-nocookie. El título es el que devolvió oEmbed.
+    Cuatro vídeos. El nuevo es el de OpenAI sobre Intelligent UI. El iframe usa youtube-nocookie.
+    El título es el que devolvió oEmbed.
   </p>
   <div class="video-grid">
+
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/IsL4dVezs18" title="Introducing GPT-6 in ChatGPT with Intelligent UI" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">7 oct 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=IsL4dVezs18" target="_blank" rel="noopener">Introducing GPT-6 in ChatGPT with Intelligent UI</a></h3>
+        <div class="video-meta">OpenAI · oEmbed 200</div>
+        <p class="why">Vídeo oficial del lanzamiento. oEmbed devuelve exactamente este título y el canal OpenAI. Las fechas de Free y Go, y el reparto Sol/Luna, están en el post, no en el reproductor.</p>
+        <div class="takeaway"><strong>Para ti:</strong> míralo para ver cómo se compone una respuesta con botones y gráficos. Para saber si te toca hoy, mira el plan.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=IsL4dVezs18" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <div class="link-row" style="margin-top:.5rem;">
+          <a class="fuente-original" href="https://openai.com/index/gpt-6-for-everyone/" target="_blank" rel="noopener">Fuente original ↗</a>
+        </div>
+      </div>
+    </article>
 
     <article class="video-card item" data-type="youtube">
       <div class="video-frame">
@@ -817,8 +932,8 @@
         <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">6–7 oct 2026</span></div>
         <h3><a href="https://www.youtube.com/watch?v=eAlNTfFENzw" target="_blank" rel="noopener">OpenAI Just Open-Sourced 722 Math Papers</a></h3>
         <div class="video-meta">AI Gradient · oEmbed 200</div>
-        <p class="why">Repaso del catálogo. El título del vídeo dice «open-sourced». Lo que está en GitHub, con licencia Apache 2.0, son los manuscritos. El modelo interno no se publica.</p>
-        <div class="takeaway"><strong>Para ti:</strong> el vídeo para enterarte. La advertencia sobre resultados sin Lean está en el README, no en el thumbnail.</div>
+        <p class="why">Repaso del catálogo. El título del vídeo dice «open-sourced» y 722. Lo que está en GitHub, con licencia Apache 2.0, son los manuscritos. El modelo interno no se publica. El README, leído el 8 oct, ya cuenta 719 tras retirar tres papers el 7 oct.</p>
+        <div class="takeaway"><strong>Para ti:</strong> el vídeo para enterarte. El recuento que vale es el del README de hoy, no el del thumbnail.</div>
         <a class="src-link" href="https://www.youtube.com/watch?v=eAlNTfFENzw" target="_blank" rel="noopener">Ver en YouTube ↗</a>
         <div class="link-row" style="margin-top:.5rem;">
           <a class="fuente-original" href="https://openai.com/index/sharing-ai-progress-in-mathematics/" target="_blank" rel="noopener">Fuente original ↗</a>
@@ -866,9 +981,9 @@
     <span>Solo lo que tiene URL y texto verificable</span>
   </div>
   <p class="lede" style="margin:0 0 1rem;font-size:.95rem;max-width:70ch;">
-    Al 7 oct no hay un post nuevo, con URL abierta, que cambie la decisión de hoy.
-    Se queda el del 5 oct de Thibault Sottiaux, porque la página del estado devuelve el texto.
-    Lo demás de la semana se anunció en blogs, no en X.
+    Cuatro posts de cuentas oficiales del 6 y el 7 oct. Cada uno cambia una decisión:
+    qué modelo probar, qué endpoint llamar, qué tier te toca o cómo comprobar un archivo.
+    El de Sottiaux (5 oct) se queda porque sigue vigente.
   </p>
 
   <article class="card item" data-type="x" style="margin-bottom:1rem;">
@@ -879,6 +994,52 @@
   </article>
 
   <div class="grid">
+    <article class="card item" data-type="x">
+      <div class="meta-row"><span class="pill articulo">x · señal</span><span class="pill fecha">7 oct</span></div>
+      <a class="title" href="https://x.com/claudeai/status/2107894039626277339" target="_blank" rel="noopener">@claudeai: Haiku 5.5</a>
+      <p class="why">Cuenta oficial. El anuncio de producto está en anthropic.com: <code>claude-haiku-5-5</code>, esfuerzo por defecto <code>medium</code>, y Sonnet 5.5 u Opus 5.5 siguen siendo la recomendación para programación compleja. La ficha larga es el spotlight.</p>
+      <div class="takeaway"><strong>Para ti:</strong> el post es la señal. El precio por tramo y el 30% más de tokens del tokenizador nuevo están en la doc en español, no en el tuit.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://x.com/claudeai/status/2107894039626277339" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">Anuncio</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="x">
+      <div class="meta-row"><span class="pill articulo">x · señal</span><span class="pill fecha">6 oct</span></div>
+      <a class="title" href="https://x.com/OpenAIDevs/status/2107573382229188645" target="_blank" rel="noopener">@OpenAIDevs: Decisions API en beta pública</a>
+      <p class="why">Cuenta oficial de desarrolladores. El endpoint es <code>POST /v1/decisions</code> sobre <code>gpt-6-luna</code>, para preguntas con un conjunto finito de respuestas, sobre texto e imagen. La guía oficial dice que va unas 10 veces más rápido que la Responses API. El changelog del 6 oct lo registra el mismo día.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si enrutas o clasificas con un enum, prueba este endpoint antes de pagar una generación larga en la Responses API.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://x.com/OpenAIDevs/status/2107573382229188645" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://developers.openai.com/api/docs/guides/decisions" target="_blank" rel="noopener">Guía</a>
+        <a class="muted-link" href="https://developers.openai.com/api/docs/changelog" target="_blank" rel="noopener">Changelog</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="x">
+      <div class="meta-row"><span class="pill articulo">x · señal</span><span class="pill fecha">6 oct</span></div>
+      <a class="title" href="https://x.com/OpenAIDevs/status/2107539647392096384" target="_blank" rel="noopener">@OpenAIDevs: la API pasa de cinco tiers a tres</a>
+      <p class="why">Decisión práctica. El changelog del 6 oct deja los tiers de pago en Build, Launch y Grow. La guía de rate limits pone Grow, el más alto, en <strong>500&nbsp;$ de compras de crédito acumuladas</strong>. El post dice que antes el tier más alto pedía 1.000&nbsp;$. El salto es automático al cruzar el mínimo.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si tu organización ya ha pagado 500&nbsp;$ en créditos, mira en Settings → Organization → Limits si ya estás en Grow. No hace falta un ticket para el salto de tier.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://x.com/OpenAIDevs/status/2107539647392096384" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://developers.openai.com/api/docs/changelog" target="_blank" rel="noopener">Changelog</a>
+        <a class="muted-link" href="https://developers.openai.com/api/docs/guides/rate-limits" target="_blank" rel="noopener">Rate limits</a>
+      </div>
+    </article>
+
+    <article class="card item" data-type="x">
+      <div class="meta-row"><span class="pill articulo">x · señal</span><span class="pill fecha">7 oct</span></div>
+      <a class="title" href="https://x.com/GoogleDeepMind/status/2107834249680499136" target="_blank" rel="noopener">@GoogleDeepMind: SynthID Detector para todo el mundo</a>
+      <p class="why">Cuenta oficial. El blog del mismo día abre el detector, en inglés, a cualquiera: imagen, vídeo o audio de Google o de OpenAI, NVIDIA, Kakao y, pronto, Apple. Las cifras —más de 180.000 millones de imágenes y vídeos, 240.000 años de audio, más de 1 millón de peticiones diarias en Search, Gemini y Chrome— están en el post de Pushmeet Kohli.</p>
+      <div class="takeaway"><strong>Para ti:</strong> comprueba el archivo en la herramienta. No trates un «sin marca» como una prueba de que no hubo IA.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://x.com/GoogleDeepMind/status/2107834249680499136" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/" target="_blank" rel="noopener">Blog</a>
+      </div>
+    </article>
+
     <article class="card item" data-type="x">
       <div class="meta-row"><span class="pill articulo">x · señal</span><span class="pill fecha">5 oct</span></div>
       <a class="title" href="https://x.com/thsottiaux/status/2107158998495748264" target="_blank" rel="noopener">Sottiaux: Astra y Sol 6.1, ~50% más rápidos (Day 1)</a>
@@ -892,31 +1053,30 @@
 
   <section class="sources" id="fuentes">
     <h2>Fuentes de esta edición</h2>
-    <p class="why" style="margin:0 0 .9rem;color:var(--soft);">Primarias abiertas para el 7 oct. Lo anterior al 30 sep salió del documento.</p>
+    <p class="why" style="margin:0 0 .9rem;color:var(--soft);">Primarias del 8 oct. Lo de días anteriores sigue en las fichas.</p>
     <div class="source-list">
+      <a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">Anthropic · Haiku 5.5</a>
+      <a href="https://platform.claude.com/docs/es/models/haiku-5-5/overview" target="_blank" rel="noopener">Docs Haiku · ES</a>
+      <a href="https://blog.donweb.com/claude-haiku-5-5-precio-gpt-6-intelligent-ui/" target="_blank" rel="noopener">DonWeb</a>
+      <a href="https://openai.com/index/gpt-6-for-everyone/" target="_blank" rel="noopener">OpenAI · GPT-6</a>
+      <a href="https://developers.openai.com/api/docs/guides/decisions" target="_blank" rel="noopener">Decisions API</a>
+      <a href="https://developers.openai.com/api/docs/changelog" target="_blank" rel="noopener">Changelog API</a>
+      <a href="https://developers.openai.com/api/docs/guides/rate-limits" target="_blank" rel="noopener">Rate limits</a>
+      <a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/" target="_blank" rel="noopener">SynthID Detector</a>
+      <a href="https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/" target="_blank" rel="noopener">Playground</a>
+      <a href="https://www.atlassian.com/blog/company-news/atlassian-openai-strategic-partnership" target="_blank" rel="noopener">Atlassian · OpenAI</a>
       <a href="https://openai.com/index/sharing-ai-progress-in-mathematics/" target="_blank" rel="noopener">OpenAI · matemáticas</a>
-      <a href="https://github.com/openai/math" target="_blank" rel="noopener">GitHub · openai/math</a>
-      <a href="https://www.anthropic.com/news/cyber-verification-program" target="_blank" rel="noopener">Anthropic · CVP</a>
-      <a href="https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build" target="_blank" rel="noopener">Claude Startups</a>
-      <a href="https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/" target="_blank" rel="noopener">Google · EmbeddingGemma 2</a>
-      <a href="https://huggingface.co/google/embeddinggemma-2" target="_blank" rel="noopener">HF · embeddinggemma-2</a>
-      <a href="https://huggingface.co/blog/tiiuae/falcon-emirati" target="_blank" rel="noopener">HF · Falcon-Emirati</a>
-      <a href="https://research.meta.ai/blog/solving-open-research-problems-together" target="_blank" rel="noopener">Meta AI · seis papers</a>
-      <a href="https://openai.com/index/eu-text-provenance" target="_blank" rel="noopener">OpenAI · textGrain</a>
-      <a href="https://www.bbc.co.uk/news/articles/cmx2qne2j88wo" target="_blank" rel="noopener">BBC · Kwon</a>
-      <a href="https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/" target="_blank" rel="noopener">Wikimedia</a>
-      <a href="https://reflection.ai/blog/introducing-beam" target="_blank" rel="noopener">Reflection · Beam</a>
-      <a href="https://reka.ai/news/rho-1-collapsing-the-multimodal-stack" target="_blank" rel="noopener">Reka · Rho-1</a>
-      <a href="https://www.webreactiva.com/blog/t3-code" target="_blank" rel="noopener">Web Reactiva · T3 Code</a>
-      <a href="https://www.webreactiva.com/blog/e2e-tester-army" target="_blank" rel="noopener">Web Reactiva · e2e</a>
-      <a href="https://www.youtube.com/watch?v=eAlNTfFENzw" target="_blank" rel="noopener">YouTube · 722 papers</a>
-      <a href="https://www.youtube.com/watch?v=anPsS6huQk0" target="_blank" rel="noopener">YouTube · EmbeddingGemma 2</a>
-      <a href="https://x.com/thsottiaux/status/2107158998495748264" target="_blank" rel="noopener">X · Sottiaux</a>
+      <a href="https://github.com/openai/math/blob/main/README.md" target="_blank" rel="noopener">README · openai/math</a>
+      <a href="https://www.youtube.com/watch?v=IsL4dVezs18" target="_blank" rel="noopener">YouTube · GPT-6</a>
+      <a href="https://x.com/claudeai/status/2107894039626277339" target="_blank" rel="noopener">X · Haiku 5.5</a>
+      <a href="https://x.com/OpenAIDevs/status/2107573382229188645" target="_blank" rel="noopener">X · Decisions</a>
+      <a href="https://x.com/OpenAIDevs/status/2107539647392096384" target="_blank" rel="noopener">X · tiers</a>
+      <a href="https://x.com/GoogleDeepMind/status/2107834249680499136" target="_blank" rel="noopener">X · SynthID</a>
     </div>
   </section>
 
   <footer>
-    <div>Mantenido por <strong>IA</strong> · última actualización 7 oct 2026 · Europe/Madrid</div>
+    <div>Mantenido por <strong>IA</strong> · última actualización 8 oct 2026 · Europe/Madrid</div>
     <div>
       <a href="https://github.com/canduchix/novedades-ia">Repo</a> ·
       <a href="https://canduchix.github.io/novedades-ia/">GitHub Pages</a>
