@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Novedades IA · 8 oct 2026</title>
-<meta name="description" content="Selección del 8 oct 2026: Claude Haiku 5.5, GPT-6 con Intelligent UI en Free y Go, y SynthID Detector abierto al mundo." />
+<title>Novedades IA · 9 oct 2026</title>
+<meta name="description" content="Selección del 9 oct 2026: Anthropic Cyber Mission y OSS Scanner, el agente de Gemini para empresas, ML Intern y Carbon-A." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -449,20 +449,20 @@
   </nav>
 
   <header class="hero">
-    <div class="eyebrow"><span class="dot"></span> Actualizado · 8 oct 2026</div>
+    <div class="eyebrow"><span class="dot"></span> Actualizado · 9 oct 2026</div>
     <h1>Lo que importa en <em>inteligencia artificial</em> esta semana</h1>
     <p class="lede">
-      Edición del jueves 8 de octubre (Europe/Madrid). La semana va del 1 al 8 oct.
-      Hoy abre el documento Claude Haiku 5.5, y GPT-6 con Intelligent UI llega a Free y Go.
-      SynthID Detector ya puede usarlo cualquiera. El catálogo de matemáticas del 6 oct
-      se queda, con el recuento corregido contra el README. Cada pieza lleva
-      <strong>fuente original</strong>.
+      Edición del viernes 9 de octubre (Europe/Madrid). La semana va del 2 al 9 oct.
+      Lo nuevo es del 8: Anthropic abre la Cyber Mission y el OSS Scanner, Google Cloud
+      presenta el agente de Gemini para empresas, y Hugging Face publica ML Intern y Carbon-A.
+      La edición del 8 oct —Haiku 5.5, Intelligent UI, SynthID y el README de 719—
+      sigue debajo, sin reescribir. Cada pieza lleva <strong>fuente original</strong>.
     </p>
     <div class="stats">
-      <div class="stat"><b>42</b><span>piezas de esta edición</span></div>
-      <div class="stat"><b>8</b><span>fichas de modelo</span></div>
-      <div class="stat"><b>4</b><span>señales nuevas en X</span></div>
-      <div class="stat"><b>2</b><span>tutoriales prácticos</span></div>
+      <div class="stat"><b>49</b><span>piezas en la página</span></div>
+      <div class="stat"><b>6</b><span>novedades que no estaban ayer</span></div>
+      <div class="stat"><b>10</b><span>fichas de modelo</span></div>
+      <div class="stat"><b>0</b><span>posts de X nuevos abiertos</span></div>
     </div>
   </header>
 
@@ -478,6 +478,79 @@
   </div>
 
   <section id="destacados" class="featured">
+    <article class="spotlight item" id="cyber-mission" data-type="herramienta">
+      <div class="kicker">Historia principal · 8 oct · digest 9 oct</div>
+      <h2>Cyber Mission: Anthropic manda informes de vulnerabilidades sin revisión humana</h2>
+      <p>
+        El 8 de octubre Anthropic lanza la Cyber Mission, un compromiso a largo plazo para asegurar los sistemas de los que depende todo el mundo. Empieza por dos sitios. El Critical Infrastructure Defense Program lleva modelos Claude de frontera, ingenieros en el sitio e investigación de amenazas a quien protege tecnología operativa: redes eléctricas, agua, fábricas y transporte. Los once socios fundadores son Accenture, Booz Allen, CrowdStrike, Deloitte, Dragos, Hitachi, Insane Cyber, Nozomi Networks, Palo Alto Networks, PwC y Rockwell Automation.
+      </p>
+      <p>
+        El segundo es <strong>OSS Scanner</strong>, gratis y opt-in, inspirado en OSS-Fuzz. Los proyectos inscritos reciben escaneos periódicos de los modelos más capaces, incluido Claude Mythos. Cada informe trae una prueba de concepto, una explicación y, si la hay, una corrección propuesta. Salen generados por el modelo, <strong>sin revisión humana</strong>. Anthropic espera una tasa de verdaderos positivos por encima del 90% y avisa de que puede fallar la severidad. En Glasswing encontraron vulnerabilidades con facilidad; verificarlas, priorizarlas y arreglarlas sigue siendo el cuello de botella.
+      </p>
+      <p>
+        El post del equipo separa dos cifras. En seis meses vieron más de <strong>29.000 candidatas</strong> y solo pudieron revisar a mano unas <strong>6.000</strong>. Casi 5.000 informes sin validar ya se enviaron a maintainers que pidieron el lote entero. En una prueba temprana, pentesters del proceso de divulgación miraron 97 hallazgos críticos o altos en 48 proyectos: <strong>85 (88%) pasaron el listón de CVD</strong>, 11 eran reales pero duplicaban algo conocido, y uno era falso positivo. No es la misma cifra que el 90% esperado. wolfSSL, citado ahí: de 74 informes, todos menos dos válidos, y cinco acabaron en CVE.
+      </p>
+      <p>
+        Quién entra: maintainers principales de proyectos con «critical impact on infrastructure and user security», caso por caso, al estilo de OSS-Fuzz. La inscripción es un pull request a <code>anthropics/oss-scanner</code> con <code>project.yaml</code> (repo, contacto y un Dockerfile que deje el proyecto construido). El agente audita <strong>sin internet</strong>, dentro de sandboxes. Los hallazgos no validados no arrancan un reloj de 90 días. Quien no pueda triagear sigue recibiendo solo la divulgación revisada por personas. Claude for Open Source ofrece suscripciones gratis de Claude Max 20x. El pronóstico de Anthropic: en dos años la IA favorecerá a la defensa; a corto plazo, dice, puede que no.
+      </p>
+      <div class="takeaway"><strong>Para ti:</strong> si mantienes un proyecto crítico y ya puedes con los informes altos, el escáner es un carril rápido, no un CVE automático. Reproduce el PoC antes de parchear. Si el triaje te desborda, no te inscribas: el carril con revisión humana sigue abierto.</div>
+      <a class="cta" href="https://www.anthropic.com/news/anthropic-cyber-mission" target="_blank" rel="noopener" style="margin-top:1rem;">Leer en Anthropic ↗</a>
+      <div class="link-row" style="margin-top:.85rem;">
+        <a class="fuente-original" href="https://www.anthropic.com/news/anthropic-cyber-mission" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source" target="_blank" rel="noopener">Post del equipo</a>
+        <a class="muted-link" href="https://red.anthropic.com/oss-scanner/" target="_blank" rel="noopener">Cómo inscribirse</a>
+        <a class="muted-link" href="https://www.unite.ai/es/anthropic-launches-cyber-mission-for-critical-infrastructure-open-source/" target="_blank" rel="noopener">Unite.AI (ES)</a>
+      </div>
+    </article>
+    <div class="side-stack">
+      <article class="side-card item" id="gemini-agent" data-type="herramienta">
+        <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">8 oct</span></div>
+        <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work/" target="_blank" rel="noopener">
+          <h3>El agente de Gemini, primero para empresas</h3>
+        </a>
+        <p>Ben Townsend, blog de Google, 8 oct, en Gemini at Work 2026. Un agente único para el trabajo: contexto de la organización, preguntas, conocimiento, contenido y código desde una caja de prompt. Planifica, usa skills y herramientas, se conecta a los sistemas del cliente y devuelve el trabajo hecho en documentos, bandeja y entornos de desarrollo. Elige el modelo, con controles de coste, seguridad y gobierno.</p>
+        <p style="margin:.7rem 0 0">TechCrunch, el mismo día, cita a Sundar Pichai: más de <strong>1.000 millones</strong> de usuarios mensuales en la app de Gemini, y casi el <strong>90% del Fortune 100</strong> usa Gemini Enterprise. El despliegue empieza en empresas; el de consumidores, después. Thomas Kurian: objetivos, no solo instrucciones. Por defecto elige el modelo; se puede forzar, también Claude de Anthropic, y más adelante modelos abiertos y privados. TechCrunch lista conectores —Workspace, Microsoft 365, Slack, Jira, Confluence, Git, BigQuery, Databricks, Postgres, Snowflake— y cualquier servidor MCP. El agente tiene cuenta propia de Workspace, con su correo. Hay una bandeja de tareas.</p>
+        <div class="takeaway"><strong>Para ti:</strong> si no estás en Gemini Enterprise, hoy es un anuncio, no un interruptor. El keynote está en YouTube, título comprobado con oEmbed.</div>
+        <div class="link-row">
+          <a class="fuente-original" href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work/" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/" target="_blank" rel="noopener">TechCrunch</a>
+          <a class="muted-link" href="https://www.youtube.com/watch?v=1ASzWklab2U" target="_blank" rel="noopener">Keynote</a>
+        </div>
+      </article>
+      <article class="side-card item" id="ml-intern" data-type="herramienta">
+        <div class="meta-row"><span class="pill herramienta">herramienta</span><span class="pill fecha">8 oct</span></div>
+        <a href="https://huggingface.co/blog/building-with-ml-intern" target="_blank" rel="noopener">
+          <h3>ML Intern: un modelo de 0,8B por 16 dólares</h3>
+        </a>
+        <p>yuvraj sharma y Abubakar Abid, blog de Hugging Face, 8 oct. ML Intern está en HuggingChat: planifica, pide presupuesto antes de gastar (empieza en cero dólares), corre un smoke test y entrena, evalúa y publica en hardware de Hugging Face. El ejemplo del título: un reescritor de prompts de 0,8B, frente al oficial de 9B de Qwen-Image 2.1 (~20 GB). Sale válido el 99,7% de las veces y usa cerca de un cuarto de los tokens del profesor. El cómputo, incluido etiquetar 8.797 ejemplos con el 9B, costó 16 dólares. Seis proyectos en la tabla suman unos <strong>103 dólares</strong>.</p>
+        <div class="takeaway"><strong>Para ti:</strong> en el prompt pide el score del modelo base antes de entrenar, un smoke test de pocos pasos y un tope de gasto. Sin la línea de base no sabes si el fine-tune sirvió.</div>
+        <div class="link-row">
+          <a class="fuente-original" href="https://huggingface.co/blog/building-with-ml-intern" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://github.com/yvrjsharma/ml-intern-prompts" target="_blank" rel="noopener">Prompts de ejemplo</a>
+        </div>
+      </article>
+      <article class="side-card item" id="carbon-a" data-type="modelo">
+        <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">8 oct</span></div>
+        <a href="https://huggingface.co/blog/HuggingFaceBio/carbon-annotator-genbank-genome-annotation" target="_blank" rel="noopener">
+          <h3>Carbon-A: 566 millones de genes candidatos, no confirmados</h3>
+        </a>
+        <p>Hugging Face Bio, 8 oct. Carbon-A (Carbon-Annotator) es un modelo de <strong>1.200 millones</strong> de parámetros que marca regiones que codifican proteínas directo desde el ADN, un solo modelo para mamíferos, otros vertebrados, invertebrados, plantas, hongos y protistas. Ventana de 98.304 pares de bases, las dos hebras. En 42 genomas de bench, F1 de nucleótido macro de <strong>0,944</strong>, por delante de AUGUSTUS, Helixer, Tiberius, ANNEVO, OrionGeno, SegmentNT y NTv3. Es su cifra.</p>
+        <p style="margin:.7rem 0 0">La Carbon Annotation Database trae 48.167 ensamblados de 22.617 taxones, unos 27 billones de pares de bases y <strong>566 millones de loci predichos</strong>. Son candidatos. Con Active Site y UCSD contrastaron Iso-Seq (ARN real) en gato, hámster sirio, pollo y Arabidopsis: apoya transcritos que no están en RefSeq. Eso no demuestra que el ARN se traduzca a proteína. El score de confianza saca un AUROC de 0,876 para acertar el CDS exacto. Pesos: <code>HuggingFaceBio/Carbon-A-1.2B</code>. Otro lote de genomas, en tres semanas.</p>
+        <div class="takeaway"><strong>Para ti:</strong> úsalo para hipótesis en genomas mal anotados, y filtra por el score. No cites 566 millones como genes demostrados en el laboratorio.</div>
+        <div class="link-row">
+          <a class="fuente-original" href="https://huggingface.co/blog/HuggingFaceBio/carbon-annotator-genbank-genome-annotation" target="_blank" rel="noopener">Fuente original ↗</a>
+          <a class="muted-link" href="https://huggingface.co/HuggingFaceBio/Carbon-A-1.2B" target="_blank" rel="noopener">Pesos</a>
+          <a class="muted-link" href="https://huggingface.co/spaces/HuggingFaceBio/genbank-annotation-explorer" target="_blank" rel="noopener">Explorador</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="section-title" id="edicion-8">
+    <h2>Edición del 8 oct</h2>
+    <span>El texto del jueves se queda. Haiku 5.5, Intelligent UI, SynthID y el README de 719</span>
+  </div>
+  <section id="destacados-8" class="featured">
     <article class="spotlight item" id="haiku-5-5" data-type="modelo">
       <div class="kicker">Historia principal · 7 oct · digest 8 oct</div>
       <h2>Claude Haiku 5.5: el modelo pequeño de Anthropic, al precio de lista de GPT-6 Luna</h2>
@@ -551,9 +624,21 @@
 
   <div class="section-title" id="modelos">
     <h2>Modelos</h2>
-    <span>Lo usable · 1–8 oct. Haiku 5.5 abre el documento</span>
+    <span>Lo usable · 1–9 oct. MIMESIS entra; Haiku 5.5 está en la edición del 8</span>
   </div>
   <div class="grid">
+
+    <article class="card item" id="mimesis" data-type="modelo">
+      <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">6 oct · envío 8 oct</span></div>
+      <a class="title" href="https://arxiv.org/abs/2610.09484" target="_blank" rel="noopener">MIMESIS: un simulador de usuario de Meta, 4B y 9B</a>
+      <p class="why">Paper de Meta Superintelligence Labs, arXiv 2610.09484. La ficha de Hugging Face lo lista publicado el 6 oct y enviado el 8 por Phan Hoang. Entrenan un simulador de usuario con conversaciones humanas, supervisión de razonamiento y 13 patrones de conducta. El 9B saca un SOUL-Index de <strong>65,7</strong>, por encima del frontier que ellos comparan. Frente a Claude-Opus-5, el mejor baseline en RealUserSim y SimulatorArena, sube la fidelidad de conducta 13,4 puntos y baja la distancia de Turing 3,6. Congelan el simulador y entrenan un agente con RL multi-turno. En ocho entornos, ese agente gana al entrenado con GPT-5.5 bajo los nueve simuladores de evaluación que no vio. CSD, su destilación con notas del coach, suma otra mejora en los nueve. La comparación es contra otros simuladores, no contra personas en producción. Código y página del proyecto en el paper.</p>
+      <div class="takeaway"><strong>Para ti:</strong> si entrenas agentes contra un LLM «útil» haciendo de usuario, el paper dice que ese usuario infla el éxito. Un gpt-5.5 fijo pasa el 63,6% de τ-bench con personas y el 82,4–84,4% con tres simuladores de API. No despliegues MIMESIS como producto: es un entorno de entrenamiento.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://arxiv.org/abs/2610.09484" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://huggingface.co/papers/2610.09484" target="_blank" rel="noopener">Hugging Face</a>
+        <a class="muted-link" href="https://github.com/VietHoang1512/mimesis" target="_blank" rel="noopener">Código</a>
+      </div>
+    </article>
 
     <article class="card item" id="embeddinggemma-2" data-type="modelo">
       <div class="meta-row"><span class="pill modelo">modelo</span><span class="pill fecha">6 oct 2026</span></div>
@@ -730,9 +815,21 @@
 
   <div class="section-title" id="lectura">
     <h2>Lectura de la semana</h2>
-    <span>En español primero · el resto sigue vigente</span>
+    <span>En español primero · Unite.AI cubre la Cyber Mission</span>
   </div>
   <div class="grid">
+
+    <article class="card item" id="unite-cyber" data-type="articulo">
+      <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">8 oct 2026</span></div>
+      <a class="title" href="https://www.unite.ai/es/anthropic-launches-cyber-mission-for-critical-infrastructure-open-source/" target="_blank" rel="noopener">Unite.AI, en español, cuenta la Cyber Mission del mismo día</a>
+      <p class="why">Mira Kellan, 8 oct. Recorre el anuncio: los once socios, el OSS Scanner sin revisión humana, el 88% de la prueba de 97 hallazgos y las citas de PostgreSQL, OpenSSL, wolfSSL y HotCRP. Sirve para leerlo en español. Las reglas de inscripción —el pull request, el Dockerfile y que no hay reloj de 90 días en lo no validado— están en la página de OSS Scanner, no en este recuento.</p>
+      <div class="takeaway"><strong>Para ti:</strong> léelo si prefieres el castellano. Para inscribir un repo, abre la ficha de red.anthropic.com. El spotlight de arriba ya separa el 88% medido del 90% que Anthropic espera.</div>
+      <div class="link-row">
+        <a class="fuente-original" href="https://www.unite.ai/es/anthropic-launches-cyber-mission-for-critical-infrastructure-open-source/" target="_blank" rel="noopener">Fuente original ↗</a>
+        <a class="muted-link" href="https://www.anthropic.com/news/anthropic-cyber-mission" target="_blank" rel="noopener">Anuncio</a>
+        <a class="muted-link" href="#cyber-mission">Spotlight</a>
+      </div>
+    </article>
 
     <article class="card item" id="donweb" data-type="articulo">
       <div class="meta-row"><span class="pill articulo">artículo</span><span class="pill fecha">7 oct 2026</span></div>
@@ -844,9 +941,11 @@
 
   <div class="section-title" id="medium">
     <h2>Medium</h2>
-    <span>Cuatro piezas de la semana · fuente + lectura</span>
+    <span>Sin pieza nueva del 8–9 · siguen las cuatro de la semana</span>
   </div>
   <p class="lede" style="margin:0 0 1rem;font-size:.95rem;max-width:70ch;">
+    Esta mañana no entró ningún artículo técnico de Medium publicado el 8 o el 9 de octubre
+    que aguantara la lectura. Las cuatro fichas de días anteriores se quedan.
     Resumen breve, no el artículo. El enlace principal es la URL original de Medium.
     El secundario abre la misma pieza en Freedium.
   </p>
@@ -902,10 +1001,27 @@
     <span>Título comprobado con oEmbed</span>
   </div>
   <p class="lede" style="margin:0 0 1rem;font-size:.95rem;max-width:70ch;">
-    Cuatro vídeos. El nuevo es el de OpenAI sobre Intelligent UI. El iframe usa youtube-nocookie.
+    Cinco vídeos. El nuevo es el keynote de Google Cloud del 8 oct. El iframe usa youtube-nocookie.
     El título es el que devolvió oEmbed.
   </p>
   <div class="video-grid">
+
+    <article class="video-card item" data-type="youtube">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/1ASzWklab2U" title="Gemini at Work 2026" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="video-body">
+        <div class="meta-row"><span class="pill tutorial">youtube</span><span class="pill fecha">8 oct 2026</span></div>
+        <h3><a href="https://www.youtube.com/watch?v=1ASzWklab2U" target="_blank" rel="noopener">Gemini at Work 2026</a></h3>
+        <div class="video-meta">Google Cloud · oEmbed 200</div>
+        <p class="why">Keynote del 8 oct en el que Google Cloud presenta el agente de Gemini. oEmbed devuelve exactamente este título y el canal Google Cloud. Las cifras de usuarios y el calendario de empresas antes que consumidores están en el post y en TechCrunch, no en el reproductor.</p>
+        <div class="takeaway"><strong>Para ti:</strong> míralo para ver la caja de prompt única y la bandeja de tareas. Para saber si te toca, mira si tu empresa está en Gemini Enterprise.</div>
+        <a class="src-link" href="https://www.youtube.com/watch?v=1ASzWklab2U" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        <div class="link-row" style="margin-top:.5rem;">
+          <a class="fuente-original" href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work/" target="_blank" rel="noopener">Fuente original ↗</a>
+        </div>
+      </div>
+    </article>
 
     <article class="video-card item" data-type="youtube">
       <div class="video-frame">
@@ -978,12 +1094,13 @@
 
   <div class="section-title" id="desde-x">
     <h2>Desde X</h2>
-    <span>Solo lo que tiene URL y texto verificable</span>
+    <span>Sin post nuevo del 8–9 que se pudiera abrir</span>
   </div>
   <p class="lede" style="margin:0 0 1rem;font-size:.95rem;max-width:70ch;">
-    Cuatro posts de cuentas oficiales del 6 y el 7 oct. Cada uno cambia una decisión:
-    qué modelo probar, qué endpoint llamar, qué tier te toca o cómo comprobar un archivo.
-    El de Sottiaux (5 oct) se queda porque sigue vigente.
+    En esta edición no entra ningún post de X del 8 o el 9 de octubre: no hubo URL
+    de cuenta técnica que se pudiera abrir y leer. Las cinco fichas del 5 al 7 oct se quedan.
+    Cada una cambia una decisión: qué modelo probar, qué endpoint llamar, qué tier te toca
+    o cómo comprobar un archivo.
   </p>
 
   <article class="card item" data-type="x" style="margin-bottom:1rem;">
@@ -1053,8 +1170,18 @@
 
   <section class="sources" id="fuentes">
     <h2>Fuentes de esta edición</h2>
-    <p class="why" style="margin:0 0 .9rem;color:var(--soft);">Primarias del 8 oct. Lo de días anteriores sigue en las fichas.</p>
+    <p class="why" style="margin:0 0 .9rem;color:var(--soft);">Primarias del 9 oct (anuncios del 8). Lo de días anteriores sigue en las fichas.</p>
     <div class="source-list">
+      <a href="https://www.anthropic.com/news/anthropic-cyber-mission" target="_blank" rel="noopener">Anthropic · Cyber Mission</a>
+      <a href="https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source" target="_blank" rel="noopener">OSS Scanner · research</a>
+      <a href="https://red.anthropic.com/oss-scanner/" target="_blank" rel="noopener">OSS Scanner · alta</a>
+      <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work/" target="_blank" rel="noopener">Gemini agent</a>
+      <a href="https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/" target="_blank" rel="noopener">TechCrunch · Gemini</a>
+      <a href="https://huggingface.co/blog/building-with-ml-intern" target="_blank" rel="noopener">ML Intern</a>
+      <a href="https://huggingface.co/blog/HuggingFaceBio/carbon-annotator-genbank-genome-annotation" target="_blank" rel="noopener">Carbon-A</a>
+      <a href="https://arxiv.org/abs/2610.09484" target="_blank" rel="noopener">MIMESIS</a>
+      <a href="https://www.youtube.com/watch?v=1ASzWklab2U" target="_blank" rel="noopener">YouTube · Gemini at Work</a>
+      <a href="https://www.unite.ai/es/anthropic-launches-cyber-mission-for-critical-infrastructure-open-source/" target="_blank" rel="noopener">Unite.AI (ES)</a>
       <a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">Anthropic · Haiku 5.5</a>
       <a href="https://platform.claude.com/docs/es/models/haiku-5-5/overview" target="_blank" rel="noopener">Docs Haiku · ES</a>
       <a href="https://blog.donweb.com/claude-haiku-5-5-precio-gpt-6-intelligent-ui/" target="_blank" rel="noopener">DonWeb</a>
@@ -1076,7 +1203,7 @@
   </section>
 
   <footer>
-    <div>Mantenido por <strong>IA</strong> · última actualización 8 oct 2026 · Europe/Madrid</div>
+    <div>Mantenido por <strong>IA</strong> · última actualización 9 oct 2026 · Europe/Madrid</div>
     <div>
       <a href="https://github.com/canduchix/novedades-ia">Repo</a> ·
       <a href="https://canduchix.github.io/novedades-ia/">GitHub Pages</a>
